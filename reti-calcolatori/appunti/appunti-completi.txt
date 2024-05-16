@@ -1,0 +1,778 @@
+MODULO 1:
+
+### Networks Affect our Lives:
+
+- Le 
+- I diagrammi di reti, come i diagrammi topologici, mostrano la connettività.
+- Sia la topologia fisica che logica sono illustrate nei diagrammi.
+
+### Common Types of Networks:
+
+- Le reti variano dalle piccole reti domestiche a Internet.
+- LAN e WAN sono tipi comuni di infrastrutture di rete.
+
+### Internet Connections:
+
+reti hanno rivoluzionato le comunicazioni e la condivisione di idee.
+- Il cloud storage permette l'accesso ai dati da qualsiasi luogo.
+  
+### Network Components:
+
+- Gli host, dispositivi finali e intermedi, insieme al supporto, sono fondamentali.
+- Le reti possono essere peer-to-peer o internetworked.
+
+### Network Representations and Topologies:
+- Le connessioni internet includono diverse tecnologie.
+- Reti separate convergono per fornire dati, voce e video su una singola infrastruttura.
+
+### Reliable Networks:
+
+- Le reti devono affrontare sfide come tolleranza agli errori, scalabilità, QoS e sicurezza.
+
+### Network Trends:
+
+- Le tendenze includono BYOD, collaborazione online, video comunicazioni e cloud computing.
+- La tecnologia smart home e le reti wireless sono in evoluzione.
+
+### Network Security:
+
+- Le minacce includono virus, attacchi DoS, furto di dati e intercettazioni.
+- Le reti utilizzano varie tecniche di sicurezza come firewall, VPN e ACL.
+
+### The IT Professional:
+
+- Le certificazioni come CCNA offrono competenze per carriere nel settore.
+- Cisco Networking Academy fornisce formazione e opportunità di lavoro nel settore delle reti.
+
+
+
+
+
+MODULO 3: 
+
+Ecco un riassunto dei concetti presentati:
+
+### Regole:
+- Tutti i metodi di comunicazione coinvolgono un mittente, un destinatario e un canale.
+- I protocolli regolano l'invio dei messaggi e comprendono regole per mittente e destinatario identificati, linguaggio comune e tempi di consegna.
+- I protocolli informatici includono requisiti come codifica, formattazione, dimensioni e opzioni di recapito.
+- La codifica trasforma le informazioni in un formato accettabile per la trasmissione e la decodifica le interpreta.
+- I formati dei messaggi variano in base al tipo di messaggio e al canale utilizzato.
+- La temporizzazione 'ha funzioni, formato e regole specifiche.
+- Famiglie di protocolli includono Ethernet, IP, TCP, HTTP, SSH, SSL, TLS, OSPF, BGP, DHCP, DNS e altri.
+- I protocolli proteggono i dati fornendo autenticazione, integrità e crittografia.
+- Consentono ai router di instradare, comparare le informazioni sul percorso e selezionare il percorso migliore.
+- Utilizzati per il rilevamento automatico di dispositivi o servizi.
+- Forniscono funzioni come indirizzamento, affidabilità, controllo del flusso e . rilevamento degli errori.
+
+### Suite di protocolli:
+- Gruppo di protocolli correlati per una funzione di comunicazione.
+- Mostra l'implementazione dei singoli protocolli all'interno di una suite.
+- TCP/IP è la suite più comune, utilizzata per reti e Internet.
+- Offre suite di protocolli standard e basate su standard.
+
+### Organismi di standardizzazione:
+- Promuovono standard aperti per l'interoperabilità e l'innovazione.
+- Include organizzazioni come ISOC, IAB, IETF, IRTF, ICANN, IANA, IEEE, EIA, TIA, ITU-T.
+
+### Modelli di riferimento:
+- OSI e TCP/IP sono i principali modelli di riferimento.
+- Il modello OSI ha sette layer, mentre TCP/IP ha quattro.
+- Ogni layer ha una funzione specifica nella comunicazione di rete.
+
+### Incapsulamento dei dati:
+- I dati vengono suddivisi in segmenti più piccoli per efficienza e multipli invii.
+- Durante l'incapsulamento, ogni livello aggiunge un'intestazione ai dati.
+- Il processo viene invertito durante il de-incapsulamento.
+
+### Accesso ai dati:
+- Gli indirizzi di origine e destinazione sono presenti a livelli diversi della pila protocollare.
+- Gli indirizzi IP e MAC sono comuni per la consegna dei dati su reti locali e su Internet.
+
+Questo riassunto offre una visione generale dei concetti chiave relativi alle comunicazioni di rete.
+
+
+
+MODULO 4:
+
+### Purpose of the Physical Layer:
+
+- La connessione fisica con la rete è essenziale per avviare la comunicazione.
+- Le connessioni possono essere cablate o wireless, con l'ausilio di schede di interfaccia di rete (NIC).
+- Il layer fisico trasporta i bit attraverso i supporti di rete.
+
+### Physical Layer Characteristics:
+
+- Include circuiti elettronici, supporti e connettori.
+- Gli standard si concentrano su componenti fisici, codifica e segnalazione.
+- La larghezza di banda, la velocità di trasmissione e la latenza sono caratteristiche rilevanti.
+
+### Copper Cabling:
+
+- Utilizzato per la sua convenienza e basso costo, ma limitato dalla distanza e dalle interferenze.
+- Tipi comuni includono UTP, STP e cavo coassiale, ciascuno con vantaggi e limitazioni.
+
+### UTP Cabling:
+
+- Comprende quattro coppie di fili intrecciati e termina generalmente con connettori RJ-45.
+- Utilizzato per Ethernet, viene cablato seguendo gli standard TIA/EIA.
+
+### Fiber-Optic Cabling:
+
+- Trasmette dati su lunghe distanze e a larghezze di banda elevate, immuni alle interferenze elettromagnetiche.
+- I segnali vengono codificati in impulsi luminosi attraverso fili di vetro purissimo.
+
+### Wireless Media:
+
+- Trasporta segnali elettromagnetici utilizzando frequenze radio o microonde.
+- Gli standard includono Wi-Fi, Bluetooth, WiMAX 24e Zigbee, con WLAN che richiede un AP wireless e adattatori NIC.
+
+
+
+MODULO 6:
+
+### Purpose of the Data Link Layer:
+
+- Il Layer di Collegamento Dati (Layer 2) del modello OSI prepara i dati di rete per la trasmissione sulla rete fisica.
+- Gestisce la comunicazione della scheda di interfaccia di rete (NIC).
+- Senza il Layer di Collegamento Dati, i protocolli di livello rete dovrebbero prevedere misure di collegamento specifiche per ogni tipo di supporto di rete.
+- Il layer LAN/MAN IEEE 802 è composto da due sublayer: LLC e MAC, che si occupano dell'incapsulamento dei dati, dell'indirizzamento e del rilevamento degli errori.
+- Le organizzazioni di ingegneria, come IEEE e ITU, definiscono standard aperti per il livello di accesso alla rete.
+
+### Topologie:
+
+- Esistono due tipi di topologie: fisiche e logiche.
+- Il layer di collegamento determina la topologia logica durante il controllo degli accessi ai supporti.
+- Le topologie WAN fisiche includono punto-punto, hub and spoke e mesh.
+- Nelle LAN con accesso multiplo, i nodi sono collegati utilizzando topologie a stella o a stella estesa.
+- Esistono due modalità di comunicazione: half-duplex e full-duplex.
+- Le reti ad accesso multiplo richiedono norme per regolare le modalità di condivisione dei supporti tra i dispositivi, come CSMA/CD per LAN Ethernet e CSMA/CA per WLAN.
+
+
+
+MODULO 8:
+
+### Network Layer Characteristics:
+
+- Il Layer di Rete (Layer 3) permette lo scambio di dati tra dispositivi finali su reti diverse.
+- I protocolli principali a questo livello sono IPv4 e IPv6, insieme a protocolli di routing come OSPF e protocolli di messaggistica come ICMP.
+- IPv4 e IPv6 gestiscono l'indirizzamento dei dispositivi finali, l'incapsulamento, il routing e il de-incapsulamento.
+- IPv4 e IPv6 specificano la struttura dei pacchetti e i processi di trasferimento dati.
+- IPv4 è connectionless, best effort e indipendente dal mezzo di trasmissione.
+
+### IPv4 Packet:
+
+- L'header di un pacchetto IPv4 contiene informazioni cruciali come versione, checksum, TTL e indirizzi IPv4 di origine e destinazione.
+- IPv4 opera indipendentemente dal mezzo di trasmissione utilizzato.
+
+### IPv6 Packet:
+
+- IPv6 supera i limiti di IPv4, fornendo uno spazio di indirizzamento più ampio e semplificando la gestione dei pacchetti.
+- L'header di un pacchetto IPv6 include informazioni come versione, classe di traffico, etichetta di flusso, lunghezza payload e indirizzi IPv6 di origine e destinazione.
+
+### Routing Introduction:
+
+- Gli host determinano la destinazione dei pacchetti consultando la tabella di routing.
+- Se la destinazione è su una rete remota, il pacchetto viene inoltrato al gateway predefinito (di solito un router locale).
+- I router esaminano l'indirizzo IP di destinazione dei pacchetti e consultano la loro tabella di routing per instradare i pacchetti verso la destinazione.
+- Le tabelle di routing dei router memorizzano le reti connesse direttamente, le reti remote e i percorsi predefiniti.
+- I router possono apprendere dinamicamente le reti remote utilizzando protocolli di routing come OSPF ed EIGRP.
+- I percorsi statici sono configurati manualmente.
+- Il comando `show ip route` su un router Cisco IOS consente di visualizzare la tabella di routing IPv4.
+
+
+
+MODULO 9:
+
+### MAC and IP:
+
+- Gli indirizzi MAC Ethernet (Layer 2) vengono utilizzati per instradare i pacchetti IP da una NIC a un'altra sulla stessa rete.
+- Se l'indirizzo IP di destinazione è sulla stessa rete, l'indirizzo MAC di destinazione sarà quello del dispositivo di destinazione. Se è su una rete remota, sarà l'indirizzo MAC del gateway predefinito.
+- Ogni collegamento lungo il percorso incapsula il pacchetto IP in un frame specifico alla tecnologia di collegamento, come Ethernet.
+
+### ARP (Address Resolution Protocol):
+
+- ARP risolve gli indirizzi IPv4 in indirizzi MAC e gestisce una tabella di mappature.
+- Una richiesta ARP viene inviata in broadcast sulla LAN per determinare l'indirizzo MAC associato a un indirizzo IPv4.
+- Solo il dispositivo con l'indirizzo IPv4 richiesto risponde, inviando una risposta ARP unicast.
+- Il dispositivo ricevente aggiunge l'associazione ARP alla sua tabella ARP per un successivo utilizzo.
+- Le voci non utilizzate nella tabella ARP vengono rimosse dopo un certo periodo di tempo.
+- Spoofing ARP può essere utilizzato per eseguire un attacco di poisoning ARP, manipolando le tabelle ARP dei dispositivi nella rete.
+
+
+
+
+MODULO 11:
+
+### Struttura dell'Indirizzamento IPv4:
+
+- Un indirizzo IPv4 è composto da una porzione di rete e una porzione di host, entrambe a 32 bit.
+- La parte di rete è identica per tutti i dispositivi sulla stessa rete, mentre la parte di host è univoca per identificare un dispositivo specifico.
+- Un host richiede un indirizzo IPv4 univoco e una subnet mask per distinguere tra la porzione di rete e la porzione di host.
+- La lunghezza del prefisso nella subnet mask indica quanti bit sono impostati su 1, scritto in notazione barra (/).
+- L'AND logico è utilizzato per confrontare due bit, producendo un 1 solo se entrambi sono 1.
+- Gli indirizzi IPv4 includono indirizzi di rete, indirizzi host e indirizzi di trasmissione.
+
+### IPv4 Unicast, Multicast e Broadcast:
+
+- La trasmissione unicast è da un dispositivo a un altro in comunicazioni uno-a-uno.
+- Un pacchetto unicast ha un indirizzo IP di destinazione che è un indirizzo unicast.
+- La trasmissione broadcast è da un dispositivo a tutti i dispositivi sulla rete in comunicazioni uno-a-tutti.
+- Un pacchetto broadcast ha tutti 1 nella parte host dell'indirizzo IP di destinazione.
+- La trasmissione multicast invia un pacchetto a un gruppo selezionato di host che si iscrivono a un gruppo multicast.
+- Gli indirizzi multicast IPv4 vanno da 224.0.0.0 a 239.255.255.255.
+
+### Tipi di Indirizzi IPv4:
+
+- Gli indirizzi IPv4 pubblici vengono instradati globalmente su Internet.
+- Gli indirizzi IPv4 privati sono utilizzati internamente nelle organizzazioni e non sono instradabili globalmente.
+- Gli indirizzi di loopback (127.0.0.1) sono utilizzati per reindirizzare il traffico al proprio host.
+- Gli indirizzi link-local (APIPA) sono auto-assegnati e utilizzati in assenza di un server DHCP.
+
+### Segmentazione della Rete e Subnetting:
+
+- La segmentazione della rete riduce il traffico di broadcast e migliora le prestazioni di rete.
+- Il subnetting suddivide una rete in subnet più piccole, riducendo il traffico di rete e migliorando le prestazioni.
+- VLSM (Variable Length Subnet Masking) consente di suddividere una rete in parti disuguali, ottimizzando l'uso degli indirizzi IP.
+- Il subnetting di un prefisso /16 e /8 coinvolge il prestito di bit dalla parte host dell'indirizzo IP per creare subnet più piccole.
+- Il design strutturato dell'indirizzamento IP prevede la pianificazione della suddivisione della rete in base alle esigenze e ai requisiti dell'organizzazione.
+
+
+
+
+MODULO 14:
+
+### Trasporto dei Dati:
+
+Il layer di trasporto fornisce un collegamento tra il layer dell'applicazione e i livelli inferiori della trasmissione di rete. Include TCP e UDP, responsabili delle comunicazioni logiche tra le applicazioni su host diversi.
+
+#### Panoramica su TCP:
+
+- TCP è affidabile, stato, gestisce sessioni, segmenta e riassembla dati, e fornisce consegna in ordine.
+- Un segmento TCP aggiunge 20 byte di overhead come informazioni di header.
+- I campi dell'header TCP includono porte di origine e di destinazione, numeri di sequenza, numeri di acknowledgment, lunghezza dell'header, control bits, dimensione della finestra, checksum e opzioni.
+- Applicazioni come HTTP, FTP, SMTP e Telnet utilizzano TCP.
+
+#### Panoramica su UDP:
+
+- UDP è veloce, senza stato, e non garantisce l'affidabilità o la consegna in ordine.
+- L'header UDP include porte di origine e di destinazione, lunghezza e checksum.
+- Applicazioni come DHCP, DNS, SNMP, TFTP, VoIP e videoconferenza utilizzano UDP.
+
+#### Numeri di Porta:
+
+- TCP e UDP utilizzano numeri di porta per gestire conversazioni simultanee.
+- La combinazione di indirizzo IP e numero di porta è chiamata socket.
+- Ci sono porte note, registrate, private e dinamiche.
+- Netstat è un'utility per verificare le connessioni TCP attive.
+
+#### Processo di Comunicazione TCP:
+
+- I processi dell'applicazione su un server utilizzano numeri di porta assegnati automaticamente o manualmente.
+- TCP stabilisce sessioni e fornisce controllo del flusso.
+- Il three-way handshake stabilisce una connessione TCP.
+- Sei flag di controllo: URG, ACK, PSH, RST, SYN e FIN.
+
+#### Affidabilità e Controllo del Flusso:
+
+- TCP garantisce la consegna e il riordino dei dati.
+- Il ritrasferimento viene utilizzato per gestire la perdita di segmenti.
+- Il controllo del flusso regola la velocità di trasmissione dei dati.
+- TCP utilizza finestre scorrevoli per il controllo del flusso.
+
+#### Comunicazione UDP:
+
+- UDP è semplice e non gestisce lo stato o l'ordine dei dati.
+- Le applicazioni identificano la sequenza dei dati se necessario.
+- Le applicazioni server utilizzano porte note o registrate, mentre i client selezionano dinamicamente le porte di origine.
+- UDP non modifica le porte di origine e di destinazione nei datagrammi.
+
+
+
+
+
+Tabella Subnet-Mask:
+
+| Subnet Mask       | Prefix Length | Numero di subnet   | Host per subnet            | Indirizzi IP utilizzabili                  | Indirizzo di rete            | Indirizzo di broadcast        |
+|-------------------|---------------|--------------------|----------------------------|--------------------------------------------|------------------------------|-----------------------
+| 128.0.0.0         | /1            | 2                  | 2^31 - 2                   | 0.0.0.1 - 127.255.255.254                 | 0.0.0.0                      | 127.255.255.255                |
+| 192.0.0.0         | /2            | 4                  | 2^30 - 2                   | 128.0.0.1 - 191.255.255.254               | 128.0.0.0                    | 191.255.255.255                |
+| 224.0.0.0         | /3            | 8                  | 2^29 - 2                   | 192.0.0.1 - 223.255.255.254               | 192.0.0.0                    | 223.255.255.255                |
+| 240.0.0.0         | /4            | 16                 | 2^28 - 2                   | 224.0.0.1 - 239.255.255.254               | 224.0.0.0                    | 239.255.255.255                |
+| 248.0.0.0         | /5            | 32                 | 2^27 - 2                   | 240.0.0.1 - 247.255.255.254               | 240.0.0.0                    | 247.255.255.255                |
+| 252.0.0.0         | /6            | 64                 | 2^26 - 2                   | 248.0.0.1 - 251.255.255.254               | 248.0.0.0                    | 251.255.255.255                |
+| 254.0.0.0         | /7            | 128                | 2^25 - 2                   | 252.0.0.1 - 253.255.255.254               | 252.0.0.0                    | 253.255.255.255                |
+| 255.0.0.0         | /8            | 256                | 2^24 - 2                   | 254.0.0.1 - 254.255.255.254               | 254.0.0.0                    | 254.255.255.255                |
+| 255.128.0.0       | /9            | 512                | 2^23 - 2                   | 255.0.0.1 - 255.127.255.254               | 255.0.0.0                    | 255.127.255.255                |
+| 255.192.0.0       | /10           | 1024               | 2^22 - 2                   | 255.128.0.1 - 255.191.255.254             | 255.128.0.0                  | 255.191.255.255                |
+| 255.224.0.0       | /11           | 2048               | 2^21 - 2                   | 255.192.0.1 - 255.223.255.254             | 255.192.0.0                  | 255.223.255.255                |
+| 255.240.0.0       | /12           | 4096               | 2^20 - 2                   | 255.224.0.1 - 255.239.255.254             | 255.224.0.0                  | 255.239.255.255                |
+| 255.248.0.0       | /13           | 8192               | 2^19 - 2                   | 255.240.0.1 - 255.247.255.254             | 255.240.0.0                  | 255.247.255.255                |
+| 255.252.0.0       | /14           | 16384              | 2^18 - 2                   | 255.248.0.1 - 255.251.255.254             | 255.248.0.0                  | 255.251.255.255                |
+| 255.254.0.0       | /15           | 32768              | 2^17 - 2                   | 255.252.0.1 - 255.253.255.254             | 255.252.0.0                  | 255.253.255.255                |
+| 255.255.0.0       | /16           | 65536              | 2^16 - 2                   | 255.254.0.1 - 255.254.255.254             | 255.254.0.0                  | 255.254.255.255                |
+| 255.255.128.0     | /17           | 131072             | 2^15 - 2                   | 255.255.0.1 - 255.255.127.254             | 255.255.128.0                | 255.255.127.255                |
+| 255.255.192.0     | /18           | 262144             | 2^14 - 2                   | 255.255.128.1 - 255.255.191.254           | 255.255.192.0                | 255.255.191.255                |
+| 255.255.224.0     | /19           | 524288             | 2^13 - 2                   | 255.255.192.1 - 255.255.223.254           | 255.255.224.0                | 255.255.223.255                |
+| 255.255.240.0     | /20           | 1048576            | 2^12 - 2                   | 255.255.224.1 - 255.255.239.254           | 255.255.240.0                | 255.255.239.255                |
+| 255.255.248.0     | /21           | 2097152            | 2^11 - 2                   | 255.255.240.1 - 255.255.247.254           | 255.255.248.0                | 255.255.247.255                |
+| 255.255.252.0     | /22           | 4194304            | 2^10 - 2                   | 255.255.248.1 - 255.255.251.254           | 255.255.252.0                | 255.255.251.255                |
+| 255.255.254.0     | /23           | 8388608            | 2^9 - 2                    | 255.255.252.1 - 255.255.253.254           | 255.255.254.0                | 255.255.253.255                |
+| 255.255.255.0     | /24           | 16777216           | 2^8 - 2                    | 255.255.254.1 - 255.255.254.254           | 255.255.255.0                | 255.255.254.255                |
+| 255.255.255.128   | /25           | 33554432           | 2^7 - 2                    | 255.255.255.1 - 255.255.255.126           | 255.255.255.128              | 255.255.255.127                |
+| 255.255.255.192   | /26           | 67108864           | 2^6 - 2                    | 255.255.255.129 - 255.255.255.190         | 255.255.255.192              | 255.255.255.191                |
+| 255.255.255.224   | /27           | 134217728          | 2^5 - 2                    | 255.255.255.193 - 255.255.255.222         | 255.255.255.224              | 255.255.255.223                |
+| 255.255.255.240   | /28           | 268435456          | 2^4 - 2                    | 255.255.255.225 - 255.255.255.238         | 255.255.255.240              | 255.255.255.239                |
+| 255.255.255.248   | /29           | 536870912          | 2^3 - 2                    | 255.255.255.241 - 255.255.255.246         | 255.255.255.248              | 255.255.255.247                |
+| 255.255.255.252   | /30           | 1073741824         | 2^2 - 2                    | 255.255.255.249 - 255.255.255.250         | 255.255.255.252              | 255.255.255.251                |
+| 255.255.255.254   | /31           | 2147483648         | 2^1 - 2                    | 255.255.255.249 - 255.255.255.250         | 255.255.255.254              | 255.255.255.253                |
+| 255.255.255.255   | /32           | 2^32               | 1                          | 192.168.1.1                               | 192.168.1.1                  | 192.168.1.1                    |
+
+Questa tabella fornisce una panoramica dei vari prefissi di subnet e quanti indirizzi di rete e host sono disponibili per ciascuno, insieme agli indirizzi di rete e di broadcast associati a ciascuna subnet.
+
+
+UNI/MULTI/BROAD-CAST
+
+Ecco uno schema per comprendere se si sta utilizzando unicast, multicast o broadcast:
+
+1. **Unicast**:
+   - **Definizione**: Unicast si riferisce a una comunicazione punto a punto in cui un dispositivo invia un messaggio a un singolo destinatario.
+   - **Schema**:
+     - Se l'indirizzo IP di destinazione nel pacchetto è unico e corrisponde a un singolo host sulla rete, allora si sta utilizzando unicast.
+
+2. **Multicast**:
+   - **Definizione**: Multicast si riferisce a una comunicazione uno-a-molti in cui un host invia un messaggio a un gruppo selezionato di destinatari che si sono iscritti al gruppo multicast.
+   - **Schema**:
+     - Se l'indirizzo IP di destinazione è nell'intervallo specifico riservato per i gruppi multicast (da 224.0.0.0 a 239.255.255.255), allora si sta utilizzando multicast.
+
+3. **Broadcast**:
+   - **Definizione**: Broadcast si riferisce a una comunicazione uno-a-tutti in cui un host invia un messaggio a tutti i dispositivi sulla rete.
+   - **Schema**:
+     - Se l'indirizzo IP di destinazione nel pacchetto ha tutti 1 nella parte host (es. 255.255.255.255) o corrisponde a un indirizzo broadcast valido per una determinata rete, allora si sta utilizzando il broadcast.
+
+Questo schema fornisce un modo rapido per determinare il tipo di comunicazione utilizzata in base all'indirizzo IP di destinazione nel pacchetto.
+
+
+
+HOST, RETE, BROADCAST
+
+Certamente! Ecco due esempi dettagliati di calcolo degli indirizzi di rete, host e broadcast utilizzando lo schema fornito:
+
+### Esempio 1:
+
+Supponiamo di avere l'indirizzo IP `192.168.1.50` con una subnet mask `255.255.255.0 (/24)`.
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: `192.168.1.50` diventa `11000000.10101000.00000001.00110010`
+   - Subnet mask: `255.255.255.0` diventa `11111111.11111111.11111111.00000000`
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - L'indirizzo IP ha 24 bit nella porzione di rete e 8 bit nella porzione di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettua l'AND logico tra l'indirizzo IP e la subnet mask:
+     `11000000.10101000.00000001.00110010`
+     `11111111.11111111.11111111.00000000`
+     ----------------------------------------
+     `11000000.10101000.00000001.00000000`
+   - L'indirizzo di rete è `192.168.1.0`.
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Inverti i bit della porzione di host dell'indirizzo IP:
+     `00000000`
+   - Aggiungi questi bit invertiti all'indirizzo di rete:
+     `11000000.10101000.00000001.11111111`
+   - L'indirizzo di broadcast è `192.168.1.255`.
+
+5. **Numero di host disponibili:**
+   - Sottrai 2 (indirizzo di rete e broadcast) dal numero totale di indirizzi IP disponibili nella subnet: `2^8 - 2 = 254`.
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno da `192.168.1.1` a `192.168.1.254`.
+
+### Esempio 2:
+
+Supponiamo di avere l'indirizzo IP `10.20.30.40` con una subnet mask `255.255.255.192 (/26)`.
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: `10.20.30.40` diventa `00001010.00010100.00011110.00101000`
+   - Subnet mask: `255.255.255.192` diventa `11111111.11111111.11111111.11000000`
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - L'indirizzo IP ha 26 bit nella porzione di rete e 6 bit nella porzione di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettua l'AND logico tra l'indirizzo IP e la subnet mask:
+     `00001010.00010100.00011110.00101000`
+     `11111111.11111111.11111111.11000000`
+     ----------------------------------------
+     `00001010.00010100.00011110.00100000`
+   - L'indirizzo di rete è `10.20.30.32`.
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Inverti i bit della porzione di host dell'indirizzo IP:
+     `00000011`
+   - Aggiungi questi bit invertiti all'indirizzo di rete:
+     `00001010.00010100.00011110.00111111`
+   - L'indirizzo di broadcast è `10.20.30.63`.
+
+5. **Numero di host disponibili:**
+   - Sottrai 2 (indirizzo di rete e broadcast) dal numero totale di indirizzi IP disponibili nella subnet: `2^6 - 2 = 62`.
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno da `10.20.30.33` a `10.20.30.62`.
+
+Questi esempi illustrano i passaggi dettagliati per calcolare gli indirizzi di rete, host e broadcast per due diversi scenari di subnetting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Certamente! Ti fornirò degli esempi con tutti i passaggi e le spiegazioni dettagliate per calcolare gli indirizzi di rete, host e broadcast.
+
+### Esempio 1:
+
+**Indirizzo IP:** 192.168.1.100  
+**Subnet Mask:** 255.255.255.0 (o /24)
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: 11000000.10101000.00000001.01100100
+   - Subnet Mask: 11111111.11111111.11111111.00000000
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - Nell'indirizzo IP, i primi 24 bit rappresentano la parte di rete, mentre gli ultimi 8 bit rappresentano la parte di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettuando l'AND logico tra l'indirizzo IP e la subnet mask:
+     - Indirizzo di rete: 11000000.10101000.00000001.00000000 (192.168.1.0)
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Invertendo i bit della parte di host dell'indirizzo IP:
+     - Indirizzo di broadcast: 11000000.10101000.00000001.11111111 (192.168.1.255)
+
+5. **Determinazione del numero di host disponibili:**
+   - Numero di host disponibili = 2^(numero di bit nella parte di host) - 2
+   - Numero di host disponibili = 2^8 - 2 = 254
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno dall'indirizzo di rete all'indirizzo di broadcast esclusi:
+     - Intervallo: 192.168.1.1 - 192.168.1.254
+
+### Esempio 2:
+
+**Indirizzo IP:** 10.20.30.40  
+**Subnet Mask:** 255.255.255.192 (o /26)
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: 00001010.00010100.00011110.00101000
+   - Subnet Mask: 11111111.11111111.11111111.11000000
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - Nell'indirizzo IP, i primi 26 bit rappresentano la parte di rete, mentre gli ultimi 6 bit rappresentano la parte di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettuando l'AND logico tra l'indirizzo IP e la subnet mask:
+     - Indirizzo di rete: 00001010.00010100.00011110.00101000 (10.20.30.0)
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Invertendo i bit della parte di host dell'indirizzo IP:
+     - Indirizzo di broadcast: 00001010.00010100.00011110.00111111 (10.20.30.63)
+
+5. **Determinazione del numero di host disponibili:**
+   - Numero di host disponibili = 2^(numero di bit nella parte di host) - 2
+   - Numero di host disponibili = 2^6 - 2 = 62
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno dall'indirizzo di rete all'indirizzo di broadcast esclusi:
+     - Intervallo: 10.20.30.1 - 10.20.30.62
+
+Con questi esempi, hai una panoramica dettagliata di come calcolare gli indirizzi di rete, host e broadcast utilizzando un indirizzo IP e una subnet mask.
+
+
+
+
+
+DECIMALE A BINARIO
+
+```
+| Decimale | Binario (8 bit) |
+|----------|-----------------|
+|    0     |   00000000      |
+|    1     |   00000001      |
+|    2     |   00000010      |
+|    3     |   00000011      |
+|    4     |   00000100      |
+|    5     |   00000101      |
+|    6     |   00000110      |
+|    7     |   00000111      |
+|    8     |   00001000      |
+|    9     |   00001001      |
+|   10     |   00001010      |
+|   11     |   00001011      |
+|   12     |   00001100      |
+|   13     |   00001101      |
+|   14     |   00001110      |
+|   15     |   00001111      |
+|   16     |   00010000      |
+|   17     |   00010001      |
+|   18     |   00010010      |
+|   19     |   00010011      |
+|   20     |   00010100      |
+|   21     |   00010101      |
+|   22     |   00010110      |
+|   23     |   00010111      |
+|   24     |   00011000      |
+|   25     |   00011001      |
+|   26     |   00011010      |
+|   27     |   00011011      |
+|   28     |   00011100      |
+|   29     |   00011101      |
+|   30     |   00011110      |
+|   31     |   00011111      |
+|   32     |   00100000      |
+|   33     |   00100001      |
+|   34     |   00100010      |
+|   35     |   00100011      |
+|   36     |   00100100      |
+|   37     |   00100101      |
+|   38     |   00100110      |
+|   39     |   00100111      |
+|   40     |   00101000      |
+|   41     |   00101001      |
+|   42     |   00101010      |
+|   43     |   00101011      |
+|   44     |   00101100      |
+|   45     |   00101101      |
+|   46     |   00101110      |
+|   47     |   00101111      |
+|   48     |   00110000      |
+|   49     |   00110001      |
+|   50     |   00110010      |
+|   51     |   00110011      |
+|   52     |   00110100      |
+|   53     |   00110101      |
+|   54     |   00110110      |
+|   55     |   00110111      |
+|   56     |   00111000      |
+|   57     |   00111001      |
+|   58     |   00111010      |
+|   59     |   00111011      |
+|   60     |   00111100      |
+|   61     |   00111101      |
+|   62     |   00111110      |
+|   63     |   00111111      |
+|   64     |   01000000      |
+|   65     |   01000001      |
+|   66     |   01000010      |
+|   67     |   01000011      |
+|   68     |   01000100      |
+|   69     |   01000101      |
+|   70     |   01000110      |
+|   71     |   01000111      |
+|   72     |   01001000      |
+|   73     |   01001001      |
+|   74     |   01001010      |
+|   75     |   01001011      |
+|   76     |   01001100      |
+|   77     |   01001101      |
+|   78     |   01001110      |
+|   79     |   01001111      |
+|   80     |   01010000      |
+|   81     |   01010001      |
+|   82     |   01010010      |
+|   83     |   01010011      |
+|   84     |   01010100      |
+|   85     |   01010101      |
+|   86     |   01010110      |
+|   87     |   01010111      |
+|   88     |   01011000      |
+|   89     |   01011001      |
+|   90     |   01011010      |
+|   91     |   01011011      |
+|   92     |   01011100      |
+|   93     |   01011101      |
+|   94     |   01011110      |
+|   95     |   01011111      |
+|   96     |   01100000      |
+|   97     |   01100001      |
+|   98     |   01100010      |
+|   99     |   01100011      |
+|  100     |   01100100      |
+|  101     |   01100101      |
+|  102     |   01100110      |
+|  103     |   01100111      |
+|  104     |   01101000      |
+|  105     |   01101001      |
+|  106     |   01101010      |
+|  107     |   01101011      |
+|  108     |   01101100      |
+|  109     |   01101101      |
+|  110     |   01101110      |
+|  111     |   01101111      |
+|  112     |   01110000      |
+|  113     |   01110001      |
+|  114     |   01110010      |
+|  115     |   01110011      |
+|  116     |   01110100      |
+|  117     |   01110101      |
+|  118     |   01110110      |
+|  119     |   01110111      |
+|  120     |   01111000      |
+|  121     |   01111001      |
+|  122     |   01111010      |
+|  123     |   01111011      |
+|  124     |   01111100      |
+|  125     |   01111101      |
+|  126     |   01111110      |
+|  127     |   01111111      |
+|  128     |   10000000      |
+|  129     |   10000001      |
+|  130     |   10000010      |
+|  131     |   10000011      |
+|  132     |   10000100      |
+|  133     |   10000101      |
+|  134     |   10000110      |
+|  135     |   10000111      |
+|  136     |   10001000      |
+|  137     |   10001001      |
+|  138     |   10001010      |
+|  139     |   10001011      |
+|  140     |   10001100      |
+|  141     |   10001101      |
+|  142     |   10001110      |
+|  143     |   10001111      |
+|  144     |   10010000      |
+|  145     |   10010001      |
+|  146     |   10010010      |
+|  147     |   10010011      |
+|  148     |   10010100      |
+|  149     |   10010101      |
+|  150     |   10010110      |
+|  151     |   10010111      |
+|  152     |   10011000      |
+|  153     |   10011001      |
+|  154     |   10011010      |
+|  155     |   10011011      |
+|  156     |   10011100      |
+|  157     |   10011101      |
+|  158     |   10011110      |
+|  159     |   10011111      |
+|  160     |   10100000      |
+|  161     |   10100001      |
+|  162     |   10100010      |
+|  163     |   10100011      |
+|  164     |   10100100      |
+|  165     |   10100101      |
+|  166     |   10100110      |
+|  167     |   10100111      |
+|  168     |   10101000      |
+|  169     |   10101001      |
+|  170     |   10101010      |
+|  171     |   10101011      |
+|  172     |   10101100      |
+|  173     |   10101101      |
+|  174     |   10101110      |
+|  175     |   10101111      |
+|  176     |   10110000      |
+|  177     |   10110001      |
+|  178     |   10110010      |
+|  179     |   10110011      |
+|  180     |   10110100      |
+|  181     |   10110101      |
+|  182     |   10110110      |
+|  183     |   10110111      |
+|  184     |   10111000      |
+|  185     |   10111001      |
+|  186     |   10111010      |
+|  187     |   10111011      |
+|  188     |   10111100      |
+|  189     |   10111101      |
+|  190     |   10111110      |
+|  191     |   10111111      |
+|  192     |   11000000      |
+|  193     |   11000001      |
+|  194     |   11000010      |
+|  195     |   11000011      |
+|  196     |   11000100      |
+|  197     |   11000101      |
+|  198     |   11000110      |
+|  199     |   11000111      |
+|  200     |   11001000      |
+|  201     |   11001001      |
+|  202     |   11001010      |
+|  203     |   11001011      |
+|  204     |   11001100      |
+|  205     |   11001101      |
+|  206     |   11001110      |
+|  206     |   11001110      |
+|  207     |   11001111      |
+|  208     |   11010000      |
+|  209     |   11010001      |
+|  210     |   11010010      |
+|  211     |   11010011      |
+|  212     |   11010100      |
+|  213     |   11010101      |
+|  214     |   11010110      |
+|  215     |   11010111      |
+|  216     |   11011000      |
+|  217     |   11011001      |
+|  218     |   11011010      |
+|  219     |   11011011      |
+|  220     |   11011100      |
+|  221     |   11011101      |
+|  222     |   11011110      |
+|  223     |   11011111      |
+|  224     |   11100000      |
+|  225     |   11100001      |
+|  226     |   11100010      |
+|  227     |   11100011      |
+|  228     |   11100100      |
+|  229     |   11100101      |
+|  230     |   11100110      |
+|  231     |   11100111      |
+|  232     |   11101000      |
+|  233     |   11101001      |
+|  234     |   11101010      |
+|  235     |   11101011      |
+|  236     |   11101100      |
+|  237     |   11101101      |
+|  238     |   11101110      |
+|  239     |   11101111      |
+|  240     |   11110000      |
+|  241     |   11110001      |
+|  242     |   11110010      |
+|  243     |   11110011      |
+|  244     |   11110100      |
+|  245     |   11110101      |
+|  246     |   11110110      |
+|  247     |   11110111      |
+|  248     |   11111000      |
+|  249     |   11111001      |
+|  250     |   11111010      |
+|  251     |   11111011      |
+|  252     |   11111100      |
+|  253     |   11111101      |
+|  254     |   11111110      |
+|  255     |   11111111      |

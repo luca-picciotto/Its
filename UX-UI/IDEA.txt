@@ -1,0 +1,42 @@
+		IDEA
+	   Cibo a casa tua
+_____________________________________
+Analisi competitor:
+	-Hello fresh :
+		VANTAGGI:
+			-spesa comodamente a casa tua
+			-scelta menù settimanale
+			-presenza di ricette di default
+			-varietà (culturale) di menù
+			-selezione allergeni
+			-passaggi guidati 
+
+		SVANTAGGI:
+			-abbonamento mensile
+			-menu limitato settimanale
+			-spazio di conservazione
+			-devi cucinare te
+			-poca varieta di ingredienti
+
+		POSSIBILI AGGIUNTE: 
+			-servizio su prenotazione di chef personale
+				-scelta livello professionista;
+			-inserimento di collab con ristoranti per piatti pronti
+			-possibilità di singolo giorno
+			-possibilità fuori menù (>prezzo)
+
+
+	-Glovo (o simili):
+		VANTAGGI:
+			-cibo pronto in poco tempo
+			-visualizza posizione rider
+			-scelta (culturale) praticamente infinita
+
+		SVANTAGGI:
+			-orari notturni poco servizio
+			-problemi di qualità del servizio
+			
+
+			
+		
+	

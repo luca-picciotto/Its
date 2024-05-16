@@ -1,0 +1,2 @@
+   // x = numeroCasuale();
+    // y = numeroCasuale();

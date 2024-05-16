@@ -1,0 +1,44 @@
+### Trasporto dei Dati:
+
+Il layer di trasporto fornisce un collegamento tra il layer dell'applicazione e i livelli inferiori della trasmissione di rete. Include TCP e UDP, responsabili delle comunicazioni logiche tra le applicazioni su host diversi.
+
+#### Panoramica su TCP:
+
+- TCP è affidabile, stato, gestisce sessioni, segmenta e riassembla dati, e fornisce consegna in ordine.
+- Un segmento TCP aggiunge 20 byte di overhead come informazioni di header.
+- I campi dell'header TCP includono porte di origine e di destinazione, numeri di sequenza, numeri di acknowledgment, lunghezza dell'header, control bits, dimensione della finestra, checksum e opzioni.
+- Applicazioni come HTTP, FTP, SMTP e Telnet utilizzano TCP.
+
+#### Panoramica su UDP:
+
+- UDP è veloce, senza stato, e non garantisce l'affidabilità o la consegna in ordine.
+- L'header UDP include porte di origine e di destinazione, lunghezza e checksum.
+- Applicazioni come DHCP, DNS, SNMP, TFTP, VoIP e videoconferenza utilizzano UDP.
+
+#### Numeri di Porta:
+
+- TCP e UDP utilizzano numeri di porta per gestire conversazioni simultanee.
+- La combinazione di indirizzo IP e numero di porta è chiamata socket.
+- Ci sono porte note, registrate, private e dinamiche.
+- Netstat è un'utility per verificare le connessioni TCP attive.
+
+#### Processo di Comunicazione TCP:
+
+- I processi dell'applicazione su un server utilizzano numeri di porta assegnati automaticamente o manualmente.
+- TCP stabilisce sessioni e fornisce controllo del flusso.
+- Il three-way handshake stabilisce una connessione TCP.
+- Sei flag di controllo: URG, ACK, PSH, RST, SYN e FIN.
+
+#### Affidabilità e Controllo del Flusso:
+
+- TCP garantisce la consegna e il riordino dei dati.
+- Il ritrasferimento viene utilizzato per gestire la perdita di segmenti.
+- Il controllo del flusso regola la velocità di trasmissione dei dati.
+- TCP utilizza finestre scorrevoli per il controllo del flusso.
+
+#### Comunicazione UDP:
+
+- UDP è semplice e non gestisce lo stato o l'ordine dei dati.
+- Le applicazioni identificano la sequenza dei dati se necessario.
+- Le applicazioni server utilizzano porte note o registrate, mentre i client selezionano dinamicamente le porte di origine.
+- UDP non modifica le porte di origine e di destinazione nei datagrammi.

@@ -1,0 +1,45 @@
+Una biblioteca ha identificato tutti i libri della propria collezione mediante 
+un codice numerico. Le informazioni peculiari del libro sono le seguenti: 
+
+    il codice numerico, 
+    il titolo, 
+    l’autore, 
+    l’anno di pubblicazione, 
+    la casa editrice, 
+    nome utente che usufruisce del prestito, 
+    numero di giorni che mancano allo scadere del prestito.
+
+
+Costruire un programma che stampi un menu’ di scelta che presenti le seguenti 
+opzioni:
+
+Inserimento di N libri nella biblioteca
+
+Stampa del numero totale di libri presenti
+
+Stampa di tutti i libri presenti
+
+Stampa di tutti i libri ordinati per autore
+
+Stampa dei libri che non sono in prestito ordinati per codice
+
+Stampa di tutti i libri in scadenza (a meno di 2 giorni dalla data di scadenza)
+
+Esci
+
+
+Specifiche:
+
+Se il libro non è in prestito il nome utente deve essere valorizzato a spazio
+
+Ogni opzione del menù deve essere gestite con le funzioni
+
+Verificare i domini dei dati in input e se non soddisfatti richiedere il reinserimento.
+
+Il punto 7 deve richiedere conferma
+
+Curare la scrittura del codice facendo, in particolare, attenzione a:
+
+commenti del codice (soprattutto documentazione delle funzioni e delle eventuali strutture dati)
+
+indentazione corretta del codice

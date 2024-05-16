@@ -1,0 +1,91 @@
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+*{
+    box-sizing: border-box;
+}
+div{
+    display: block;
+}
+.container{
+    width: 560px;
+    margin: 0 auto;
+    /* background-color: blue; */
+    padding: 50px;
+	height: auto;
+    line-height: 20px; 
+}
+.container-fluid{
+	width: 100%;
+	padding: 0 15px;
+}
+.mt-5{
+	margin-top: 50px;
+}
+.beat{
+	width: 33.3%;
+	height: auto;
+	float: left;
+	padding: 0 7px;
+}
+.clearfix{
+	clear: both;
+}
+.item{
+	background-color: #f8f9fa;
+	height: 100%;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	border-radius: 15px;
+	overflow: hidden;
+}
+.p-1{
+	padding: 10px;
+}
+.item p{
+	padding: 10px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.img-fluid{
+	max-width: 100%;
+}
+figcaption{
+	background-color: rgba(0, 139, 139, 0.615);
+	height: 50px;
+}
+figcaption h2{
+	color: black;
+	line-height: 50px;
+	text-align: center;
+}
+img{
+	display: inline-block;
+	vertical-align: bottom;
+}
+

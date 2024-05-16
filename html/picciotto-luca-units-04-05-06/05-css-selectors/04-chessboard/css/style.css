@@ -1,0 +1,20 @@
+table,tr,td{
+    border: 1px solid blue;
+}
+td{
+    width: 20px;
+    height: 20px;
+}
+tr:nth-of-type(odd) td:nth-of-type(odd){
+    background-color: rgb(231, 144, 5);
+}
+tr:nth-of-type(odd) td:nth-of-type(even){
+    background-color: black;
+}
+
+tr:nth-of-type(even) td:nth-of-type(odd){
+    background-color: black;
+}
+tr:nth-of-type(even) td:nth-of-type(even){
+    background-color: rgb(231, 144, 5);
+}

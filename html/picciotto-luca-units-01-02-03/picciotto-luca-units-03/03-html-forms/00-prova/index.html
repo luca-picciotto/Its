@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Prova Slide">
+    <meta name="author" content="Luca Picciotto">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+</head>
+
+<body>
+    <p>
+        <form action="./processing-page.php" method="post">
+            <ul>
+                <li>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name">
+                </li>
+                <li>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="pswd">
+                </li>
+            </ul>
+        </form>
+    </p>
+
+    <p>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" name="username" id="username">
+            <input type="text" placeholder="Enter your name">
+        </form>
+    </p>
+
+    <p>
+        <form>
+            <label for="user-pwd">Password:</label>
+            <input type="password" name="user-password" id="user-pwd">
+            <input type="password" placeholder="Enter your password">
+        </form> 
+    </p>
+
+    <p>
+        <form action="..." method="post" target="_blank">
+            <input type="radio" name="gender" id="male" value="man">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="woman" checked="checked">
+            <label for="female">Female</label>
+            <button type="submit">Send</button>
+        </form>
+    </p>
+
+    <p>
+        <form action="..." method="get" target="_blank">
+            <input type="checkbox" name="sports" id="soccer" value="soccer-sport">
+            <label for="soccer">Soccer</label>
+            <input type="checkbox" name="sports" id="baseball" value="baseball-sport" checked="checked">
+            <label for="baseball">Baseball</label>
+            <button type="submit">Send</button>
+        </form>           
+    </p>
+
+    <p>
+        <form>
+            <label for="city">City:</label>
+            <select name="city" id="city">
+                <option value="sydney">Sydney</option>
+                <option value="melbourne">Melbourne</option>
+                <option value="cromwell" selected>Cromwell</option>
+            </select>
+        </form>              
+    </p>
+
+    <p>
+        <form>
+            <label for="city2">City:</label>
+            <select name="city2" id="city2" multiple>
+                <option value="sydney">Sydney</option>
+                <option value="melbourne">Melbourne</option>
+                <option value="cromwell" selected>Cromwell</option>
+            </select>
+        </form>
+    </p>
+
+    <p>
+        <form>
+            <label for="file-select">Upload:</label>
+            <input type="file" name="upload" id="file-select">
+        </form>           
+    </p>
+
+    <p>
+        <form>
+            <label for="address">Address:</label>
+            <textarea rows="4" cols="20" name="address" id="address"></textarea>
+        </form>
+           <!-- Can start with existing text -->
+        <form>
+            <textarea name="message" rows="2" cols="40">This text can be edited
+            </textarea>
+        </form>           
+    </p>
+
+
+    <p>
+        <form action="processor.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="user-name">
+            <input type="submit" value="Submit">
+            <input type="reset" value="Reset">
+        </form>           
+    </p>
+
+    <p>
+        <form>
+            <label for="user-email">Email:</label>
+            <input type="email" name="user-email" id="form-email">
+            <button type="submit">Send</button>
+        </form>           
+    </p>
+
+    <p>
+        <input type="email" id="email" name="email" placeholder="Email">
+        <input type="url" id="url" name="url" placeholder="url">
+        <input type="number" name="age" id="age" min="1" max="10" step="2" placeholder="Enter number">
+        <input type="search" id="mysearch" name="search-keyword" placeholder="Ricerca">
+    </p>
+    <!-- <script src="js/script.js"></script> -->
+
+</body>
+</html>

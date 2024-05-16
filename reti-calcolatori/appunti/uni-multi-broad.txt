@@ -1,0 +1,18 @@
+Ecco uno schema per comprendere se si sta utilizzando unicast, multicast o broadcast:
+
+1. **Unicast**:
+   - **Definizione**: Unicast si riferisce a una comunicazione punto a punto in cui un dispositivo invia un messaggio a un singolo destinatario.
+   - **Schema**:
+     - Se l'indirizzo IP di destinazione nel pacchetto è unico e corrisponde a un singolo host sulla rete, allora si sta utilizzando unicast.
+
+2. **Multicast**:
+   - **Definizione**: Multicast si riferisce a una comunicazione uno-a-molti in cui un host invia un messaggio a un gruppo selezionato di destinatari che si sono iscritti al gruppo multicast.
+   - **Schema**:
+     - Se l'indirizzo IP di destinazione è nell'intervallo specifico riservato per i gruppi multicast (da 224.0.0.0 a 239.255.255.255), allora si sta utilizzando multicast.
+
+3. **Broadcast**:
+   - **Definizione**: Broadcast si riferisce a una comunicazione uno-a-tutti in cui un host invia un messaggio a tutti i dispositivi sulla rete.
+   - **Schema**:
+     - Se l'indirizzo IP di destinazione nel pacchetto ha tutti 1 nella parte host (es. 255.255.255.255) o corrisponde a un indirizzo broadcast valido per una determinata rete, allora si sta utilizzando il broadcast.
+
+Questo schema fornisce un modo rapido per determinare il tipo di comunicazione utilizzata in base all'indirizzo IP di destinazione nel pacchetto.

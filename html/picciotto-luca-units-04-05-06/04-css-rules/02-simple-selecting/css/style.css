@@ -1,0 +1,39 @@
+body{
+    background-color: rgba(137, 240, 106, 0.671);
+}
+
+h1{
+    background-color: blue;
+    color: white;
+}
+/*  */
+
+table{
+    border-collapse: collapse;
+    border: 2px blue;
+}
+
+ol li{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    font-size: larger;
+    color: brown;
+}
+
+#h1-list{
+    background-color: rgb(255, 166, 0);
+    color: rgb(0, 0, 0);
+}
+
+.utile{
+    text-decoration:double line-through;
+    color: magenta;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-size: larger;
+}
+
+
+.inutile{
+    text-decoration: none ;
+    color: #ff00ff;
+}

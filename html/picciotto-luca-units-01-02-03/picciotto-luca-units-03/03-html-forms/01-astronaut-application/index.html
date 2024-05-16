@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Esercizio 1">
+    <meta name="author" content="Luca Picciotto">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <p id="intestazione">
+        <h1>Good Moorning Space Traveler</h1>
+        <h2>Please complite the form!</h2>
+    </p>
+    <p>
+        <form action="https://envsyhfymq3ni.x.pipedream.net" method="post">
+            <label for="first_name">Generals:</label>
+            <input type="text" name="first_name" placeholder="First name" id="first_name">
+            <input type="text" name="middle_name" placeholder="Middle (optional)" id="middle_name">
+            <input type="text" name="last_name" placeholder="Last name" id="last_name">
+            <br>
+            <label for="mission">Mission: </label>
+            <select name="mission" id="mission">
+                <option value="Other" selected>Other</option>
+                <option value="Moon">Moon</option>
+                <option value="Jupiter">Jupiter</option>
+                <option value="Mars">Mars</option>
+                <option value="Venus">Venus</option>
+                <option value="Neptune">Neptune</option>
+                <option value="S-Moon">S-Moon</option>
+            </select>
+            <br>
+            <label for="age">Age: </label>
+            <input type="date" name="age" id="age" min="21" max="40" required placeholder="Min. age: 21y">
+            <br>
+            <input type="radio" name="gender" id="male" value="male">
+            <label for="male">Male </label>
+            <input type="radio" name="gender" id="female" value="female" checked>
+            <label for="female">Female</label>
+            <br>
+            <label for="color-eyes">Color of Eyes: </label>
+            <input type="color" name="color-eyes" id="color-eyes" value="#A52A2A">
+            <br>
+            <label for="email">General contact: </label>
+            <input type="email" name="email" id="email" placeholder="Enter Email">
+            <input type="tel" name="tel" id="tel" placeholder="Enter number phone">
+            <input type="text" name="address" id="address" placeholder="Enter address">
+            <br>
+            <label for="weight">Weight</label>
+            <input type="number" name="weight" id="weight" placeholder="Your Weight" max="100" min="60">
+            <br>
+            <label for="biography">Biography</label>
+            <textarea name="biography" id="biography" cols="15" maxlength="255" rows="5"></textarea>
+            <br>
+            <input type="submit" name="invio" id="invio" value="submit">
+
+        </form>
+        <button><a href="astronauts.xml">astronauts</a></button>
+        <a href="astronauts.xml"></a>
+
+
+        <br>
+
+        <a href="astronauts.xml"> <button>astronauts</button></a>
+    </p>
+    <!-- <script src="js/script.js"></script> -->
+
+</body>
+</html>

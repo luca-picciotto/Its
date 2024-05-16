@@ -1,0 +1,12 @@
+body{
+    background-color: rgb(138, 240, 106);
+}
+h1{
+    background-color: blue;
+    color: white;
+}
+table{
+    border-collapse: collapse;
+    border: 2px solid blue;
+    /* border-color: blue; */
+}

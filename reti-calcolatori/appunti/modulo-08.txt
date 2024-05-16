@@ -1,0 +1,27 @@
+### Network Layer Characteristics:
+
+- Il Layer di Rete (Layer 3) permette lo scambio di dati tra dispositivi finali su reti diverse.
+- I protocolli principali a questo livello sono IPv4 e IPv6, insieme a protocolli di routing come OSPF e protocolli di messaggistica come ICMP.
+- IPv4 e IPv6 gestiscono l'indirizzamento dei dispositivi finali, l'incapsulamento, il routing e il de-incapsulamento.
+- IPv4 e IPv6 specificano la struttura dei pacchetti e i processi di trasferimento dati.
+- IPv4 è connectionless, best effort e indipendente dal mezzo di trasmissione.
+
+### IPv4 Packet:
+
+- L'header di un pacchetto IPv4 contiene informazioni cruciali come versione, checksum, TTL e indirizzi IPv4 di origine e destinazione.
+- IPv4 opera indipendentemente dal mezzo di trasmissione utilizzato.
+
+### IPv6 Packet:
+
+- IPv6 supera i limiti di IPv4, fornendo uno spazio di indirizzamento più ampio e semplificando la gestione dei pacchetti.
+- L'header di un pacchetto IPv6 include informazioni come versione, classe di traffico, etichetta di flusso, lunghezza payload e indirizzi IPv6 di origine e destinazione.
+
+### Routing Introduction:
+
+- Gli host determinano la destinazione dei pacchetti consultando la tabella di routing.
+- Se la destinazione è su una rete remota, il pacchetto viene inoltrato al gateway predefinito (di solito un router locale).
+- I router esaminano l'indirizzo IP di destinazione dei pacchetti e consultano la loro tabella di routing per instradare i pacchetti verso la destinazione.
+- Le tabelle di routing dei router memorizzano le reti connesse direttamente, le reti remote e i percorsi predefiniti.
+- I router possono apprendere dinamicamente le reti remote utilizzando protocolli di routing come OSPF ed EIGRP.
+- I percorsi statici sono configurati manualmente.
+- Il comando `show ip route` su un router Cisco IOS consente di visualizzare la tabella di routing IPv4.

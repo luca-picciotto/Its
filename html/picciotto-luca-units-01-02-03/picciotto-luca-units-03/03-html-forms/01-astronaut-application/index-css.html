@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Esercizio 1">
+        <meta name="author" content="Luca Picciotto">
+        <title>Document</title>
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700">
+    
+    </head>
+
+    <body>
+                <div id="login">
+                
+                <form action="https://envsyhfymq3ni.x.pipedream.net" method="post" name='form-login' >
+
+                    <span class="fontawesome-lock">First name:</span>
+                    <input type="text" name="first_name"  id="first_name" required>
+<br>
+                    <span class="fontawesome-lock">Middle name (optional): </span>
+                    <input type="text" name="middle_name"  id="middle_name" >
+<br>
+                    <span class="fontawesome-lock">Last name: </span>
+                    <input type="text" name="last_name" required >
+<br>
+                    <span class="fontawesome-lock">D. o. B.</span>
+                    <!-- <label for="age">Age: </label> -->
+                    <input type="date" name="age" id="age" min="21" max="40" required >
+<br>
+                    <!-- <span class="fontawesome-lock"></span> -->
+                    <label for="male">Male 
+                    <input type="radio" name="gender" id="male" value="male"></label>
+                    
+
+                    <!-- <span class="fontawesome-lock"></span> -->
+                    <label for="female">Female
+                    <input type="radio" name="gender" id="female" value="female" checked></label>
+                    <br>
+                    <br><br><br>
+
+
+
+                    <span class="fontawesome-lock">Color of Eyes:</span>
+                    <!-- <label for="color-eyes">Color of Eyes: </label> -->
+                    <input type="color" name="color-eyes" id="color-eyes" value="#A52A2A">
+<br>
+                    <span class="fontawesome-lock">Selected the mission: </span>
+                    <!-- <label for="mission">Mission: </label> -->
+                    <select name="mission" id="mission" required>
+                        <option value="Other">Other</option>
+                        <option value="Moon">Moon</option>
+                        <option value="Jupiter">Jupiter</option>
+                        <option value="Mars">Mars</option>
+                        <option value="Venus">Venus</option>
+                        <option value="Neptune">Neptune</option>
+                        <option value="S-Moon">S-Moon</option>
+                    </select>
+<br>
+                    <span class="fontawesome-lock" >Email: </span>
+                    <input type="email" name="email" id="email" required>
+<br>
+                    <span class="fontawesome-lock">Telephon number: </span>
+                    <input type="tel" name="tel" id="tel" >
+<br>
+                    <span class="fontawesome-lock">Address: </span>
+                    <input type="text" name="address" id="address" >
+
+<br>
+                    <span class="fontawesome-lock">Your weight: </span>
+                    <!-- <label for="weight">Weight:</label> -->
+                    <input type="number" name="weight" id="weight"  max="100" min="60" required>
+<br>
+                    <span class="fontawesome-lock">Descrive me yourself: </span>
+                    <!-- <label for="biography">Biography</label> -->
+                    <textarea name="biography" id="biography" cols="15" maxlength="255" rows="5"></textarea>    
+<br>
+                    <button class="custom-btn btn-7" name="inserisci" id="inserisci" value="submit">Submit</button>
+                </form>
+        </div>
+        <!-- <a href="astronauts.xml"> <button class="custom-btn btn-7">astronauts</button></a> -->
+    </body>
+</html>

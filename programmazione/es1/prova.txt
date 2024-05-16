@@ -1,0 +1,234 @@
+
+
+#include <iostream>
+
+using namespace std;
+
+int
+main ()
+{
+  int var = 3;
+
+  cout << "Var vale: " << var << endl;
+
+  if(var ==2){
+      cout <<"Si\n";
+      
+  }
+  else{
+      cout <<"No\n";
+  }
+  
+  return 0;
+}
+------------------------------
+//sposta numeri
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int a, b, c;
+    cout<<"Inserisci A: ";
+    cin >> a;
+    
+    cout<<"Inserisci b: ";
+    cin >> b;
+    
+    cout<<"Inserisci C: ";
+    cin >> c;
+    
+    cout <<"A vale: " <<a <<"\n" <<"B vale: " <<b <<"\n" <<"C vale: " <<c <<endl;
+    
+    int x1, x2;
+    
+    x1=a;
+    a=c;
+    x2=b;
+    b=x1;
+    c=x2;
+    
+    cout <<"A vale: " <<a <<"\n" <<"B vale: " <<b <<"\n" <<"C vale: " <<c <<endl;
+    return 0;
+}
+
+--------------------------------------
+// area e circonferenza cerchio
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double r, pg = 3.14, A, C;
+    cout<<"Inserisci il raggio: ";
+    cin >> r;
+    
+    if(r > 0){
+        C = 2 * pg * r;
+        A = pg * (r*r);
+        cout <<"L'area vale: " <<A <<"\n" <<"La circonferenza vale: " <<C <<endl;
+    }
+    else{
+        cout <<"Errore" <<endl;
+    }
+
+    return 0;
+}
+
+--------------------------------------------
+
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double n, ris;
+    
+    cout<<"Inserisci un numero: ";
+    cin >> n;
+    
+    if(n > 0){
+        ris = n * n * n;
+    }
+    else{
+        ris = n * n;
+    }
+    
+    cout <<"risposta: " <<ris <<endl;
+    
+
+    return 0;
+}
+
+--------------------------------------------------------
+
+//biglietto scontato
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int t_utente;
+    double b_intero = 100, b_ridotto;
+    
+    cout<<"Benvenuto Utente, che professione hai? \n Se sei uno studente premere: 1. \n Se sei un pensionato premere: 2. \n Se sei disoccupato premere: 3" <<endl;
+    cin >> t_utente;
+    /*
+    if(t_utente == 1 || t_utente == 2 || t_utente == 3){
+        
+    }
+    */
+    switch(t_utente){
+        case 1: 
+            b_ridotto = b_intero - (b_intero /100) * 10;
+        break;
+        case 2:
+             b_ridotto = b_intero - (b_intero /100) * 15;
+        break;
+        case 3:
+             b_ridotto = b_intero - (b_intero /100) * 25;
+        break;
+        default:
+            cout <<"Valore non valido!" <<endl;
+        
+    }
+    
+    cout <<"Il tuo biglietto lo pagherai: " <<b_ridotto;
+    return 0;
+}
+
+--------------------------------------------------
+// SCONTO SPESA
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    double t, t_scontato;
+    cout<<"Inserisci totale spesa: ";
+    cin >> t;
+    
+    if(t >= 100){
+        if(t >= 300){
+            t_scontato = t - (t / 100) * 10;
+        }
+        else{
+            t_scontato = t - (t / 100) * 5;            
+        }
+    }
+    else{
+        cout <<"Nessuno sconto per te!"; 
+        return 0;
+    }
+    cout <<"grazie allo sconto sei passato da: " <<t <<" a: " <<t_scontato <<endl;
+    return 0;
+}
+
+------------------------------------------
+
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float t1, t2, t3, tm, tM;
+    double vm;
+    float incertezza;
+    
+    cout<<"Inserisci il primo valore: ";
+    cin >>t1;
+    
+    cout<<"Inserisci il secondo valore: ";
+    cin >>t2;
+    
+    cout<<"Inserisci il terzo valore: ";
+    cin >>t3;
+    
+    cout<< "I tuoi tempi sono: " <<t1 <<", " <<t2 <<", " <<t3 <<endl;
+    
+    if(t1>t2){
+		if(t1>t3){
+	    		cout<<"Il numero maggiore e': "<<t1  <<endl; tM = t1;
+		}
+	    	else{
+	    		cout<<"Il numero maggiore e': "<<t3 <<endl; tM = t3;}
+    }
+	else {
+		if (t2>t3){
+	    		cout<<"Il numero maggiore e': "<<t2 <<endl; tM = t2;}
+		else{
+			cout<<"Il numero maggiore e': "<<t3 <<endl; tM = t3;}
+	}
+
+    
+    vm = (t1 + t2 + t3) / 3;
+    
+    if(t1<t2){
+		if(t1<t3){
+	    		cout<<"Il numero minore e': "<<t1  <<endl; tm = t1;
+		}
+	    	else{
+	    		cout<<"Il numero minore e': "<<t3  <<endl; tm = t3;}
+    }
+	else {
+		if (t2<t3){
+	    		cout<<"Il numero minore e': "<<t2 <<endl; tm = t2;}
+		else{
+			cout<<"Il numero minore e': "<<t3 <<endl; tM = t3;}
+	}
+
+    incertezza = (tM - tm) / 2;
+    
+    cout<<"(" <<vm <<"+-" <<incertezza <<") s" ;
+
+    return 0;
+}

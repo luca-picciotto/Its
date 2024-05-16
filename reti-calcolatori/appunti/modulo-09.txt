@@ -1,0 +1,14 @@
+### MAC and IP:
+
+- Gli indirizzi MAC Ethernet (Layer 2) vengono utilizzati per instradare i pacchetti IP da una NIC a un'altra sulla stessa rete.
+- Se l'indirizzo IP di destinazione è sulla stessa rete, l'indirizzo MAC di destinazione sarà quello del dispositivo di destinazione. Se è su una rete remota, sarà l'indirizzo MAC del gateway predefinito.
+- Ogni collegamento lungo il percorso incapsula il pacchetto IP in un frame specifico alla tecnologia di collegamento, come Ethernet.
+
+### ARP (Address Resolution Protocol):
+
+- ARP risolve gli indirizzi IPv4 in indirizzi MAC e gestisce una tabella di mappature.
+- Una richiesta ARP viene inviata in broadcast sulla LAN per determinare l'indirizzo MAC associato a un indirizzo IPv4.
+- Solo il dispositivo con l'indirizzo IPv4 richiesto risponde, inviando una risposta ARP unicast.
+- Il dispositivo ricevente aggiunge l'associazione ARP alla sua tabella ARP per un successivo utilizzo.
+- Le voci non utilizzate nella tabella ARP vengono rimosse dopo un certo periodo di tempo.
+- Spoofing ARP può essere utilizzato per eseguire un attacco di poisoning ARP, manipolando le tabelle ARP dei dispositivi nella rete.

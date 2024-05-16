@@ -1,0 +1,32 @@
+### Struttura dell'Indirizzamento IPv4:
+
+- Un indirizzo IPv4 è composto da una porzione di rete e una porzione di host, entrambe a 32 bit.
+- La parte di rete è identica per tutti i dispositivi sulla stessa rete, mentre la parte di host è univoca per identificare un dispositivo specifico.
+- Un host richiede un indirizzo IPv4 univoco e una subnet mask per distinguere tra la porzione di rete e la porzione di host.
+- La lunghezza del prefisso nella subnet mask indica quanti bit sono impostati su 1, scritto in notazione barra (/).
+- L'AND logico è utilizzato per confrontare due bit, producendo un 1 solo se entrambi sono 1.
+- Gli indirizzi IPv4 includono indirizzi di rete, indirizzi host e indirizzi di trasmissione.
+
+### IPv4 Unicast, Multicast e Broadcast:
+
+- La trasmissione unicast è da un dispositivo a un altro in comunicazioni uno-a-uno.
+- Un pacchetto unicast ha un indirizzo IP di destinazione che è un indirizzo unicast.
+- La trasmissione broadcast è da un dispositivo a tutti i dispositivi sulla rete in comunicazioni uno-a-tutti.
+- Un pacchetto broadcast ha tutti 1 nella parte host dell'indirizzo IP di destinazione.
+- La trasmissione multicast invia un pacchetto a un gruppo selezionato di host che si iscrivono a un gruppo multicast.
+- Gli indirizzi multicast IPv4 vanno da 224.0.0.0 a 239.255.255.255.
+
+### Tipi di Indirizzi IPv4:
+
+- Gli indirizzi IPv4 pubblici vengono instradati globalmente su Internet.
+- Gli indirizzi IPv4 privati sono utilizzati internamente nelle organizzazioni e non sono instradabili globalmente.
+- Gli indirizzi di loopback (127.0.0.1) sono utilizzati per reindirizzare il traffico al proprio host.
+- Gli indirizzi link-local (APIPA) sono auto-assegnati e utilizzati in assenza di un server DHCP.
+
+### Segmentazione della Rete e Subnetting:
+
+- La segmentazione della rete riduce il traffico di broadcast e migliora le prestazioni di rete.
+- Il subnetting suddivide una rete in subnet più piccole, riducendo il traffico di rete e migliorando le prestazioni.
+- VLSM (Variable Length Subnet Masking) consente di suddividere una rete in parti disuguali, ottimizzando l'uso degli indirizzi IP.
+- Il subnetting di un prefisso /16 e /8 coinvolge il prestito di bit dalla parte host dell'indirizzo IP per creare subnet più piccole.
+- Il design strutturato dell'indirizzamento IP prevede la pianificazione della suddivisione della rete in base alle esigenze e ai requisiti dell'organizzazione.

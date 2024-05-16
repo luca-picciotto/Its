@@ -1,0 +1,53 @@
+-----ITALIANO-----
+Riassunto 	->	Compiler and Interpreter Critical Differences
+	Un compilatore trasforma il codice sorgente in codice oggetto. Questo processo è essenziale per l'esecuzione 
+	del programma poiché i computer capiscono solo il linguaggio binario. Alcuni compilatori convertono il codice sorgente 
+	in linguaggio assembly prima di trasformarlo in codice macchina, mentre altri lo convertono direttamente. I linguaggi 
+	di programmazione come C, C++, COBOL e Fortran usano compilatori. Gli interpreti, invece, eseguono le istruzioni di 
+	alto livello riga per riga. Python e JavaScript sono esempi di linguaggi interpretati. Gli interpreti facilitano il 
+	debugging, ma l'esecuzione può essere più lenta rispetto ai programmi compilati.
+
+
+Riassunto 	-> 	Levels of Programming Languages
+	I linguaggi di programmazione si suddividono in tre categorie principali: linguaggi macchina, linguaggi assembly e 
+	linguaggi ad alto livello. I linguaggi macchina sono direttamente compresi dal computer e richiedono la memorizzazione 
+	di codici binari. Gli assembly, più comprensibili per gli esseri umani, usano abbreviazioni per le istruzioni e richiedono 
+	traduzione in linguaggio macchina tramite un assembler. I linguaggi ad alto livello, come C++, Java, sono più simili 
+	all'inglese e semplificano la programmazione. Richiedono la traduzione in linguaggio macchina tramite un compilatore o un 
+	interprete, che può tradurre il codice una riga alla volta.
+
+Riassunto	->	Machine Language vs. Assembly Language
+	Il linguaggio macchina è un insieme di bit che i computer leggono e interpretano. I linguaggi di programmazione, come Java o C++, 
+	vengono tradotti in linguaggio macchina per essere compresi dai computer. Il linguaggio assembly, invece, permette agli utenti 
+	di influenzare l'hardware e il software dei computer, fungendo da ponte tra il sistema operativo e i programmi applicativi. 
+	Rispetto ai linguaggi di alto livello, il linguaggio assembly è più specifico e offre maggiore controllo sull'hardware. 
+	Anche se richiede una maggiore comprensione del sistema, è più efficiente in termini di spazio e tempo rispetto ai linguaggi di alto livello.
+
+
+
+
+
+-----ENGLISH-----
+Summary 	-> 	Compiler and Interpreter Critical Differences
+	A compiler transforms source code into object code. This process is essential for execution
+	of the program since computers only understand binary language. Some compilers convert the source code
+	in assembly language before transforming it into machine code, while others convert it directly. The languages
+	Programming programs such as C, C++, COBOL, and Fortran use compilers. Interpreters, on the other hand, execute the instructions of
+	high level line by line. Python and JavaScript are examples of interpreted languages. Interpreters facilitate
+	debugging, but execution may be slower than compiled programs.
+
+
+Summary 	-> 	Levels of Programming Languages
+	Programming languages ​​are divided into three main categories: machine languages, assembly languages ​​and
+	high-level languages. Machine languages ​​are directly understood by the computer and require memorization
+	of binary codes. Assemblies, which are more understandable to humans, use abbreviations for instructions and require
+	translation into machine language via an assembler. High level languages, like C++, Java, are more similar
+	in English and simplify programming. They require translation into machine language via a compiler or a
+	interpreter, which can translate code one line at a time.
+
+Summary 	-> 	Machine Language vs. Assembly Language
+	Machine language is a collection of bits that computers read and interpret. Programming languages, such as Java or C++,
+	they are translated into machine language to be understood by computers. Assembly language, on the other hand, allows users
+	to influence computer hardware and software, acting as a bridge between the operating system and application programs.
+	Compared to high-level languages, assembly language is more specific and offers more control over the hardware.
+	Although it requires more understanding of the system, it is more space and time efficient than high-level languages.

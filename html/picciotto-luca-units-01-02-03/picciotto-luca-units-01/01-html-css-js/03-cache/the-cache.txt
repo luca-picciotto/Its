@@ -1,0 +1,7 @@
+	ITALIANO
+-----------------------
+Serve per essere sicuri di prendere l'ultima versione del css o ddel js
+
+	ENGLISH
+-----------------------
+This makes sure you are getting the latest version from of the css or js file from the server.

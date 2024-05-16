@@ -1,0 +1,49 @@
+`slice()`
+
+Il metodo `slice()` restituisce una copia superficiale di una porzione di un array in un nuovo oggetto array selezionato da start a end (non incluso) dove start e end rappresentano l'indice degli elementi in quell'array. L'array originale non verrà modificato.
+
+Parametri:
+- `start` (opzionale): Indice basato su zero da cui iniziare l'estrazione. Un indice negativo può essere utilizzato, indicando uno spostamento dalla fine della sequenza. Predefinito: 0.
+- `end` (opzionale): Indice basato su zero prima del quale terminare l'estrazione. `slice` estrae fino a, ma non includendo `end`. Un indice negativo può essere utilizzato. Predefinito: lunghezza dell'array.
+
+Comportamento:
+- Restituisce un nuovo array contenente gli elementi dall'array originale dall'indice `start` fino, ma non inclusivo, all'indice `end`.
+- Non modifica l'array originale.
+
+
+
+Esempio:
+
+```javascript
+const frutta = ['mela', 'banana', 'ciliegia', 'datte', 'fico'];
+const fruttaTagliata = frutta.slice(1, 4);
+console.log(fruttaTagliata); // Output: ['banana', 'ciliegia', 'datte']
+console.log(frutta); // Output: ['mela', 'banana', 'ciliegia', 'datte', 'fico']
+```
+
+
+
+
+`splice()`
+
+Il metodo `splice()` modifica i contenuti di un array rimuovendo o sostituendo elementi esistenti e/o aggiungendo nuovi elementi sul posto.
+
+Parametri:
+- `start`: Indice da cui iniziare a modificare l'array. Se maggiore della lunghezza dell'array, l'indice di partenza effettivo sarà impostato sulla lunghezza dell'array. Se negativo, inizierà quel numero di elementi dalla fine.
+- `deleteCount` (opzionale): Un intero che indica il numero di vecchi elementi dell'array da rimuovere. Se `deleteCount` è 0, nessun elemento viene rimosso. In questo caso, è necessario specificare almeno un nuovo elemento.
+- `items` (opzionale): Gli elementi da aggiungere all'array, a partire dall'indice `start`. Se non si specificano elementi, `splice()` rimuoverà solo elementi dall'array.
+
+Comportamento:
+- Modifica l'array originale rimuovendo, sostituendo o aggiungendo elementi.
+- Restituisce un array contenente gli elementi eliminati, o un array vuoto se non vengono eliminati elementi.
+
+
+
+Esempio:
+
+```javascript
+const mesi = ['Gen', 'Mar', 'Apr', 'Giu'];
+const rimossi = mesi.splice(1, 0, 'Feb');
+console.log(mesi); // Output: ['Gen', 'Feb', 'Mar', 'Apr', 'Giu']
+console.log(rimossi); // Output: [] (nessun elemento rimosso)
+```

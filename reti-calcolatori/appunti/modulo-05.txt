@@ -1,0 +1,11 @@
+### Binary Number System:
+
+- Il binario è un sistema numerico basato sui numeri 0 e 1, chiamati bit, in contrasto con il sistema decimale che utilizza 10 cifre (da 0 a 9).
+- È importante capire il binario poiché gli host, i server e i dispositivi di rete utilizzano gli indirizzi binari, come gli indirizzi IPv4, per identificarsi.
+- È necessario comprendere come convertire tra indirizzi IPv4 binari e decimali.
+
+### Hexadecimal Number System:
+
+- L'esadecimale è un sistema numerico basato su 16 cifre, che comprende i numeri da 0 a 9 e le lettere da A a F.
+- È utilizzato in reti per rappresentare indirizzi IPv6 e indirizzi MAC Ethernet.
+- Per convertire tra decimale ed esadecimale, spesso è necessario passare attraverso il binario come fase intermedia.

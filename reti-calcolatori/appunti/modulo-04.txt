@@ -1,0 +1,31 @@
+### Purpose of the Physical Layer:
+
+- La connessione fisica con la rete è essenziale per avviare la comunicazione.
+- Le connessioni possono essere cablate o wireless, con l'ausilio di schede di interfaccia di rete (NIC).
+- Il layer fisico trasporta i bit attraverso i supporti di rete.
+
+### Physical Layer Characteristics:
+
+- Include circuiti elettronici, supporti e connettori.
+- Gli standard si concentrano su componenti fisici, codifica e segnalazione.
+- La larghezza di banda, la velocità di trasmissione e la latenza sono caratteristiche rilevanti.
+
+### Copper Cabling:
+
+- Utilizzato per la sua convenienza e basso costo, ma limitato dalla distanza e dalle interferenze.
+- Tipi comuni includono UTP, STP e cavo coassiale, ciascuno con vantaggi e limitazioni.
+
+### UTP Cabling:
+
+- Comprende quattro coppie di fili intrecciati e termina generalmente con connettori RJ-45.
+- Utilizzato per Ethernet, viene cablato seguendo gli standard TIA/EIA.
+
+### Fiber-Optic Cabling:
+
+- Trasmette dati su lunghe distanze e a larghezze di banda elevate, immuni alle interferenze elettromagnetiche.
+- I segnali vengono codificati in impulsi luminosi attraverso fili di vetro purissimo.
+
+### Wireless Media:
+
+- Trasporta segnali elettromagnetici utilizzando frequenze radio o microonde.
+- Gli standard includono Wi-Fi, Bluetooth, WiMAX e Zigbee, con WLAN che richiede un AP wireless e adattatori NIC.

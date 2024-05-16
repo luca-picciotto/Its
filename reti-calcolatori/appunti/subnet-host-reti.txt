@@ -1,0 +1,153 @@
+Certamente! Ecco due esempi dettagliati di calcolo degli indirizzi di rete, host e broadcast utilizzando lo schema fornito:
+
+### Esempio 1:
+
+Supponiamo di avere l'indirizzo IP `192.168.1.50` con una subnet mask `255.255.255.0 (/24)`.
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: `192.168.1.50` diventa `11000000.10101000.00000001.00110010`
+   - Subnet mask: `255.255.255.0` diventa `11111111.11111111.11111111.00000000`
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - L'indirizzo IP ha 24 bit nella porzione di rete e 8 bit nella porzione di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettua l'AND logico tra l'indirizzo IP e la subnet mask:
+     `11000000.10101000.00000001.00110010`
+     `11111111.11111111.11111111.00000000`
+     ----------------------------------------
+     `11000000.10101000.00000001.00000000`
+   - L'indirizzo di rete è `192.168.1.0`.
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Inverti i bit della porzione di host dell'indirizzo IP:
+     `00000000`
+   - Aggiungi questi bit invertiti all'indirizzo di rete:
+     `11000000.10101000.00000001.11111111`
+   - L'indirizzo di broadcast è `192.168.1.255`.
+
+5. **Numero di host disponibili:**
+   - Sottrai 2 (indirizzo di rete e broadcast) dal numero totale di indirizzi IP disponibili nella subnet: `2^8 - 2 = 254`.
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno da `192.168.1.1` a `192.168.1.254`.
+
+### Esempio 2:
+
+Supponiamo di avere l'indirizzo IP `10.20.30.40` con una subnet mask `255.255.255.192 (/26)`.
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: `10.20.30.40` diventa `00001010.00010100.00011110.00101000`
+   - Subnet mask: `255.255.255.192` diventa `11111111.11111111.11111111.11000000`
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - L'indirizzo IP ha 26 bit nella porzione di rete e 6 bit nella porzione di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettua l'AND logico tra l'indirizzo IP e la subnet mask:
+     `00001010.00010100.00011110.00101000`
+     `11111111.11111111.11111111.11000000`
+     ----------------------------------------
+     `00001010.00010100.00011110.00100000`
+   - L'indirizzo di rete è `10.20.30.32`.
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Inverti i bit della porzione di host dell'indirizzo IP:
+     `00000011`
+   - Aggiungi questi bit invertiti all'indirizzo di rete:
+     `00001010.00010100.00011110.00111111`
+   - L'indirizzo di broadcast è `10.20.30.63`.
+
+5. **Numero di host disponibili:**
+   - Sottrai 2 (indirizzo di rete e broadcast) dal numero totale di indirizzi IP disponibili nella subnet: `2^6 - 2 = 62`.
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno da `10.20.30.33` a `10.20.30.62`.
+
+Questi esempi illustrano i passaggi dettagliati per calcolare gli indirizzi di rete, host e broadcast per due diversi scenari di subnetting.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Certamente! Ti fornirò degli esempi con tutti i passaggi e le spiegazioni dettagliate per calcolare gli indirizzi di rete, host e broadcast.
+
+### Esempio 1:
+
+**Indirizzo IP:** 192.168.1.100  
+**Subnet Mask:** 255.255.255.0 (o /24)
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: 11000000.10101000.00000001.01100100
+   - Subnet Mask: 11111111.11111111.11111111.00000000
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - Nell'indirizzo IP, i primi 24 bit rappresentano la parte di rete, mentre gli ultimi 8 bit rappresentano la parte di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettuando l'AND logico tra l'indirizzo IP e la subnet mask:
+     - Indirizzo di rete: 11000000.10101000.00000001.00000000 (192.168.1.0)
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Invertendo i bit della parte di host dell'indirizzo IP:
+     - Indirizzo di broadcast: 11000000.10101000.00000001.11111111 (192.168.1.255)
+
+5. **Determinazione del numero di host disponibili:**
+   - Numero di host disponibili = 2^(numero di bit nella parte di host) - 2
+   - Numero di host disponibili = 2^8 - 2 = 254
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno dall'indirizzo di rete all'indirizzo di broadcast esclusi:
+     - Intervallo: 192.168.1.1 - 192.168.1.254
+
+### Esempio 2:
+
+**Indirizzo IP:** 10.20.30.40  
+**Subnet Mask:** 255.255.255.192 (o /26)
+
+1. **Conversione in formato binario:**
+   - Indirizzo IP: 00001010.00010100.00011110.00101000
+   - Subnet Mask: 11111111.11111111.11111111.11000000
+
+2. **Identificazione delle porzioni di rete e di host:**
+   - Nell'indirizzo IP, i primi 26 bit rappresentano la parte di rete, mentre gli ultimi 6 bit rappresentano la parte di host.
+
+3. **Calcolo dell'indirizzo di rete:**
+   - Effettuando l'AND logico tra l'indirizzo IP e la subnet mask:
+     - Indirizzo di rete: 00001010.00010100.00011110.00101000 (10.20.30.0)
+
+4. **Calcolo dell'indirizzo di broadcast:**
+   - Invertendo i bit della parte di host dell'indirizzo IP:
+     - Indirizzo di broadcast: 00001010.00010100.00011110.00111111 (10.20.30.63)
+
+5. **Determinazione del numero di host disponibili:**
+   - Numero di host disponibili = 2^(numero di bit nella parte di host) - 2
+   - Numero di host disponibili = 2^6 - 2 = 62
+
+6. **Identificazione dell'intervallo di indirizzi IP utilizzabili:**
+   - Gli indirizzi IP utilizzabili vanno dall'indirizzo di rete all'indirizzo di broadcast esclusi:
+     - Intervallo: 10.20.30.1 - 10.20.30.62
+
+Con questi esempi, hai una panoramica dettagliata di come calcolare gli indirizzi di rete, host e broadcast utilizzando un indirizzo IP e una subnet mask.

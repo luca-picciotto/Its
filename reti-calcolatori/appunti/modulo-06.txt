@@ -1,0 +1,16 @@
+### Purpose of the Data Link Layer:
+
+- Il Layer di Collegamento Dati (Layer 2) del modello OSI prepara i dati di rete per la trasmissione sulla rete fisica.
+- Gestisce la comunicazione della scheda di interfaccia di rete (NIC).
+- Senza il Layer di Collegamento Dati, i protocolli di livello rete dovrebbero prevedere misure di collegamento specifiche per ogni tipo di supporto di rete.
+- Il layer LAN/MAN IEEE 802 è composto da due sublayer: LLC e MAC, che si occupano dell'incapsulamento dei dati, dell'indirizzamento e del rilevamento degli errori.
+- Le organizzazioni di ingegneria, come IEEE e ITU, definiscono standard aperti per il livello di accesso alla rete.
+
+### Topologie:
+
+- Esistono due tipi di topologie: fisiche e logiche.
+- Il layer di collegamento determina la topologia logica durante il controllo degli accessi ai supporti.
+- Le topologie WAN fisiche includono punto-punto, hub and spoke e mesh.
+- Nelle LAN con accesso multiplo, i nodi sono collegati utilizzando topologie a stella o a stella estesa.
+- Esistono due modalità di comunicazione: half-duplex e full-duplex.
+- Le reti ad accesso multiplo richiedono norme per regolare le modalità di condivisione dei supporti tra i dispositivi, come CSMA/CD per LAN Ethernet e CSMA/CA per WLAN.

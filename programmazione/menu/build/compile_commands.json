@@ -1,0 +1,8 @@
+[
+{
+  "directory": "C:/Users/icts23-25.422/Desktop/Its/programmazione/menu/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe   -g -o CMakeFiles\\menu.dir\\main.cpp.obj -c C:\\Users\\icts23-25.422\\Desktop\\Its\\programmazione\\menu\\main.cpp",
+  "file": "C:/Users/icts23-25.422/Desktop/Its/programmazione/menu/main.cpp",
+  "output": "CMakeFiles/menu.dir/main.cpp.obj"
+}
+]

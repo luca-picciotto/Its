@@ -1,0 +1,92 @@
+-----ITALIANO-----
+Linguaggi conosciuti:
+	-html		->	Interpretato
+	-javascript	->	Interpretato
+	-css		->	Interpretato
+	-php		->	Interpretato
+	-java		->	Compilato
+	-c / c++	->	Compilato
+	-phyton		->	Interpretato
+
+
+1. HTML: Linguaggio di markup per la struttura delle pagine web, interpretato dai browser.
+
+2. PHP: Linguaggio di scripting per applicazioni web server-side, interpretato sul server per generare HTML dinamico.
+
+3. CSS: Linguaggio per lo stile e la presentazione delle pagine web, interpretato dai browser.
+
+4. Java: Linguaggio di programmazione compilato in bytecode, eseguito sulla Java Virtual Machine.
+
+5. C / C++: Linguaggi di programmazione compilati, tradotti direttamente in codice macchina.
+
+6. Python: Linguaggio di scripting interpretato ad alto livello, eseguito in tempo reale dall'interprete Python.
+
+7. SQL: Linguaggio di interrogazione per database relazionali, interpretato dal sistema di gestione del database.
+
+8. JavaScript: Linguaggio di scripting interpretato dai browser per aggiungere interattività alle pagine web.
+
+
+
+
+
+Linguaggi cercati ma da me non conosciuti:
+	-Ruby:	Linguaggio di scripting interpretato per lo sviluppo web, noto per la sua sintassi elegante ed è la base di framework come Ruby on Rails.
+
+	-Swift:	Linguaggio di programmazione compilato sviluppato da Apple per applicazioni iOS, macOS, watchOS e tvOS, noto per sicurezza e prestazioni.
+
+	-Go:	Linguaggio compilato sviluppato da Google, utilizzato per applicazioni web, di sistema e distribuite, noto per efficienza e facilità d'uso.
+
+	-R:	Linguaggio interpretato e ambiente software per analisi statistica e visualizzazione dati, ampiamente utilizzato dagli statistici e analisti dei dati.
+
+
+
+
+
+ 
+-----ENGLISH-----
+Languages that I know
+	-html		->	Interpreted
+	-javascript	->	Interpreted
+	-css		->	Interpreted
+	-php		->	Interpreted
+	-java		->	Compiled
+	-c / c++	->	Compiled
+	-phyton		->	Interpreted
+
+
+1. HTML: Markup language for the structure of web pages, interpreted by browsers.
+
+2. PHP: Scripting language for server-side web applications, interpreted on the server to generate dynamic HTML.
+
+3. CSS: Language for the style and presentation of web pages, interpreted by browsers.
+
+4. Java: Programming language compiled into bytecode, running on the Java Virtual Machine.
+
+5. C / C++: Compiled programming languages, translated directly into machine code.
+
+6. Python: High-level interpreted scripting language, executed in real time by the Python interpreter.
+
+7. SQL: Query language for relational databases, interpreted by the database management system.
+
+8. JavaScript: Scripting language interpreted by browsers to add interactivity to web pages.
+
+
+
+
+
+Languages ​​searched for but not known to me:
+-Ruby: Interpreted scripting language for web development, known for its elegant syntax and is the basis of frameworks such as Ruby on Rails.
+
+-Swift: Compiled programming language developed by Apple for iOS, macOS, watchOS and tvOS applications, known for security and performance.
+
+-Go: Compiled language developed by Google, used for web, system and distributed applications, known for efficiency and ease of use.
+
+-R: Interpreted language and software environment for statistical analysis and data visualization, widely used by statisticians and data analysts.
+
+
+
+
+
+
+
+

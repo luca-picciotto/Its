@@ -1,0 +1,246 @@
+/* Stili per il logo */
+#logo-black-white, #logo-profile {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+}
+
+/* Stili per le informazioni e le informazioni dell'utente */
+.information, .user-information {
+    display: inline-block;
+}
+
+.user-information {
+    float: right;
+}
+
+/* Stili globali del corpo */
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Stili per la navbar */
+nav {
+    background-color: #333;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+nav ul, .sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+nav li, .sidebar li {
+    float: left;
+}
+
+nav li a, .sidebar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+nav li a:hover, .sidebar li a:hover {
+    background-color: #111;
+}
+
+/* Stili per il titolo */
+.title h1 {
+    text-align: center;
+    font-size: 98px;
+}
+
+.permanent-marker-regular {
+    font-family: "Permanent Marker", cursive;
+    font-weight: 100;
+    font-style: normal;
+}
+
+/* Stili per gli articoli */
+
+.info-products{
+    font-size: 21px;
+    text-decoration: underline;
+    margin-left: 30px;
+}
+
+.article {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+article {
+    margin-bottom: 30px;
+    display: inline-block;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+article h2 {
+    font-size: 34px;
+    margin-bottom: 10px;
+    display: block;
+}
+
+article img {
+    max-width: 30%;
+    height: auto;
+    margin-bottom: 10px;
+    float: left;
+    margin-right: 10px;
+}
+
+article p {
+    padding-left: 10px;
+}
+
+.products {
+    font-size: 50px;
+    text-decoration: underline;
+    text-align: center;
+}
+
+/* Stili per i pulsanti degli articoli */
+.article-buttons {
+    list-style: none;
+    padding: 0;
+    margin-top: 40px;
+}
+
+.article-buttons ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.article-buttons li {
+    display: inline-block;
+    color: #666;   
+    margin-right: 10px; 
+}
+
+.article-buttons li:hover, .article-buttons a:hover {
+    color: white;
+    background-color: #666;
+}
+
+.article-buttons a {
+    text-decoration: none;
+    color: #666;
+    padding: 10px 20px;
+    border: 1px solid #666;
+    border-radius: 3px;
+}
+
+#view {
+    float: right;
+    margin-left: 350px;
+}
+
+.article-buttons button:last-child {
+    margin-right: 0;
+}
+
+/* Stili per la sidebar */
+.sidebar {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    width: 200px;
+    height: calc(100% - 50px);
+    background-color: #f4f4f4;
+    padding: 20px;
+    box-sizing: border-box;
+    z-index: 1;
+    transition: opacity 0.3s ease; 
+    opacity: 1; 
+}
+
+@media (max-width: 768px) {
+    .sidebar {
+        display: none; 
+    }
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+.sidebar li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+}
+
+.sidebar li a:hover {
+    color: #f4f4f4;
+    background-color: #333;
+}
+
+/* Stili per la categoria */
+.type-of-product {
+    font-size: 28px;
+}
+
+/* Stili per i colori degli articoli */
+.light-color {
+    background-color: rgb(254, 247, 237);
+    border-radius: 10px;
+}
+
+.dark-color {
+    background-color: antiquewhite;
+    border-radius: 10px;
+}
+
+/* Stili per il footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    height: 90px;
+    margin-top: 50px;
+}
+
+#contact {
+    float: left;
+    display: inline-block;
+}
+
+#event {
+    display: inline-block;
+    float: right;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

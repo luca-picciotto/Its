@@ -1,0 +1,16 @@
+span
+○ Racchiudi più parole o frasi con tag span
+○ Fornisci loro una class o un id
+○ Modellali utilizzando diverse regole CSS; imbottitura, bordo, margini, colori, sfondi,
+caratteri, stili di testo, ecc
+● Div ed elementi semantici HTML5
+○ Utilizza i div per creare contenitori per i tuoi contenuti
+○ Dividere la pagina in diverse sezioni: intestazione, area contenuto, barra laterale e a
+piè di pagina
+○ Fornisci loro una lezione o un documento d'identità dove necessario
+○ Modellali utilizzando diverse regole CSS; imbottitura, bordo, margini, colori, sfondi,
+caratteri, allineamento del contenuto, angoli arrotondati, ecc
+● Immagini
+○ Aggiungi larghezza e altezza ad alcuni elementi img e div
+○ Utilizza i selettori CSS per indirizzare immagini specifiche nei contenitori div
+○ Imposta una regola per tutti i tag img in modo che non possano mai superare le dimensioni dei loro genitori

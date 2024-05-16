@@ -1,0 +1,140 @@
+    
+body {
+    color: yellow;
+    background-color: black;
+}
+#container {
+    width: 70%;
+    padding: 10px;
+}
+.byline {
+    font-size: 12px;
+    border-bottom: 1px solid #ccc;
+}
+
+ol li {
+    color: green;
+}
+ol > li {
+    color: purple;
+}
+li {
+    color: yellow;
+}
+li.myclass {
+    color: red;
+}
+li.myclass ~ li {
+    color: blue;
+}
+li.myclass + li {
+    color: orange;
+}
+
+#happy-cake {
+    color: crimson;
+}
+
+.module {
+    color: olive;
+}
+
+h2 {
+    color: DarkGoldenRod;
+}
+
+article h2 {
+    color: maroon;
+}
+
+article > p {
+    color: greenyellow;
+}
+
+h2 ~ p {
+    color: lightblue;
+}   
+
+a[target] {
+    color: orangered;
+}
+
+a[href="http://google.com/"] {
+    color: rgb(31, 238, 238);
+}
+
+[data-modal="open"] {
+    color: peru;
+}
+
+a[href*="login"] {
+    color: salmon;
+}
+
+a[href^="https://"] {
+    color: plum;
+}
+
+a[href$=".pdf"] {
+    background-image: url("../images/pdf.png.png");
+}
+
+    /* unvisited link */
+    a:link {
+    color: #ff0000;
+   }
+   /* visited link */
+   a:visited {
+    color: green;
+   }
+   /* moused over */
+   a:hover {
+    color: purple;
+   }
+   /* selected with keyboard*/
+   a:focus {
+    color: purple;
+   }
+   /* activated link */
+   a:active {
+    color: blue;
+   }
+   
+
+   /* div:not(.awesome) {
+    color: plum;
+   }
+   :not(div):not(body):not(html) {
+    color: tan;
+   } */
+
+.alpha::first-letter,
+.bravo::first-line {
+ color: #ff7b29;
+ font-size: 18px;
+}
+   
+
+    .sale:hover::after {
+        background-color: orange;
+        color: white;
+        content: "Sale!";
+        font-size: 12px;
+        margin-left: 5px;
+        padding: 1px 6px;
+    }
+
+   .not-sale:hover::after{
+        background-color: rgb(255, 0, 0);
+        color: rgb(0, 0, 0);
+        content: "Not Sale!";
+        font-size: 12px;
+        margin-left: 5px;
+        padding: 1px 6px;
+   }
+
+   /* a::after {
+    color: #9799a7;
+    content: " (" attr(href) ")";
+    font-size: 11px;
+   } */

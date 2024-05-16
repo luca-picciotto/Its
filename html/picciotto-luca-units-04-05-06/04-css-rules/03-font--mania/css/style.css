@@ -1,0 +1,28 @@
+body{
+    background-color: rgb(138, 240, 106);
+}
+h1{
+    background-color: blue;
+    color: white;
+}
+table{
+    border-collapse: collapse;
+    border: 2px blue;
+    /* border-color: blue; */
+}
+a{
+    color: red;
+}
+ul li a{
+    color: blue;
+}
+a:hover{
+    color: magenta;
+}
+
+.jersey-10-regular {
+    font-family: "Jersey 10", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  

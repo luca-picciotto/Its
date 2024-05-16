@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='it'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='description' content=''>
+    <meta name='author' content='Luca Picciotto'>
+    <title></title>
+    <link rel='stylesheet' href='./css/style.css'>
+</head>
+
+<body>
+    <div id="container" class="byline">
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3 
+            <ul>
+                <li>item a</li>
+                <li>item b</li>
+                <li>item c</li>
+            </ul>
+        </li>
+        <li class="myclass">item 4 (myclass)</li>
+        <li>item 5</li>
+        <li>item 6</li>
+        <li>item 7</li>
+    </ol>
+    </div>   
+    <div id="container" class="byline">
+        <!-- WILL match -->
+        <div id="happy-cake">Hey</div>
+        <!-- WILL match -->
+        <aside id="happy-cake">Lmao</aside>
+        <!-- Will NOT match -->
+        <div id="sad-cake">Wrong ID!</div>
+        <!-- Will NOT match -->
+        <div class="happy-cake">That's not an ID!</div>
+        
+    </div>
+    <div id="container" class="byline">
+        
+          <!-- WILL match -->
+          <div class="module">Cooming</div>
+          <!-- WILL match -->
+          <aside class="country module iceland">Soon</aside>
+          <!-- Will NOT match -->
+          <div class=".module">The dot is for CSS, not HTML</div>
+          <!-- Will NOT match -->
+          <div class="bigmodule">Wrong class</div>
+             
+    </div>
+
+    <div id="container" class="byline">
+        <main>
+            <div>
+            <!-- WILL match -->
+            <h2>Anywhere</h2>
+            </div>
+        </main>
+        <!-- Will NOT match -->
+        <div class="h2">Wrong tag, can't trick it</div>
+        <!-- Will NOT match -->
+        <h2class="yolo">Make sure that tag has a space after it!</h2>
+        <!-- <script src='./js/script.js'></script> --> 
+    </div>
+
+    <div id="container" class="byline"> 
+        <!-- Will NOT match -->
+        <h2>title</h2>
+        <article>
+        <!-- WILL match -->
+        <h2>subtitle</h2>
+        <div>
+            <!-- WILL match -->
+            <h2>subtitle</h2>
+        </div>
+        </article>
+    </div>
+
+    <div id="container" class="byline"> 
+        <!-- Will NOT match -->
+        <p>Lorem ipsum dolor sit amet</p>
+        <article>
+        <!-- WILL match -->
+        <p>This paragraph will be selected</p>
+        <div>
+            <!-- Will NOT match -->
+            <p>Lorem ipsum dolor sit amet</p>
+        </div>
+        </article>
+    </div>
+
+    <div class="byline" id="container">
+        <section>
+            <!-- Will NOT match -->
+            <p>Lorem ipsum dolor sit amet</p>
+            <h2>title</h2>
+            <!-- WILL match -->
+            <p>This paragraph will be selected</p>
+            <div>
+              <!-- Will NOT match -->
+              <p>Lorem ipsum dolor sit amet</p>
+            </div>
+            <!-- WILL match -->
+            <p>This paragraph will be selected</p>
+          </section>
+          <!-- Will NOT match -->
+          <p>Lorem ipsum dolor sit amet</p>
+    </div>
+
+    <div class="byline" id="container">
+        <!-- WILL match -->
+        <a href="#" target="_blank">click here</a>
+        <!-- WILL NOT match -->
+        <a href="#">click here</a>
+    </div>
+
+    <div class="byline" id="container">
+        <!-- WILL match -->
+        <a href="http://google.com/">search on google</a>   
+    </div>
+
+    <div class="byline" id="container">
+        <div data-modal="open">Hey</div>
+        <aside class='closed' data-modal='open'>Hey</aside>
+        <div data-modal="false">Hey</div>
+        <div data-modal>Hey</div>
+        <div data-modal-open>Hey</div>
+
+    </div>
+
+    <div class="byline" id="container">
+        <!-- WILL match -->
+        <a href="/login.php">login page</a>
+        <a href="/INDEX.php">login page</a>
+
+    </div>
+
+    <div class="byline" id="container">
+        <!-- WILL match -->
+        <a href="https://www.bbc.com/">The BBC</a>
+        <a href="www.bbc.com">The BBC</a>
+
+    </div>
+
+    <div class="byline" id="container">
+        <!-- WILL match -->
+        <a href="/docs/menu.pdf">download menu</a>
+        <!-- Will NOT match -->
+        <a href="/audio/song.mp3">download song</a>
+
+    </div>
+    <div class="byline" id="container">
+        <a href="#home">Hey</a>
+
+    </div>
+
+    <div class="byline" id="container">
+        <div>content</div><!-- selected -->
+        <div class="awesome">content</div>
+        <section>content</section><!-- selected -->
+        <p class="awesome">hello</p><!-- selected -->
+    </div>
+
+    <div class="byline" id="container">
+        <p class="alpha">Lorem ipsum dolor...</p>
+        <p class="bravo">Integer eget enim...</p>
+    
+    </div>
+
+    <div class="byline" id="container">
+        <ul>
+            <li class="sale">item1</li>
+            <li class="not-sale">item2</li>
+            <li class="sale">item3</li>
+            <li class="not-sale">item4</li>
+          </ul>
+          
+    </div>
+    <div class="byline" id="container">
+        <a href="http://google.com/">Search the Web</a> 
+        <a href="https://www.bbc.com/">The BBC</a>
+
+    </div>
+    
+    <div class="byline" id="container"></div>
+    <div class="byline" id="container"></div>
+    <div class="byline" id="container"></div>
+</body>
+</html>
