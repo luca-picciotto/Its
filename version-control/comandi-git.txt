@@ -24,3 +24,14 @@ $ git rm --cached + nome->	rimuove il file da git ma non lo elimina dal sistema
 $ git rm + nomeFile	->	rimuove il file
 
 $ git mv nomeVecchio + nomeNuovo	->	rinomima i file
+
+$ git checkout -b + nome ->	crea un nuovo branch
+
+$ git checkout master 	->	si sposta sul master (se metti un nome di un altro branch si sposta li)
+
+$ git merge + nome branch	->	sposta il master al branch scelto
+
+$ git rebase master 	->	fa partire il brench dal masterl
+
+
+
