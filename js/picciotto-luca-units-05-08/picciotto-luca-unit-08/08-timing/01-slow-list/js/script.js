@@ -1,17 +1,8 @@
-// Create an array that holds a list of 30 items (food, books, etc.)
-// ● Print one item of the list every second until the list is completely printed
-// ○ Use setInterval to achieve this goal
-// ○ Do the same thing using setTimeout
 
-
-
-// Create an array that holds a list of 30 items (food, books, etc.)
-// ● Print one item of the list every second until the list is completely printed
-// ○ Use setInterval to achieve this goal
-// ○ Do the same thing using setTimeout
-
-
-
+/**
+ * An array that holds a list of 30 items (food, books, etc.).
+ * @type {Array<string>}
+ */
 const items = [
     "Apples",
     "Bananas",
@@ -45,13 +36,37 @@ const items = [
     "Pen"
 ];
 
+
+/**
+ * Prints each item in the given array at one-second intervals using setInterval.
+ * @param {Array<string>} items - An array of items to be printed.
+ */
+function slowListInterval(items) {
     let i = 0;
-function  slowList(list){
 
+    let intervalId = setInterval(() => {
+        console.log("setInterval: " + items[i]);
+        i++;
 
-    console.log(list[i]);
-    i ++;
+        if (i === items.length) {
+            clearInterval(intervalId);
+        }
+    }, 1000);
 }
 
-setInterval(slowList,3000, items);
-clearInterval
+/**
+ * Prints each item in the given array at 1.5-second intervals using setTimeout.
+ * @param {number} i - The current index of the item to be printed.
+ * @param {Array<string>} items - An array of items to be printed.
+ */
+function slowListTimeout(i, items) {
+    if (i < items.length) {
+        console.log("setTimeout: " + items[i]);
+        setTimeout(() => slowListTimeout(i + 1, items), 1000);
+    }
+}
+
+
+// Function calls
+slowListInterval(items);
+slowListTimeout(0, items);
