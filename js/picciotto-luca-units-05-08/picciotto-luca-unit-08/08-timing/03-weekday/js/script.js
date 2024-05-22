@@ -25,7 +25,7 @@ const dayLang = {
  * @param {string} [lang='en'] - The language code ('en' for English, 'it' for Italian).
  * @returns {string} The day of the week in the specified language.
  */
-let getWeekDay = (date, lang = 'en') => {
+let getWeekDay = (date, lang) => {
     let day = new Date(date).getDay();
     return dayLang[lang][day];
 }
