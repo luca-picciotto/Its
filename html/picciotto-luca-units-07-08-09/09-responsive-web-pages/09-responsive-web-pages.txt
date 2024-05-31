@@ -1,0 +1,53 @@
+-------------------------------
+	CONTENT FIRST		
+-------------------------------
+What is?
+	- Content is the reason users use your platform
+Why content first?
+	- Non perdere tempo facendo template inutili
+	- User experience
+How to do?
+	- Ragionare su cosa vuole l'utente da te
+	- Parità tra i device
+	- Definisce il design
+	- Usare contenuto realistico, simile all'esperienza utente
+		{
+			proto-content: 
+		}
+	- Discutere su come, quando e con che cos realizzare
+
+-------------------------------
+	MOBILE FIRST		
+-------------------------------
+ 
+Why mobile first?
+	- + del 50% del traffico
+	- Google e gli utenti ti guardano
+	- Migliore scalabilità
+How to do?
+	- coding
+	- user-friendly interactions
+	- Optimise your content
+
+-------------------------------
+	RESPONSIVE DESIGN		
+-------------------------------
+What is?
+	- Si aggiunsta in automatico tra i device
+	- Si usa nelle pagine web
+	- Con le media query cambia il css e il layout
+		{
+			media-query: 
+				istruzioni css che permettono di 
+				cambiare gli stili in base alle 
+				carratteristicedel dispositivo.
+		}
+Designers?
+	- usano il responsive per partire dal desktop
+	- oggi il responsive si usa anche per il mobile-first
+	- maggiore scalabilità mobile -> desktop
+Developers?
+	- il responsive era usato per partire dal desktop-first
+	- lo sviluppo mobile è più difficile
+
+

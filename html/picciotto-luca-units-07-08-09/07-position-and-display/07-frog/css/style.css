@@ -1,0 +1,144 @@
+/* Container for the content */
+.content {
+    width: 100%; /* The container takes up 100% of the width of its parent */
+    height: 100%; /* The container takes up 100% of the height of its parent */
+    display: flex; /* Flexbox layout for children elements */
+    flex-wrap: wrap; /* Wrap children elements to the next line if they overflow */
+}
+
+/* Individual elements within the content */
+.content .element {
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    display: flex; /* Flexbox layout for children elements */
+    /* background-color: rgba(153, 153, 255, 0.337); Background color with partial transparency */
+    width: 300px; /* Fixed width of 300px */
+    height: 300px; /* Fixed height of 300px */
+    border-radius: 6px; /* Rounded corners with a radius of 6px */
+    /* border: 1px solid black; Solid black border with a width of 1px */
+    margin: 5px 20px 5px; /* Margins: 5px top, 20px right/left, 5px bottom */
+    justify-content: center; /* Center children elements horizontally */
+}
+
+/* Specific styling for every 2nd element starting from the 4th */
+.element:nth-of-type(2n+4) {
+    width: 600px; /* Double the width of standard elements */
+    height: 300px; /* Same height as standard elements */
+}
+
+/* Specific styling for the frog class within specific elements */
+.element:nth-child(2) .frog,
+.element:last-child .frog,
+.element:nth-child(5) .frog,
+.element:nth-child(6) .frog {
+    background-color: greenyellow; /* Set background color to greenyellow */
+}
+
+/* Specific styling for the eye class within specific elements */
+.element:nth-child(2) .eye,
+.element:nth-child(5) .eye {
+    background-color: green; /* Set background color to green */
+}
+
+/* Specific styling for the eye class within specific elements */
+.element:last-child .eye,
+.element:nth-child(6) .eye {
+    background-color: rgb(96, 253, 96); /* Set background color to a specific green */
+    color: black; /* Set text color to black */
+}
+
+/* Specific styling for the eye class within the 4th element */
+.element:nth-child(4) .eye {
+    background-color: rgb(249, 152, 152); /* Set background color to a specific pink */
+    color: black; /* Set text color to black */
+}
+
+/* Styling for elements when hovered */
+.element:hover {
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+/* Styling for the eye class within elements when hovered */
+.element:hover .eye {
+    background-color: black; /* Set background color to black */
+    color: white; /* Set text color to white */
+}
+
+/* Styling for the frog class */
+.frog {
+    background-color: rgb(255, 0, 0); /* Set background color to red */
+    margin-left: 20px; /* Left margin of 20px */
+    margin-right: 20px; /* Right margin of 20px */
+    box-sizing: content-box; /* Padding is not included in the width/height */
+    padding-top: 20px; /* Top padding of 20px */
+    border: 2px solid black; /* Solid black border with a width of 2px */
+    text-align: center; /* Center text horizontally */
+    justify-content: center; /* Center children elements horizontally */
+    align-items: center; /* Center children elements vertically */
+    border-radius: 12px; /* Rounded corners with a radius of 12px */
+    position: relative; /* Relative positioning */
+    top: 40%; /* Offset from the top by 40% of its parent's height */
+}
+
+/* Specific styling for smaller frogs */
+.frog.little {
+    width: 200px; /* Fixed width of 200px */
+    height: 50px; /* Fixed height of 50px */
+}
+
+/* Specific styling for larger frogs */
+.frog.big {
+    width: 400px; /* Fixed width of 400px */
+    height: 100px; /* Fixed height of 100px */
+}
+
+/* Styling for the eye class */
+.eye {
+    text-align: center; /* Center text horizontally */
+    position: relative; /* Relative positioning */
+    display: flex; /* Flexbox layout for children elements */
+    justify-content: center; /* Center children elements horizontally */
+    align-items: center; /* Center children elements vertically */
+    color: white; /* Set text color to white */
+    background-color: rgb(128, 0, 0); /* Set background color to a specific red */
+    border: 2px solid black; /* Solid black border with a width of 2px */
+}
+
+/* Specific styling for eyes within smaller frogs */
+.frog.little .eye {
+    border-radius: 25px; /* Rounded corners with a radius of 25px */
+    width: 50px; /* Fixed width of 50px */
+    height: 50px; /* Fixed height of 50px */
+}
+
+/* Specific styling for left eyes within smaller frogs */
+.frog.little .eye.left {
+    bottom: 60px; /* Offset from the bottom by 60px */
+    right: 25px;
+}
+
+/* Specific styling for right eyes within smaller frogs */
+.frog.little .eye.right {
+    float: right; /* Float element to the right */
+    bottom: 110px; /* Offset from the bottom by 110px */
+    left: 25px;
+}
+
+/* Specific styling for eyes within larger frogs */
+.frog.big .eye {
+    border-radius: 50px; /* Rounded corners with a radius of 50px */
+    width: 100px; /* Fixed width of 100px */
+    height: 100px; /* Fixed height of 100px */
+}
+
+/* Specific styling for left eyes within larger frogs */
+.frog.big .eye.left {
+    bottom: 80px; /* Offset from the bottom by 80px */
+    right: 50px;
+}
+
+/* Specific styling for right eyes within larger frogs */
+.frog.big .eye.right {
+    float: right; /* Float element to the right */
+    bottom: 180px; /* Offset from the bottom by 180px */
+    left: 50px;
+}

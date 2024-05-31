@@ -1,0 +1,56 @@
+
+.container{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+
+}
+.container .coloum-left{
+    float: left;
+    display: inline-block;
+    background-color: lightcoral;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+
+}
+.container .coloum-right{
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: lightblue;
+    width: 50%;
+    height:100%;
+
+}
+
+.container button{
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    height: 90px;
+    width: 100%;
+    text-align: center;
+    background-color: greenyellow;
+}
+
+
+ #dirtyStack,
+ #washStack{
+    margin: 20px;
+    height: 85%;
+    width: 90%;
+    padding: 10px;
+    outline: 1px solid black;
+}
+
+.plate{
+    width: 50px;
+    height: 50px;
+    outline: 1px solid black;
+    border-radius: 50%;
+}

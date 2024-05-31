@@ -1,0 +1,109 @@
+/* .border *{
+    outline: 1px solid black;
+} */
+
+header{
+    background-color: yellow;
+    margin-top: 0;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    top: 0;
+}
+
+footer {
+    background-color: aqua;
+    color: white;
+    padding: 20px;
+    position: fixed;
+    height: 90px;
+    width: 100%;
+    bottom: 0;
+    
+}
+
+.sidebar{
+    background-color: orange;
+    float: left;
+    width: 20vw;
+    height: 100vh;
+    max-width: 400px;
+    position: fixed;
+    margin-top: 90px;
+}
+
+main{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    /* height: fit-content; */
+
+}
+main .coloum-left{
+    float: left;
+    display: inline-block;
+    background-color: lightcoral;
+    width: 50%;
+    height: fit-content;
+    box-sizing: border-box;
+    margin-left: 20vw ;
+}
+main .coloum-right{
+    float: right;
+    display: inline-block;
+    box-sizing: border-box;
+    background-color: lightblue;
+    width: 50%;
+    height: fit-content;
+
+}
+
+.coloum-left h2, .coloum-left h1{
+    background-color: lightblue;
+}
+.coloum-right h2, .coloum-right h1{
+    background-color: lightcoral;
+}
+
+main h1, main h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.content{
+    background: none;
+    width: auto;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+
+figure{
+    width: auto;
+    height: fit-content;
+    margin: 20px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+.coloum-left figure{
+    background-color: red;
+}
+.coloum-right figure{
+    background-color: blue;
+    color: white;
+}
+figure figcaption{
+    padding: 10px;
+}
+figure img{
+    width: 100%;
+    border-radius: 6px;
+}
+
+
+
