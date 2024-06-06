@@ -46,7 +46,7 @@ function removeDirty(){
 
 
 function washDish(){
-        printDirty("dirtyStack");
+    printDirty("dirtyStack");
     removeDirty();
     printWash("washStack");
 }

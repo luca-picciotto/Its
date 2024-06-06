@@ -1,0 +1,66 @@
+header{
+    padding: 0;
+}
+header nav{
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    background-color: blue;
+    /* top: 0; */
+}
+nav ul{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+
+nav ul .pres-button{
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: yellow;
+    height: 40%;
+    width: 70px;
+    display: flexbox;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+
+#name-of-brand{
+    width: fit-content;
+    height: fit-content;
+    font-family: "Bebas Neue", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    /* padding: 0 20px ; */
+    max-height: 100%;
+    
+}
+
+#search{
+    width: calc( 70px * 3);
+    text-align: left;
+    margin-right: 50em;
+}
+
+.pres-button::first-letter{
+    text-transform: capitalize;
+}
+
+@media screen and (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+    header nav{
+        position: fixed;
+        /* top: 100px; */
+        bottom: 0
+    }
+
+}
+
+
+

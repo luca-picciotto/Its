@@ -1,0 +1,77 @@
+header{
+    padding: 0;
+}
+header nav{
+    width: 100%;
+
+    background-color: blue;
+    position: fixed;
+}
+nav ul{
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+nav ul .pres-button, #search input{
+    box-sizing: border-box;
+    justify-content: center;
+    background-color: yellow;
+    display: flexbox;
+    padding: 10px;
+    margin: auto;
+    text-align: center;
+    border-radius: 20px;
+}
+.pres-button::first-letter{
+    text-transform: capitalize;
+}
+#search{
+    padding: 0;
+}
+#search input{
+    border: 0;
+    text-align: left;
+    padding: 10px;
+    width: 100%;
+}
+@media screen and (max-width: 1000px) {
+    body{
+        background-color: red;
+    }
+    /* header nav{
+        height: ;
+    } */
+    nav ul{
+        position: fixed;
+        top: 50px;
+    }
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-color: black;
+    }
+    nav ul{
+        position:static;
+        bottom: 0;
+    }
+    header nav{
+        bottom: 0;
+        
+        height: 70px;      
+    }
+    #name-of-brand{
+        position: fixed;
+        top: 10px;
+        left: 10px;
+    }
+    #search{
+        position: fixed;
+        top: 10px;
+        width: calc(70px * 3);
+        text-align: left;
+    }
+}
+
+
