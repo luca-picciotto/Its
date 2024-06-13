@@ -22,14 +22,19 @@ body{
 
 .dirty-plate,
 .wash-plate{
-    width: 50%;
-    height: 50px;
-    outline: 1px solid blue;
+    width: 150px;
+    height: 80px;
+    /* outline: 1px solid blue; */
     margin: 0 auto;
+    border-radius: 50%;
+    display: flex;
 }
+
+
 
 .h1-start, button{
     font-size: 25px;
     width: 100%;
     height: 100px;
+    display: block;
 }

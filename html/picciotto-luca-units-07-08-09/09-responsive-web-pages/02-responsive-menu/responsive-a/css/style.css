@@ -40,10 +40,10 @@ nav ul .pres-button, #search input{
     body{
         background-color: red;
     }
-    /* header nav{
+    header nav{
         height: ;
-    } */
-    nav ul{
+    } 
+     nav ul{
         position: fixed;
         top: 50px;
     }

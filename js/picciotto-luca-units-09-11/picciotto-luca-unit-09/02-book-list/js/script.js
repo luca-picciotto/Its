@@ -72,7 +72,7 @@ let addCss = setTimeout(() => {
  * @type {number}
  */
 let i = 0;
-
+    
 /**
  * Itera attraverso l'array dei libri e crea gli elementi HTML corrispondenti per ogni libro.
  * @param {Object} element - Oggetto libro corrente.
@@ -112,10 +112,6 @@ books.forEach(element => {
 
     // Aggiunge tutti i div del libro al div principale del libro
     divBook.append(bookTitle, bookImage,bookAuthor,bookRead);
-    // divBook.appendChild(bookTitle);
-    // divBook.appendChild(bookImage);
-    // divBook.appendChild(bookAuthor);
-    // divBook.appendChild(bookRead);
     pageNode.appendChild(divBook);
 
     // Aggiunge una classe specifica al titolo del libro in base allo stato di lettura

@@ -68,9 +68,10 @@ function getDish(){
 function printDirty(i){
     let dirtyStack = getDish();
     dirtyStack.forEach(element => {
-        let divDish = document.createElement('div');
+        let divDish = document.createElement('img');
         divDish.className = 'dirty-plate';
         divDish.id = 'plate-' + i;
+        divDish.src = './img/plate-no-clean.svg'
         i++;
         dirtyDishNode.appendChild(divDish);
     });
@@ -94,9 +95,10 @@ function removeAndAdd(id, dirtyStack, toWash, washStack, i){
     washStack.push(toWash);
     console.log(washStack);
     wash = setTimeout(() => {
-        let divDish = document.createElement('div');
+        let divDish = document.createElement('img');
         divDish.className = 'wash-plate';
         divDish.id = 'plates-' + i;
+        divDish.src = './img/plate-clean.svg';
         washDishNode.appendChild(divDish);
     }, increment);
     increment += 1000;
@@ -128,9 +130,14 @@ let washDish = (dirtyStack, washStack) => {
 }
 
 // Inizia il processo di lavaggio dei piatti
-washDish(dirtyStack, washStack);
-
 // Associa l'evento click alla callback startWash
-// var test = document.getElementById('start');
-// test.addEventListener('click', startWash);
+var start = document.getElementById('start');
+start.addEventListener('click', startWash);
+
+
+
+function startWash(){
+    washDish(dirtyStack, washStack);
+
+}
 

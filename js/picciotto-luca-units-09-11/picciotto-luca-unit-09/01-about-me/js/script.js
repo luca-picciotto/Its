@@ -37,3 +37,5 @@ let addCss = setTimeout(() => {
     newCss.rel = 'stylesheet';
     pageHead.appendChild(newCss);
 }, 4000);
+
+log
