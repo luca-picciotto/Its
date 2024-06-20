@@ -1,0 +1,6 @@
+label, button{
+    display: block;
+}
+label{
+    margin: 20px;
+}

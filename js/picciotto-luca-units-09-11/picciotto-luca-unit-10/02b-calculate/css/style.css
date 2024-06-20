@@ -1,0 +1,35 @@
+#calculator {
+    width: fit-content;
+    height: fit-content;
+    max-width: calc((100px *4) + 15px);
+    max-height: calc((100px *6) + 15px);
+    padding: 20px;
+    outline: 5px solid black;
+}
+
+#calculator > div{
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    justify-items: center;
+    outline: 1px solid gray;
+    box-sizing: border-box;
+}
+
+div#btn-0{
+    width: 200px;
+}
+div#solution,div#calc{
+    width: 100%;
+    display: block;
+    background-color: gainsboro;
+    outline: none;
+    
+}
+#calculator > div:hover{
+    background-color: bisque;
+}
+#calculator > div#solution:hover, div#calc:hover{
+    background-color: gainsboro;
+}

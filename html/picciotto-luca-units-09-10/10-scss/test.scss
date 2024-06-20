@@ -1,0 +1,11 @@
+@use 'sass:color';
+.strange {
+ $mixed: color.mix($primary, $secondary, $weight: 50%);
+ background-color: $mixed;
+ &:hover {
+ background-color: lighten($mixed, 20%);
+ }
+ p {
+ background-color: color.adjust($mixed, $hue: 35);
+ }
+}
