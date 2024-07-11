@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #ffffff;
+  color: #333;
+}
+
+header {
+  background-color: #ff0000;
+  padding: 10px 0;
+  color: white;
+  position: sticky;
+  top: 0;
+}
+
+nav {
+  background-color: #0000ff;
+  padding: 10px;
+  margin: 10px 0;
+}
+nav ul {
+  list-style: none;
+}
+nav ul li {
+  display: inline-block;
+  margin: 0 auto;
+  width: calc(25% - 10px);
+  text-align: center;
+}
+
+main {
+  background-color: #ff8b07;
+  padding: 10px;
+  display: flex;
+}
+
+article {
+  background-color: yellow;
+  padding: 10px;
+  margin: 10px;
+  flex: 3;
+}
+
+#page-title {
+  text-align: center;
+  font-size: 4em;
+}
+#page-title::first-line {
+  text-transform: uppercase;
+}
+
+section {
+  background-color: #00ff00;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+aside {
+  background-color: purple;
+  padding: 10px;
+  margin: 10px;
+  flex: 1;
+}
+
+footer {
+  background-color: gray;
+  padding: 10px;
+  color: white;
+  text-align: center;
+}
+
+@media screen and (max-width: 480px) {
+  main {
+    height: fit-content;
+    min-width: 80vh;
+  }
+  aside {
+    display: none;
+  }
+  footer {
+    height: 100px;
+  }
+  #page-title {
+    font-size: 2em;
+  }
+  #clock-gear.product img {
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    float: left;
+    margin: 0 10px 0 0;
+  }
+  #clock-gear.product figcaption {
+    display: inline-block;
+    text-decoration: underline;
+    font-size: 1.5em;
+  }
+  article section p {
+    font-size: 13px;
+  }
+}
+
+/*# sourceMappingURL=test.css.map */

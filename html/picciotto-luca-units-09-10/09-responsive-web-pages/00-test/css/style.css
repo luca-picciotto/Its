@@ -1,0 +1,118 @@
+/* Reset some default browser styles */
+:root{
+    --number-section: 3;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background: red;
+    color: white;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav {
+    background: blue;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+nav ul{
+    list-style: none;
+}
+nav ul li{
+    display: inline-block;
+    margin: 0 auto;
+    width: calc(25% - 10px);
+    text-align: center;
+}
+
+main {
+    display: flex;
+    background: orange;
+    padding: 10px;
+}
+
+article {
+    background: yellow;
+    padding: 10px;
+    margin: 10px;
+    flex: 3;
+}
+#page-title{
+    text-align: center;
+    font-size: 4em;
+}
+#page-title::first-line{
+    text-transform: uppercase;
+}
+
+
+section {
+    background: lightgreen;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+aside {
+    background: purple;
+    padding: 10px;
+    margin: 10px;
+    flex: 1;
+}
+
+footer {
+    background: gray;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width:480px) {
+    
+    main{
+        height: fit-content;
+        min-height: 80vh;
+    }
+    
+    aside{
+        display: none;
+    }
+
+    footer{
+        height: 100px;
+    }
+    #page-title{
+        font-size: 2em;
+    }
+
+    #clock-gear.product img{
+        width: 100px;
+        height: 100px;   
+        display: inline-block; 
+        float: left;
+        margin: 0 10px 0 0;
+    }
+    #clock-gear.product figcaption {
+        display: inline-block;
+        text-decoration: underline;
+        font-size: 1.5em;
+    }
+    p{
+        
+        font-size: 13px;
+    }
+}

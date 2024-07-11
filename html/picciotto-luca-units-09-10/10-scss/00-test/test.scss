@@ -1,0 +1,135 @@
+@use 'sass:map';
+
+$colors: (
+ body: #ffffff,
+ header: #ff0000,
+ nav: #0000ff,
+ main: #ff8b07,
+ article: yellow,
+ section: #00ff00,
+ aside: purple,
+ footer: gray
+);
+
+$body-color: map.get($colors, body);
+$header-color: map.get($colors, header);
+$nav-color: map.get($colors, nav);
+$main-color: map.get($colors, main);
+$article-color: map.get($colors, article);
+$section-color: map.get($colors, section);
+$aside-color: map.get($colors, aside);
+$footer-color: map.get($colors, footer);
+
+$font: Arial, sans-serif;
+$margin: 10px;
+$number-of-section: 3;
+$number-of-section-aside: 1;
+
+$mobile-max-width: 480px;
+    $mobile-main-min-width: 80vh;
+
+@mixin part-panel($bg-color, $padding){
+    background-color: $bg-color;
+    padding: $padding;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: $font;
+    line-height: 1.6;
+    background-color: $body-color;
+    color: #333;
+}
+
+header{
+    @include part-panel($header-color, 10px 0 );
+    color: white;
+    position: sticky;
+    top: 0;
+}
+
+nav{
+    @include part-panel($nav-color, 10px );
+    margin: $margin 0;
+    & ul{
+        list-style: none;
+        & li{
+            display: inline-block;
+            margin: 0 auto;
+            width: calc(25% - 10px);
+            text-align: center;
+        }
+    }
+}
+main{
+    @include part-panel($main-color, 10px );
+    display: flex;
+}
+
+article{
+    @include part-panel($article-color, 10px );
+    margin: $margin;
+    flex: $number-of-section;
+}
+
+#page-title{
+    text-align: center;
+    font-size: 4em;
+    &::first-line{
+        text-transform: uppercase;
+    }
+}
+
+section{
+    @include part-panel($section-color, 10px);
+    margin: $margin 0;
+}
+
+aside{
+    @include part-panel($aside-color, 10px );
+    margin: $margin;
+    flex: $number-of-section-aside;
+}
+
+footer{
+    @include part-panel($footer-color, 10px );
+    color: white;
+    text-align: center;
+}
+
+@media screen and (max-width: $mobile-max-width) {
+    main{
+        height: fit-content;
+        min-width: $mobile-main-min-width;
+    }
+    aside{
+        display: none;
+    }
+    footer{
+        height: 100px;
+    }
+    #page-title{
+        font-size: 2em;
+    }
+    #clock-gear.product {
+        & img{
+            width: 100px;
+            height: 100px;   
+            display: inline-block; 
+            float: left;
+            margin: 0 $margin 0 0;
+        }
+        & figcaption{
+            display: inline-block;
+            text-decoration: underline;
+            font-size: 1.5em;
+        }
+    }
+    article section p{
+        font-size: 13px;
+    }
+}
