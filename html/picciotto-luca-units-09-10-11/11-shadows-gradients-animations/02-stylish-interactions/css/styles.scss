@@ -1,0 +1,65 @@
+// Variables
+$heading-gradient-start: #ff7e5f;
+$heading-gradient-end: #feb47b;
+$paragraph-shadow: rgba(0, 0, 0, 0.5);
+$paragraph-color: #333;
+$paragraph-hover-color: #ff7e5f;
+$div-background: #4a90e2;
+$div-size: 100px;
+$animation-duration: 3s;
+
+// Styles
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  text-align: center;
+}
+
+.gradient-heading {
+  background: radial-gradient(circle, $heading-gradient-start, $heading-gradient-end);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.shadow-paragraph {
+  font-size: 1.2rem;
+  color: $paragraph-color;
+  text-shadow: 2px 2px 4px $paragraph-shadow;
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: $paragraph-hover-color;
+  }
+}
+
+.rotating-div {
+  width: $div-size;
+  height: $div-size;
+  background-color: $div-background;
+  transform: rotate(45deg);
+  animation: move-left-right $animation-duration infinite alternate linear;
+
+  &:hover {
+    animation-play-state: paused;
+  }
+}
+
+@keyframes move-left-right {
+  0% {
+    transform: rotate(45deg) translateX(0);
+  }
+  100% {
+    transform: rotate(45deg) translateX(200px);
+  }
+}

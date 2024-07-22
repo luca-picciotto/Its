@@ -1,0 +1,52 @@
+// Mixin 1: Set font size and color
+@mixin fontStyle($size, $color) {
+    font-size: $size;
+    color: $color;
+  }
+  
+  // Mixin 2: Uses fontStyle and adds padding and margin
+  @mixin boxStyle($size, $color, $padding, $margin) {
+    @include fontStyle($size, $color);
+    padding: $padding;
+    margin: $margin;
+  }
+  
+  // Mixin 3: Uses boxStyle and adds border and background
+  @mixin advancedBoxStyle($size, $color, $padding, $margin, $border, $background) {
+    @include boxStyle($size, $color, $padding, $margin);
+    border: $border;
+    background-color: $background;
+  }
+  
+  $font-size: 16px;
+  $font-color: #333;
+  $padding: 10px;
+  $margin: 15px;
+  $border: 2px solid #666;
+  $background-color: #f4f4f4;
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  .container {
+    @include advancedBoxStyle($font-size, $font-color, $padding, $margin, $border, $background-color);
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .header {
+    @include advancedBoxStyle(24px, white, 20px, 0, none, darkblue);
+    text-align: center;
+  }
+  
+  .content {
+    @include advancedBoxStyle(18px, black, $padding, $margin, 1px solid #ddd, white);
+    line-height: 1.5;
+  }
+  
+  .footer {
+    @include advancedBoxStyle($font-size, white, $padding, $margin, none, darkgray);
+    text-align: center;
+  }
+  

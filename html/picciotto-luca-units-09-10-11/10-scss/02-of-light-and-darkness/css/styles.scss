@@ -1,0 +1,157 @@
+// Variabili per i temi light e dark
+$light-bg: #ffffff;
+$light-text: #333333;
+$light-primary: #007bff;
+$light-secondary: #6c757d;
+$light-border: #ddd;
+$light-background-alt: #f8f9fa;
+
+$dark-bg: #333333;
+$dark-text: #ffffff;
+$dark-primary: #007bff;
+$dark-secondary: #6c757d;
+$dark-border: #555;
+$dark-background-alt: #444;
+
+// Mixin per lo stile del font
+@mixin fontStyle($size, $color) {
+  font-size: $size;
+  color: $color;
+}
+
+// Mixin per lo stile delle box
+@mixin boxStyle($size, $color, $padding, $margin) {
+  @include fontStyle($size, $color);
+  padding: $padding;
+  margin: $margin;
+}
+
+// Mixin avanzato per le box
+@mixin advancedBoxStyle($size, $color, $padding, $margin, $border, $background) {
+  @include boxStyle($size, $color, $padding, $margin);
+  border: $border;
+  background-color: $background;
+}
+
+// Mixin per lo stile del tema
+@mixin theme-styles($bg, $text, $primary, $secondary, $border, $background-alt) {
+  background-color: $bg;
+  color: $text;
+
+  a {
+    color: $primary;
+  }
+
+  button {
+    background-color: $primary;
+    color: $text;
+    border: 1px solid $primary;
+
+    &:hover {
+      background-color: darken($primary, 10%);
+    }
+  }
+
+  table {
+    th, td {
+      border: 1px solid $border;
+    }
+    th {
+      background-color: $secondary;
+    }
+    tbody tr:nth-child(odd) {
+      background-color: $background-alt;
+    }
+  }
+
+  ul {
+    li {
+      border-bottom: 1px solid $border;
+
+      &:last-child {
+        border-bottom: none;
+      }
+    }
+  }
+
+  input {
+    border: 1px solid $border;
+    background-color: $background-alt;
+  }
+}
+
+body {
+  font-family: Arial, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+
+  &.light {
+    @include theme-styles($light-bg, $light-text, $light-primary, $light-secondary, $light-border, $light-background-alt);
+  }
+
+  &.dark {
+    @include theme-styles($dark-bg, $dark-text, $dark-primary, $dark-secondary, $dark-border, $dark-background-alt);
+  }
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0;
+
+  button {
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+}
+
+.main-content {
+  .list-section, .table-section, .form-section {
+    margin-bottom: 40px;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+
+    li {
+      padding: 10px 0;
+    }
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+
+    th, td {
+      padding: 10px;
+      text-align: left;
+    }
+  }
+
+  form {
+    div {
+      margin-bottom: 15px;
+
+      label {
+        display: block;
+        margin-bottom: 5px;
+      }
+
+      input {
+        width: 100%;
+        padding: 10px;
+      }
+    }
+
+    button {
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+  }
+}
