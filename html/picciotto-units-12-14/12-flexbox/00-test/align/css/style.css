@@ -1,0 +1,58 @@
+.flex-item{
+    width: 20px;
+}
+#id-1{
+    height: 30px;
+    background-color: #d6b561;
+}
+#id-2{
+    height: 20px;
+    background-color: #bda057;
+}
+#id-3{
+    height: 30px;
+    background-color: #9b8346;
+}
+#id-4{
+    height: 50px;
+    background-color: #776538;
+}
+#id-5{
+    height: 10px;
+    background-color: #252012;
+}
+#id-6{
+    height: 40px;
+    background-color: #2e2715;
+}
+
+
+.flex-container{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid black;
+}
+
+.align-start{
+    align-items: flex-start;
+}
+.align-end{
+    align-items: flex-end;
+}
+.align-center{
+    align-items: center;
+}
+.align-baseline{
+    align-items: baseline;
+}
+
+.align-stretch{
+    align-items: stretch;
+}
+
+
+
+.flex-item.self{
+    align-self: flex-start;
+    flex: 0 0 100px;
+}

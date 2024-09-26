@@ -1,0 +1,73 @@
+[
+    {
+      "id": 1,
+      "make": "Toyota",
+      "model": "Camry",
+      "year": 2021,
+      "color": "Blue",
+      "price": 24000,
+      "electric": false,
+      "features": ["Bluetooth", "Backup Camera", "Cruise Control"],
+      "owner": {
+        "name": "John Doe",
+        "plate": "XYZ1234"
+      }
+    },
+    {
+      "id": 2,
+      "make": "Tesla",
+      "model": "Model S",
+      "year": 2022,
+      "color": "Red",
+      "price": 79999,
+      "electric": true,
+      "features": ["Autopilot", "Panoramic Roof", "Wireless Charging"],
+      "owner": {
+        "name": "Jane Smith",
+        "plate": "ABC5678"
+      }
+    },
+    {
+      "id": 3,
+      "make": "Ford",
+      "model": "Mustang",
+      "year": 2020,
+      "color": "Black",
+      "price": 35000,
+      "electric": false,
+      "features": ["Leather Seats", "Heated Seats", "Bluetooth"],
+      "owner": {
+        "name": "Emily Brown",
+        "plate": "LMN2345"
+      }
+    },
+    {
+      "id": 4,
+      "make": "Chevrolet",
+      "model": "Bolt",
+      "year": 2023,
+      "color": "White",
+      "price": 32000,
+      "electric": true,
+      "features": ["Apple CarPlay", "Android Auto", "Keyless Entry"],
+      "owner": {
+        "name": "Michael Green",
+        "plate": "QRS6789"
+      }
+    },
+    {
+      "id": 5,
+      "make": "Honda",
+      "model": "Accord",
+      "year": 2019,
+      "color": "Gray",
+      "price": 22000,
+      "electric": false,
+      "features": ["Lane Assist", "Sunroof", "Heated Seats"],
+      "owner": {
+        "name": "Chris White",
+        "plate": "TUV4567"
+      }
+    }
+  ]
+  

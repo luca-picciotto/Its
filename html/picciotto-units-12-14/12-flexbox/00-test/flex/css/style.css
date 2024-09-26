@@ -1,0 +1,104 @@
+/* the direction of the main axis can be either
+horizontal or vertical based on the specified
+value */
+div{
+    margin: 5px 10px;
+    border: black solid 1px;
+    border-radius: 3px;
+    width: fit-content;
+    
+}
+.flex-container{
+    display: flex;
+}   
+.flex-item{
+    background: #d6b561;
+    height: 30px;
+    width: 50px;
+}
+
+
+/* flex-direction
+the property defines the main axis, while the
+cross axis runs perpendicular to it */
+.row{
+    flex-direction: row;
+}
+
+.row-reverse{
+    flex-direction: row-reverse;
+}
+
+.column{
+    flex-direction: column;
+}
+
+.column-reverse{
+    flex-direction: column-reverse;
+}
+
+
+/* flex-wrap
+controls if the flex container is single or
+multi-line and sets the line direction */
+.wrap-nowrap{
+    width: 200px;
+    flex-wrap: nowrap;
+}
+.wrap-wrap{
+    width: 200px;
+    flex-wrap: wrap;
+}
+
+.wrap-reverse{
+    width: 200px;
+    flex-wrap: wrap-reverse;
+}
+
+
+/* spacing between items on the main axis using the
+property justify-content */
+.justify{
+    width: 400px;
+}
+
+.start{
+    justify-content: flex-start;
+}
+
+.end{
+    justify-content: flex-end;
+}
+
+.center{
+    justify-content:center;
+}
+
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+.evenly{
+    justify-content: space-evenly;
+}
+
+/* with flex-flow we can write unique line code ( direction + wrap ) */
+
+.flex-container-flow {
+    display: flex;
+    flex-flow: row wrap;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    justify-content: space-around;
+    border: 1px solid black;
+    }
+    .flex-item-flow {
+    background: #d6b561;
+    height: 30px;
+    width: 50px;
+    }
+    

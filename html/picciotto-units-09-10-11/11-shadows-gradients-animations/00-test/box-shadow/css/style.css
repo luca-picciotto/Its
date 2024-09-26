@@ -1,0 +1,47 @@
+/* Creazione box */
+.box{
+    width:200px;
+    height: 200px;
+    text-align: center;
+    margin: 40px 20px;
+}
+.box.ocra{
+    background-color: #caae3f;
+}
+
+.shadow{
+    box-shadow: 9px 9px rgba(0,0,0,0.2);
+    /* I primi numeri (9px, 9px) indicano da dove parte l'ombra, in base al punto di inizio del riquadro */
+}
+
+.shadow-blur{
+    box-shadow: 9px /* X */ 9px /* Y */ 9px /* Blur*/ rgba(0,0,0,0.2);
+}
+
+.shadow-spread {
+    box-shadow: 9px /* X */ 9px /* Y */ 9px /* Blur*/ 20px /* spred radius*/ rgba(0, 0, 0,0.2);
+}
+
+
+
+
+
+.box.blue{
+    background-color: #2b71a3;
+}
+  
+.shadow-tail{
+    box-shadow: 
+        5px 5px 0px 0px #289fed,
+        10px 10px 0px 0px #5fb8ff,
+        15px 15px 0px 0px #a1d8ff,
+        20px 20px 0px 0px #cae6ff,
+        25px 25px 0px 0px #e1eeff,
+        5px 5px 15px 5px rgba(0,0,0,0);
+,
+
+,
+,
+,   ;
+}
+

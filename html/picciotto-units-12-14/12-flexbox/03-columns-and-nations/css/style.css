@@ -1,0 +1,15 @@
+.states{
+    height: 80px;
+    width: 95%;
+    border: 1px solid black;
+    margin: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.name, .flag, .population{
+    border: 1px solid black;
+    width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

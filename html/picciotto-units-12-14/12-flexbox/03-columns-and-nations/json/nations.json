@@ -1,0 +1,149 @@
+{
+  "states": [
+    {
+      "name": "Alabama",
+      "population": "5.03 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5c/Flag_of_Alabama.svg"
+    },
+    {
+      "name": "Alaska",
+      "population": "733,391",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Alaska.svg"
+    },
+    {
+      "name": "Arizona",
+      "population": "7.28 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arizona.svg"
+    },
+    {
+      "name": "Arkansas",
+      "population": "3.03 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/9/9d/Flag_of_Arkansas.svg"
+    },
+    {
+      "name": "California",
+      "population": "39.24 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_California.svg"
+    },
+    {
+      "name": "Colorado",
+      "population": "5.81 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/46/Flag_of_Colorado.svg"
+    },
+    {
+      "name": "Connecticut",
+      "population": "3.61 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/9/96/Flag_of_Connecticut.svg"
+    },
+    {
+      "name": "Delaware",
+      "population": "1.01 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/c/c6/Flag_of_Delaware.svg"
+    },
+    {
+      "name": "Florida",
+      "population": "21.78 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f7/Flag_of_Florida.svg"
+    },
+    {
+      "name": "Georgia",
+      "population": "10.62 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/5/54/Flag_of_Georgia_(U.S._state).svg"
+    },
+    {
+      "name": "Hawaii",
+      "population": "1.46 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/e/ef/Flag_of_Hawaii.svg"
+    },
+    {
+      "name": "Idaho",
+      "population": "1.9 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a4/Flag_of_Idaho.svg"
+    },
+    {
+      "name": "Illinois",
+      "population": "12.67 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Illinois.svg"
+    },
+    {
+      "name": "Indiana",
+      "population": "6.81 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/a/ac/Flag_of_Indiana.svg"
+    },
+    {
+      "name": "Iowa",
+      "population": "3.19 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Flag_of_Iowa.svg"
+    },
+    {
+      "name": "Kansas",
+      "population": "2.94 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/d/da/Flag_of_Kansas.svg"
+    },
+    {
+      "name": "Kentucky",
+      "population": "4.51 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Flag_of_Kentucky.svg"
+    },
+    {
+      "name": "Louisiana",
+      "population": "4.62 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/e/e0/Flag_of_Louisiana.svg"
+    },
+    {
+      "name": "Maine",
+      "population": "1.35 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/3/35/Flag_of_Maine.svg"
+    },
+    {
+      "name": "Maryland",
+      "population": "6.18 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_Maryland.svg"
+    },
+    {
+      "name": "Massachusetts",
+      "population": "7.03 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f2/Flag_of_Massachusetts.svg"
+    },
+    {
+      "name": "Michigan",
+      "population": "10.05 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b5/Flag_of_Michigan.svg"
+    },
+    {
+      "name": "Minnesota",
+      "population": "5.75 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/b/b9/Flag_of_Minnesota.svg"
+    },
+    {
+      "name": "Mississippi",
+      "population": "2.96 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/42/Flag_of_Mississippi.svg"
+    },
+    {
+      "name": "Missouri",
+      "population": "6.16 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/5/5a/Flag_of_Missouri.svg"
+    },
+    {
+      "name": "Montana",
+      "population": "1.08 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_Montana.svg"
+    },
+    {
+      "name": "Nebraska",
+      "population": "1.96 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/4/4d/Flag_of_Nebraska.svg"
+    },
+    {
+      "name": "Nevada",
+      "population": "3.18 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/f/f1/Flag_of_Nevada.svg"
+    },
+    {
+      "name": "New Hampshire",
+      "population": "1.39 million",
+      "flag": "https://upload.wikimedia.org/wikipedia/commons/2/28/Flag_of_New_Hampshire.svg"
+    }
+  ]
+}

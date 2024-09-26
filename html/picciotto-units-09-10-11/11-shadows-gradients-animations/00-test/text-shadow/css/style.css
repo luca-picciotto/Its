@@ -1,0 +1,17 @@
+.shadow-text{
+    font-size: 40px;
+    text-shadow: 4px 4px 4px  rgba(82,77,77,0.6);
+}
+
+.shadow-multi-text {
+    font-size: 40px;
+    color: #2b71a3;
+    text-shadow: 
+        5px 5px 0px #289fed,
+        10px 10px 0px #5fb8ff,
+        15px 15px 0px #a1d8ff,
+        20px 20px 0px #cae6ff,
+        25px 25px 0px #e1eeff,
+        5px 5px 15px rgba(0, 0, 0, 0);
+   }
+   

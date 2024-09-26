@@ -1,0 +1,55 @@
+:root{
+    --color-1: #f1dec9;
+    --color-2: #c8b6a6;
+    --color-3: #a4907c;
+    --color-4: #8d7b68;
+}
+
+.box{
+    width: 400px;
+    height: 400px;
+    margin: 40px 20px;
+    text-align: center;
+}
+.box.simile-body{
+    width: 600px;
+    background: linear-gradient(
+        90deg,
+        var(--color-1) 0%,
+        var(--color-1) 25%,
+        /* var(--color-2) 25%, */
+        var(--color-2) 50%,
+        var(--color-3) 50%, /* la ripetizione della percentuale (cioè punto di inizio del colore) serve per creare un distacco netto */
+        var(--color-3) 75%,
+        var(--color-4) 75%,
+        var(--color-4) 100%
+    );
+}
+
+.background-linear{
+    background: linear-gradient(
+        90deg,
+        hsla(302, 82%, 76%, 1) 0%,
+        hsla(258, 40%, 68%, 1) 100%
+    );
+}
+
+.background-radial{
+    background: radial-gradient(
+        circle,
+        hsla(358, 82%, 71%, 1) 0%,
+        hsla(41, 88%, 75%, 1) 50%,
+        hsla(141, 81%, 87%,1) 100%
+    );
+}
+
+.background-trasparent{
+    background: linear-gradient(
+        135deg,
+        rgba(247, 89, 49, 1) 0%,
+        rgba(233, 109, 94, 1) 62%,        
+        rgba(232, 111, 98, 0.7) 68%,
+        rgba(224, 121, 121, 0) 100%
+    );
+}
+

@@ -1,0 +1,15 @@
+{
+    "id": 101,
+    "name": "AutoWorks Manufacturing",
+    "location": "Detroit, MI",
+    "capacity": 1000,
+    "active": true,
+    "employees": ["Alice Smith", "Bob Johnson", "Charlie Lee"],
+    "productionLine": {
+      "lineNumber": 1,
+      "status": "operational"
+    },
+    "upcomingModels": null,
+    "carIds": [1, 2, 3, 4, 5]
+  }
+  

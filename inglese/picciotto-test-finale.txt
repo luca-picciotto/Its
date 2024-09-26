@@ -1,0 +1,174 @@
+	Luca Picciotto 	Test Finale 	13-9-2024
+
+		Listening 	1
+1
+	. a
+
+2
+	. a
+
+3
+	. b
+
+4
+	. c
+
+5
+	. c
+
+6
+	. c
+
+7
+	. b
+
+
+
+		Listening  2
+1
+	. sport
+
+2
+	.international
+
+3
+	.sailing
+
+4
+	. vollayball
+
+5	
+	. drama
+
+6
+	. french
+
+7
+	.chess
+
+8
+	.??!!?!?
+
+9
+	. rock climbing
+
+10
+	. sking
+
+
+
+		Listening  3
+1
+	. break at home
+
+2
+	. walking holiday
+
+3
+	. walking holiday
+
+4
+	.  stay with relatives
+
+5	
+	. mini-break
+
+6
+	. it wasn’t as restful as expected
+
+7
+	.  it was less problematic than past holidays
+
+8
+	. it wasn’t as restful as expected
+
+9
+	. it was surprisingly relaxing
+
+10
+	. it was a break from the usual routine
+
+
+
+
+		Reading 1
+1 
+	. c
+
+2 
+	. c 
+
+3 
+	. d
+
+4 
+	. d 
+
+5 
+	. b 
+
+6 
+	. a 
+
+7 
+	.  b
+
+8 
+	. b
+
+9 
+	. c
+
+10 
+	. d
+
+
+
+
+		Reading 2
+1 
+	. he saw how it could save lives.
+
+2 
+	. was widely practiced by the French military.  
+
+3 
+	. was a notable practitioner of the natural method. 
+
+4 
+	. also learnt parcour while in the French military.
+
+5 
+	. someone who practices parkour.
+
+6 
+	. it is more creative.
+
+7 
+	.  a video sharing website 
+
+8 
+	. wherever you like
+
+9 
+	. There are a large number of reported injuries. 
+
+10 
+	.  avoid taking risks. 
+
+
+
+
+		Reading 3
+a
+	. d
+
+b
+	. a
+
+c
+	. c
+
+d
+	. b
+

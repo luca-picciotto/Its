@@ -1,0 +1,15 @@
+{
+    "id": 1,
+    "make": "Toyota",
+    "model": "Camry",
+    "year": 2021,
+    "color": "Blue",
+    "price": 24000,
+    "electric": false,
+    "features": ["Bluetooth", "Backup Camera", "Cruise Control"],
+    "owner": {
+      "name": "John Doe",
+      "plate": "XYZ1234"
+    }
+  }
+  

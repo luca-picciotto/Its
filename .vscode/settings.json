@@ -2,5 +2,9 @@
     "files.associations": {
         "iostream": "cpp"
     },
-    "cmake.sourceDirectory": "C:/xampp/htdocs/Its/programmazione/menu"
+    "cmake.sourceDirectory": "C:/xampp/htdocs/Its/programmazione/menu",
+    "docwriter.style": "JSDoc",
+    "docwriter.progress.trackMethods": false,
+    "docwriter.progress.trackClasses": true,
+    "docwriter.progress.trackFunctions": false
 }
