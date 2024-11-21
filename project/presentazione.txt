@@ -1,0 +1,31 @@
+salve a tutti, noi siamo codefactory
+saimo qui oggi per mostrarvi i risultati del prodotto finale che abbiamo realizzato. 
+
+l'obbiettivo nato dalle nostrae analisi era di fornirvi un prodotto ottimizzato sia per l'utente sia per il motore di ricerca, in modo tale fa favorire il 
+posizionamento migliore possibile per la nuovo Wrap 4oo plus.
+
+come approccio alla soluzioen abbiamo scelto di concentrarci su una landing page (cioè una singola pagina dedicata a mostrare 
+le caratteristiche del prodotto e contattare i produttori). 
+
+questa è la struttura della pagina, suddivisa in sezioni studiate accuratamente per rendere la navigazione immediata e completal. 
+
+nella parte iniziale della pagina troviamo un video che puo essere riprodotto tramite il tasto play e un menu di navigazione interno alla pagina.
+
+subito dopo si trova la galleria delle immagini del prodotto, studiata per mostrare e focalizzare l'attenzione al prodotto finito e confezionato, 
+indtrodurre il macchinario, ogniuna accompagnata da descrizioni accurate.
+
+la galleria è seguita da una sezione dedicata al video di presentazione della wrap 400 plus, che mostra il funzionamento della macchina, con informazioni
+utili a schermo, ovviamente accompagnata da una descrizione accurata con  l'utilizzo delle parole chiave per favorire la seo
+
+abbiamo poi la scheda tecnica, pensata per rendere la ricerca intuitiva. è infatti suddivisa in aree tematiche in base alla tipologia di specifica tecnica.
+
+poi abbiamo le faq, cioè domande con risposte utili all'utente, abbiamo inserito più domande possibili per creare una completezza nella reperibilità 
+delle informazioni.
+
+segue il form di contatto, subito dopo le faq perché nel caso non trovasse una risposta immediatamente dopo potrebbe fare 
+la domanda direttamnte a voi, con la possibilità di richiedere una visita il loco per visionare di persona il funzionamento della macchina.
+
+come utlima parte ovviamente abbiamo la sezione del footer, che contiene le informazioni e i contatti aziendali di selmi, con i collegamenti ai social per aiutare la  seo tramite i soclial media.
+
+in oltre abbiamo eseguito un analisi delle prestazioni con degli strumenti, sia in locale che, tramite un hosting, in rete per una maggiore 
+accuratezza dell'analisi.

@@ -1,0 +1,34 @@
+$nav-bg: #bd921c; 
+$nav-items: #7a5f14; 
+%items{
+    display: flex; /* Cambiato a flex per centrare il contenuto */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+    width: 150px;
+    outline: 1px solid black;
+}
+
+nav{
+    display: flex;
+    height: 100px;
+    width: 100%;
+    outline: 1px solid black;
+    align-items: center; /* Centra il contenuto verticalmente */
+    position: sticky;
+    top:0;
+    background-color: $nav-bg;
+}
+.nav-item{
+    @extend %items;
+    height: 30px;
+    background-color: $nav-items
+}
+#nav-logo {
+    @extend %items;
+    margin-right: auto; /* Sposta il logo a sinistra separandolo dagli altri elementi */
+    height: 100px;
+}
+.nav-item#contact{
+    width: 30px;
+    margin-right: 20px;
+}

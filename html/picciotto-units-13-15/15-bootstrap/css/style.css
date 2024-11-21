@@ -1,0 +1,51 @@
+#nav-logo, .nav-item {
+  display: flex; /* Cambiato a flex per centrare il contenuto */
+  justify-content: center; /* Centra il contenuto orizzontalmente */
+  align-items: center; /* Centra il contenuto verticalmente */
+  width: 150px;
+  outline: 1px solid black;
+}
+
+nav {
+  display: flex;
+  height: 100px;
+  width: 100%;
+  outline: 1px solid black;
+  align-items: center; /* Centra il contenuto verticalmente */
+  position: sticky;
+  top: 0;
+  background-color: #bd921c;
+}
+
+.nav-item {
+  height: 30px;
+  background-color: #7a5f14;
+}
+
+#nav-logo {
+  margin-right: auto; /* Sposta il logo a sinistra separandolo dagli altri elementi */
+  height: 100px;
+}
+
+.nav-item#contact {
+  width: 30px;
+  margin-right: 20px;
+}
+
+.art {
+  width: 50%;
+  height: fit-content;
+  display: flex;
+  margin: 50px auto;
+}
+
+.art-hero {
+  text-align: right;
+}
+
+.art-img {
+  width: 200px;
+  height: auto;
+}
+
+/*# sourceMappingURL=style.css.map */

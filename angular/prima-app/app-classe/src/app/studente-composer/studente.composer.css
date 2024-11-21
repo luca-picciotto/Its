@@ -1,0 +1,18 @@
+
+.ul-studente{
+    list-style: none;
+
+}
+
+.ul-studente li{
+    margin: 10px;
+}
+
+.box{
+    background-color: yellow;
+}
+
+button{
+    width: auto;
+    height: 25px;
+}

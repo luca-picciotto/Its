@@ -1,0 +1,17 @@
+/* *{
+    outline: 1px solid black;
+} */
+.art{
+    width: 50%;
+    height: fit-content;
+    display: flex;
+    margin:  50px auto;
+}
+.art-hero{
+    text-align: right;
+}
+
+.art-img{
+    width: 200px;
+    height: auto;
+}

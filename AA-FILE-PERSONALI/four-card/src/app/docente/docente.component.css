@@ -1,0 +1,14 @@
+.card-action-button {
+    border-radius: 2px;
+    color: #408cff;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    margin: 0;
+    padding: 10px;
+    text-decoration: none;
+  }
+  
+  .card-action-button:hover {
+    background-color: rgba(58, 120, 255, 0.2);
+  }

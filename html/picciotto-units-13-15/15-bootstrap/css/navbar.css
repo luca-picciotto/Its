@@ -1,0 +1,29 @@
+nav {
+    display: flex;
+    height: 100px;
+    width: 100%;
+    outline: 1px solid black;
+    align-items: center; /* Centra il contenuto verticalmente */
+    
+}
+
+#nav-logo {
+    margin-right: auto; /* Sposta il logo a sinistra separandolo dagli altri elementi */
+    height: 100px;
+}
+
+.nav-item, #nav-logo {
+    display: flex; /* Cambiato a flex per centrare il contenuto */
+    justify-content: center; /* Centra il contenuto orizzontalmente */
+    align-items: center; /* Centra il contenuto verticalmente */
+    width: 150px;
+    outline: 1px solid black;
+}
+.nav-item{
+    height: 30px;
+}
+
+.nav-item#contact{
+    width: 30px;
+    margin-right: 20px;
+}

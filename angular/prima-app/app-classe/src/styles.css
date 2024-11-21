@@ -1,0 +1,6 @@
+/* You can add global styles to this file, and also import other style files */
+.container{
+    outline: 1px solid black;
+    width: 200px;
+    height: 400px;
+}

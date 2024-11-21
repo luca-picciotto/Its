@@ -1,0 +1,10 @@
+footer{
+    width: 100%;
+}
+footer div{
+    border: none !important ;
+}
+
+.card-body .card-title{
+    text-transform: uppercase;
+}

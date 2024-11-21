@@ -1,0 +1,59 @@
+/* You can add global styles to this file, and also import other style files */
+html {
+    background-color: #ededed;
+    font: normal 14px / 20px 'Roboto', sans-serif;
+    padding: 0 0 25px;
+    
+  }
+  
+  h1 {
+    font-size: 20px;
+    font-weight: 500;
+    margin-bottom: 25px;
+    text-align: center;
+  }
+  
+  .clearfix:before,
+  .clearfix:after {
+      content: " ";
+      display: table;
+  }
+  
+  .clearfix:after {
+      clear: both;
+  }
+  
+  .card {
+    background-color: #fff;
+    border-radius: 2px;
+    box-shadow: -1px 2px 4px rgba(0,0,0,.25), 1px 1px 3px rgba(0,0,0,.1);
+    margin: 25px;
+    max-width: 340px;
+
+    
+  }
+  
+  .card-media {
+    width: 315px;
+    height: 180px;
+  }
+  
+  .card-details {
+    padding: 5px 15px;
+  }
+  
+  .card-head {
+    font-weight: 400;
+  }
+  
+  .card-head {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .box {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+  }
