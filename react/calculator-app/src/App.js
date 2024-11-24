@@ -1,108 +1,62 @@
-
-  // {/* <h2>Example below</h2>
-  // <div class="wrapper">
-  //   <div>
-  //     <button>Add row</button>
-  //   </div>
-
-  //   <ul>
-
-  //     <li>
-  //       <select>
-  //         <option selected>+</option>
-  //         <option>-</option>
-  //       </select>
-  //       <input type="text" value="100"/>
-  //       <button>Delete</button>
-  //       <button>Disable</button>
-  //     </li>
-
-  //     <li>
-  //       <select>
-  //         <option selected>+</option>
-  //         <option>-</option>
-  //       </select>
-  //       <input type="text" value="30"/>
-  //       <button>Delete</button>
-  //       <button>Disable</button>
-  //     </li>
-
-  //     <li>
-  //       <select>
-  //         <option>+</option>
-  //         <option selected>-</option>
-  //       </select>
-  //       <input type="text" value="7"/>
-  //       <button>Delete</button>
-  //       <button>Disable</button>
-  //     </li>
-
-  //   </ul>
-
-  //   <div>
-  //     Result: 123
-  //   </div>
-  // </div> */ }
-  
-function AddButton() { 
-    return (
-      <div>
-        <button> Add Row </button>
-      </div>
-    );
-  }
-
-function SelectOption() {
-  return (
-    <select>
-      <option selected>+</option>
-      <option>-</option>
-    </select>
-  );
-}
-
-function InputElement() {
-  return (
-      <input type="text" value="100"/>
-  )
-}
-
-function ButtonFunc() {
-  return (
-    <>
-        <button>Delete</button>
-        <button>Disable</button>
-    </>
-  );
-}
-
-function LiElement() {
-  return(
-    <li>
-      <SelectOption />
-      <InputElement />
-      <ButtonFunc />
-    </li>
-  )
-}
-
-// function Result() {
-//   return(
-//     <div>
-//       Result: { result };
-//     </div>
-//   );
-// }
+import { useState } from "react";
+import React from "react";
+import AddButton from "./component/AddButton";
+import LiElement from "./component/LiElement";
 
 export default function Calculator() {
+  const [rows, setRows] = useState([]); // Gestisce le righe
+  const [values, setValues] = useState([])
+  const [disabledStates, setDisabledStates] = useState([]); // Gestisce gli stati di disabilitazione
+
+  const addRow = () => {
+    setRows([...rows, { id: Date.now() }]); // Aggiunge una nuova riga
+    setValues([...values, 0]); // Gestisce i valori degli input
+    setDisabledStates([...disabledStates, false]); // Inizializza lo stato "abilitato" per la nuova riga
+  };
+
+  const removeRow = (indexToRemove) => {
+    setRows(rows.filter((_, index) => index !== indexToRemove)); // Rimuove la riga
+    setValues(values.filter((_, index) => index !== indexToRemove));// Rimuove il valore dell'input
+    setDisabledStates(disabledStates.filter((_, index) => index !== indexToRemove)); // Aggiorna gli stati di disabilitazione
+  };
+
+  const handleInputChange = (index, newValue) => {
+    const updateValues = [...values];
+    updateValues[index] = newValue; //Aggiorna il valore dell'input specifico
+    setValues(updateValues)
+    console.log(values);
+    
+  };
+  const disableRow = (indexToDisable) => {
+    const updateDisabledStates = disabledStates.map((state, index) => 
+      index === indexToDisable ? !state : state
+    );
+    setDisabledStates(updateDisabledStates);
+
+    const updateValues = [...values];
+    if(updateDisabledStates[indexToDisable]) {
+      updateValues[indexToDisable] = null;
+    } else {
+      updateValues[indexToDisable] = 0;
+    }
+  };
+
   return (
-    <div class="wrapper">
-      <AddButton />
+    <div className="wrapper">
+      <AddButton onAdd={addRow} />
+
       <ul>
-        <LiElement />
-        <LiElement />
-        <LiElement />
+        {rows.map((row, index) => (
+          <LiElement
+            key={row.id}
+            disabled={disabledStates[index]} // Passa lo stato di disabilitazione specifico
+            value={values[index]} //Passa il valore dell'input
+            onDelete={() => removeRow(index)} // Funzione di eliminazione
+            onDisable={() => disableRow(index)} // Funzione di disabilitazione
+            onInputChange={(newValue) => handleInputChange(index, newValue)} // Gestisce il cambiamento dell'input
+          />
+        ))}
       </ul>
     </div>
-  )
+  );
 }

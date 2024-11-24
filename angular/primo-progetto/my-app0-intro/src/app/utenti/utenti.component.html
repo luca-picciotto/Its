@@ -1,0 +1,26 @@
+<h2>{{titolo}}</h2>
+
+<h4>Info utente Admin</h4>
+
+<p>{{nomeAdmin}} {{cognomeAdmin}} - Anni: {{etaAdmin}}</p>
+
+
+<div class="imgBox">
+    <img [src] = "imgAdmin"  class="imgRes" alt="">
+</div>
+
+<h4>Utenti piattaforma</h4>
+<p>{{utenti[0].nome}} {{utenti[0].cognome}}
+    <img class="imgAvatar" [src]= "'userImages/' + utenti[0].img" alt="">
+</p>
+<p>{{utenti[1].nome}} {{utenti[1].cognome}}
+    <img class="imgAvatar" [src]= "'userImages/' + utenti[1].img" alt="">
+
+</p>
+<p>{{utenti[2].nome}} {{utenti[2].cognome}}
+    <img class="imgAvatar" [src]= "'userImages/' + utenti[2].img" alt="">
+</p>
+<h4>Utente del mese è: </h4>
+<p>{{utenteDelMese.nome}} {{utenteDelMese.cognome}}
+    <img class="imgAvatar" [src]="imgPath" alt="">
+</p>

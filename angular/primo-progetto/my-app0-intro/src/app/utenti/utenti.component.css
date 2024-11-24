@@ -1,0 +1,9 @@
+.imgBox, .imgAvatar {
+    width: 100px;
+    height: auto;
+}
+
+.imgRes {
+    width: 100%;
+
+}

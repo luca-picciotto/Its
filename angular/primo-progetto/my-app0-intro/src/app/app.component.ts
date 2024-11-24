@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { PrimoComponentComponent } from './primo-component/primo-component.component';
 import { SecondoComponent } from './secondo-component/secondo.component';
+import { UtentiComponent } from './utenti/utenti.component';
 
 // @Component si chiama Decorato ed è una caratteristica di TS
 // il component difinisce attraverso un oggetto JS come è fatta la classe sottostante e di che "tipo"
@@ -9,7 +10,7 @@ import { SecondoComponent } from './secondo-component/secondo.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, PrimoComponentComponent, SecondoComponent],
+  imports: [RouterOutlet, PrimoComponentComponent, SecondoComponent, UtentiComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
