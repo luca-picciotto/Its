@@ -1,0 +1,9 @@
+<h2>Esercizio</h2>
+
+<div class="box" (mousemove)="onChangeBgColor()" [style]="styleStr"> </div>
+<h4>
+    <li>{{bgColor.r}}</li>
+    <li>{{bgColor.g}}</li>
+    <li>{{bgColor.b}}</li>
+    <li [textContent]="bgColor.b"></li>
+</h4>

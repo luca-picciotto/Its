@@ -1,0 +1,21 @@
+<h2>Studenti del corso</h2>
+
+<ul>
+  <li>
+    <app-studente
+      [id]="studenti[0].id"
+      [nome]="studenti[0].nome"
+      [cognome]="studenti[0].cognome"
+      (selectStud)="onSelectStud($event)"
+    >
+    </app-studente>
+  </li>
+  <li>
+    <app-studente
+      [id]="studenti[1].id"
+      [nome]="studenti[1].nome"
+      [cognome]="studenti[1].cognome"
+    >
+    </app-studente>
+  </li>
+</ul>
