@@ -1,0 +1,11 @@
+<div class="boxRespo">
+  <h4>{{ respo.nome }} {{ respo.cognome }}</h4>
+  <p>Lista Corsi</p>
+  @for(corso of respo.corsi; track $index) {
+  <li>{{ corso }}</li>
+  }
+
+  <button (click)="onMostraDispo(respo.corsi.length)">
+    Mostra Disponibilita
+  </button>
+</div>

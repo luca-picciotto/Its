@@ -1,0 +1,65 @@
+
+.inter {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  text-align: center;
+
+}
+
+.benefit {
+  /* outline: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px;
+  padding: 30px 0 ;
+  height: 300px ;
+}
+.benefit h3 {
+    margin: 10px;
+}
+
+.prenota {
+  margin: 20px;
+  padding: 10px 20px;
+  width: 250px;
+  height: 50px;
+  color: white;
+  background-color: black;
+  border-radius: 25px;
+}
+
+.img-benefit {
+  width: 90px;
+  height: 90px;
+  margin: 20px;
+  margin-bottom: 0;
+  border-radius: 50%;
+  background-color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.section-benefit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 20px;
+  padding: 5px;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  /* outline: 1px solid black; */
+}
+
+.toUpperCase{
+    text-transform:uppercase;
+}
+@media screen and (max-width: 576px) {
+  .box {
+    flex-direction: column;
+    
+  }
+}

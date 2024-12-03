@@ -1,5 +1,10 @@
 # Calcolatrice React - Documentazione Completa
 
+## Commenti per CoolShop
+- **Criticita riscontrate**: ci sono alcuni errori che si dovrebbero risolvere, putroppo per rispettare la consegna non potrò fare un analisi dettagliata ma cercherò di aggiustare il bug di 'disable'.
+- **Funzionni**: ho preferito usare funzioni 'primordiali' per lo sviluppo, sarebbero poi da migliorare con medoti come '.map', '.filter' e '.reduce'.
+- **Documentazioni**: per problemi di tempo le documentazioni in jsDoc sono state generate tramite l'estensione di VsCode 'Mintify Doc Writer'.
+- **Scelte**: ho scelto di usare jsx invece di tsx perchè non avendo anche affrontato React e Typescript ho preferito ducumentartmi su un argomento per volta.
 
 ## Funzionalità
 1. **Aggiunta di righe**: Puoi aggiungere nuove righe per inserire numeri e operatori.
@@ -18,11 +23,11 @@ Prima di iniziare, assicurati di avere i seguenti strumenti installati:
 
 ---
 
-<!-- ## Installazione
+## Installazione
 1. Clona il repository:
    ```bash
-   git clone https://github.com/tuo-username/calcolatrice-react.git
-   cd calcolatrice-react
+   git clone https://github.com/luca-picciotto/calculator-app-style.git
+   cd calculator-app-style
    ```
 
 2. Installa le dipendenze:
@@ -37,7 +42,7 @@ Prima di iniziare, assicurati di avere i seguenti strumenti installati:
 
 L'applicazione sarà accessibile su [http://localhost:3000](http://localhost:3000).
 
---- -->
+
 
 ## Utilizzo
 
@@ -100,11 +105,10 @@ Gli stili sono definiti nel file `calculator.css`. La grafica include:
 ## Screenshot
 
 ### Layout della Calcolatrice
-![Layout della Calcolatrice](src\img\screen-calculator.png)
+![Layout della Calcolatrice](src/img/screen-calculator.png)
 
 ---
 
 ## Manutenzione e Personalizzazione
-1. Per modificare il comportamento o aggiungere nuove funzionalità, inizia da `App.js`.
-2. Gli operatori possono essere estesi nel file `utils/mathFunctions.js`.
-3. Stili personalizzati possono essere aggiunti in `calculator.css`.
+1. Gli operatori possono essere estesi nel file `utils/mathFunctions.js`.
+2. Stili personalizzati possono essere aggiunti in `calculator.css`.

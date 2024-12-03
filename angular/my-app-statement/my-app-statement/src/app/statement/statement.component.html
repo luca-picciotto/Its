@@ -1,0 +1,58 @@
+<h2>For & If</h2>
+
+<h3>Lista Studenti</h3>
+
+<!-- qusto 'track' è obbligatorio, evita il mescolamento degli elementi. Migliora il rendering e performance -->
+@for(stud of listaStudenti; track $index){
+<li>id studente: {{ $index }} {{ stud }}</li>
+}
+
+<h3>Lista Docenti</h3>
+
+@for(doc of listaDocenti; track doc.id) { @if(doc.disponibilita) {
+<li>{{ doc.nome }}</li>
+} @else {
+<li>{{ doc.nome }}: Non Disponibile</li>
+} }
+
+<h3>Lista Materie</h3>
+@for(mat of listaMaterie; track $index){
+<li>{{ mat }}</li>
+} @if (listaMaterie.length > 0 ) {
+<p>Ci sono {{ listaMaterie.length }} materie, sono un bel po</p>
+} @else {
+<p>Non ci sono materie</p>
+}
+
+<h3>Responsabili Corso</h3>
+@for(respo of listaRespoCorso; track respo.id) {
+<app-responsabile
+  [respo]="respo"
+  (disponibilita)="onMostraDispo($event)"
+></app-responsabile>
+} @if(respoDisponibilita && !isClosed) {
+<app-corso [disponibilita]="respoDisponibilita" (isClosed)="onIsClosed()">
+</app-corso>
+}
+
+<!-- 
+<h2>Versione Legacy</h2>
+<ul>
+  <li *ngFor="let doc of listaDocenti">
+    <span *ngIf="doc.disponibilita; else nonDisp">{{ doc.nome }}</span>
+  </li>
+</ul>
+
+<h3>Materie</h3>
+<p
+  *ngIf="listaMaterie.length > 0 && listaMaterie.length <= 3; else tanteMaterie"
+></p>
+
+<ng-template #nonDisp> Questo docente non è disponibile </ng-template>
+
+<ng-template #tanteMaterie>
+  <div *ngIf="listaMaterie.length > 3; else noMaterie">
+    Ci sono {{ listaMaterie.length }} materie
+  </div>
+  <ng-template #noMaterie> Non hai ma terie </ng-template>
+</ng-template> -->

@@ -1,0 +1,37 @@
+body {
+  font-size: 36px;
+}
+.box,
+#truck > p {
+  border: 1px dashed #000000;
+  padding: 10px;
+  border-radius: 6px;
+}
+.box {
+  width: 350px;
+  margin-bottom: 10px;
+  background-color: #f5f5f5;
+}
+#tree {
+  background-color: #bada55;
+}
+
+#truck {
+  display: flex;
+  align-content: flex-start;
+  flex-wrap: wrap;
+}
+#truck > p {
+  pointer-events: none; /* important to prevent drag leave on children */
+  background-color: #dbc7c0;
+  margin: 4px;
+}
+.draggable {
+  cursor: move;
+}
+.highlighted {
+  background-color: #d9d954;
+}
+.semi-transparent {
+  opacity: 0.5;
+}
