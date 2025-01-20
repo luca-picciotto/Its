@@ -1,0 +1,11 @@
+.box {
+  display: flex;
+  width: 200px;
+  height: auto;
+  outline: 1px solid black;
+  flex-wrap: wrap;
+}
+button {
+  display: block;
+  margin-top: 20px;
+}

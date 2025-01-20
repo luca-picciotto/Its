@@ -1,0 +1,7 @@
+<div>
+    <p>Nome: {{utente().firstname}}</p>
+    <p>Cognome: {{utente().lastname}}</p>
+    <img src="{{utente().image}}" width="200px" height="auto">
+    <button (click)="onSelectUser(utente())">Preferito</button>
+    <hr>
+</div>

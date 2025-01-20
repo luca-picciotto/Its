@@ -8,8 +8,18 @@ import { useState } from "react";
  * displayed inside the button.
  */
 function Square({ value, onSquareClick }) {
+  // Funzione per generare un colore casuale in formato esadecimale
+  const getRandomColor = () => {
+    const letters = '0123456789ABCDEF';
+    let color = '#';
+    for (let i = 0; i < 6; i++) {
+      color += letters[Math.floor(Math.random() * 16)];
+    }
+    return color;
+  };
+
   return (
-    <button className="square" onClick={onSquareClick}>
+    <button className="square" onClick={onSquareClick} style={{ backgroundColor: getRandomColor() }}>
       {value}
     </button>
   );
@@ -131,6 +141,8 @@ export default function Game() {
   return (
     <div className="game">
       <div className="game-board">
+        <Board />
+        <Board />
         <Board />
       </div>
 

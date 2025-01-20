@@ -1,0 +1,40 @@
+<h2>Two way Binding</h2>
+<div class="box">
+  <form (submit)="onSubmitForm()">
+    <p>
+      <!-- ngMOdel è la speciale direttiva [(ngModel)]. OSS: uso [()] perche idelalmente sto fondendo il cmeccanismo della propertyBinging[] e l'eventBinding() -->
+      <!-- [(ngMdel)] = "proprietà che voglio genstire" -->
+      <!--! IMPORTARE sempre i form module   (collection di directive utili alla gestione di form)-->
+
+      <label for="titolo">titolo</label>
+      <input type="text" id="titolo" name="titolo" [(ngModel)]="titolo" />
+    </p>
+    <span>{{ titolo | uppercase }} </span>
+
+    <p>
+      <label for="sommario">sommario</label>
+      <textarea id="sommario" name="sommario" [(ngModel)]="sommario"></textarea>
+    </p>
+    <span>{{ sommario }} </span>
+
+    <p>
+      <label for="dataConsegna">data Consegna</label>
+      <input
+        type="date"
+        id="dataConsegna"
+        name="dataConsegna"
+        [(ngModel)]="dataConsegna"
+      />
+    </p>
+    <span>{{ dataConsegna | date : "dd/MM/YYYY" }} </span>
+
+    <p>
+      <label for="prezzo">Prezzo</label>
+      <input type="number" name="prezzo" id="prezzo" [(ngModel)]="prezzo" />
+    </p>
+    <span>Costo Totale {{ prezzo | currency : "EUR" }} </span>
+    <button type="submit">Registra</button>
+  </form>
+
+  <div>{{ alert }}</div>
+</div>

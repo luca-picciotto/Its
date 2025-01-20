@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "firstname": "Maria",
+      "lastname": "Rossi",
+      "age": 22,
+      "email": "marco.rossi@mail.com",
+      "image": "http://localhost:3000/images/avatar-1.jpg"
+    },
+    {
+      "id": 2,
+      "firstname": "Luigi",
+      "lastname": "Verdi",
+      "age": 22,
+      "email": "luigi.verdi@mail.com",
+      "image": "http://localhost:3000/images/avatar-2.jpg"
+    },
+    {
+      "id": 3,
+      "firstname": "Marco",
+      "lastname": "Neri",
+      "age": 22,
+      "email": "marco.neri@mail.com",
+      "image": "http://localhost:3000/images/avatar-3.jpg"
+    }
+  ],
+  "utentiPreferiti": [
+    {
+      "id": 2,
+      "firstname": "Luigi",
+      "lastname": "Verdi",
+      "age": 22,
+      "email": "luigi.verdi@mail.com",
+      "image": "http://localhost:3000/images/avatar-2.jpg"
+    }
+  ]
+}

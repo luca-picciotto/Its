@@ -1,0 +1,14 @@
+<h2>Utenti</h2>
+<!-- <button (click)="getUsers()">Scarica utenti</button> -->
+@if(isFetching()){
+    <div>Caricamento in corso...</div>
+}@else {
+    @if(utenti() !== undefined) {
+        @for(utente of utenti() ?? []; track utente.id) {
+           <app-utente [utente]="utente" (selectUser)="onSelectedUser($event)"></app-utente>
+        }
+    }
+}
+
+<h2></h2>
+<app-utenti-preferiti></app-utenti-preferiti>

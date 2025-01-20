@@ -28,5 +28,7 @@ export class IntroComponent {
   //   return this.selectedRespo().image;
   // }
 
-  imagePath = computed(() => 'respoImg/' + this.selectedRespo().image);
+  imagePath = computed(() => {
+    return 'respoImg/' + this.selectedRespo().image;
+  });
 }

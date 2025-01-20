@@ -1,0 +1,6 @@
+json-server --watch ./nomeFile.json
+
+Att: le prop al primo livello dell'oggetto json costituiranno gli endpoint del mio backend
+
+La cartella public serve per poter inserire fuile statici tipo immagini.
+quando devo inserire anche i file statici lancipo il comando "json-server --watch ./db.json -s ./public"

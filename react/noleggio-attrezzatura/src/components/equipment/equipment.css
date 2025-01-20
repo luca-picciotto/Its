@@ -1,0 +1,39 @@
+.card {
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 0.5rem; /* Angoli arrotondati */
+    padding: 1rem; /* Padding interno */
+    margin: 1rem; /* Margine esterno */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
+    background-color: #fff; /* Sfondo bianco */
+    transition: transform 0.2s; /* Transizione per l'effetto hover */
+}
+
+.card:hover {
+    transform: scale(1.05); /* Effetto di ingrandimento al passaggio del mouse */
+}
+
+.card-title {
+    font-size: 1.5rem; /* Dimensione del titolo */
+    font-weight: bold; /* Grassetto */
+    margin-bottom: 0.5rem; /* Margine inferiore */
+}
+
+.card-text {
+    font-size: 1rem; /* Dimensione del testo */
+    color: #555; /* Colore del testo grigio scuro */
+    margin-bottom: 0.5rem; /* Margine inferiore */
+}
+
+.card img {
+    max-width: 100%; /* Immagine responsiva */
+    height: auto; /* Mantieni le proporzioni */
+    border-radius: 0.25rem; /* Angoli arrotondati per l'immagine */
+}
+
+.card-button {
+    background-color: #007bff; /* Colore del pulsante */
+    color: white; /* Testo bianco */
+    padding: 0.5rem 1rem; /* Padding interno */
+    border: none; /* Nessun bordo */
+    border-radius: 0.25rem; /* Angoli arrotondati */
+}

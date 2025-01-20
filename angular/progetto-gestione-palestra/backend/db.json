@@ -1,0 +1,44 @@
+{
+    "corsi": [
+        {
+            "id": 1,
+            "nome": "Yoga Base",
+            "descrizione": "Corso introduttivo di yoga per principianti.",
+            "istruttore": "Maria Rossi",
+            "durata": 60,
+            "capacitaMassima": 15
+        },
+        {
+            "id": 2,
+            "nome": "Pilates Avanzato",
+            "descrizione": "Corso di pilates per praticanti esperti.",
+            "istruttore": "Luca Bianchi",
+            "durata": 75,
+            "capacitaMassima": 10
+        },
+        {
+            "id": 3,
+            "nome": "Zumba Fitness",
+            "descrizione": "Corso di danza fitness per divertirsi e mantenersi in forma.",
+            "istruttore": "Giulia Verdi",
+            "durata": 50,
+            "capacitaMassima": 20
+        },
+        {
+            "id": 4,
+            "nome": "Boxe per principianti",
+            "descrizione": "Corso di boxe per chi inizia a praticare.",
+            "istruttore": "Marco Neri",
+            "durata": 60,
+            "capacitaMassima": 12
+        },
+        {
+            "id": 5,
+            "nome": "Corsa all'aperto",
+            "descrizione": "Corso di corsa per migliorare la resistenza.",
+            "istruttore": "Sara Gallo",
+            "durata": 90,
+            "capacitaMassima": 25
+        }
+    ]
+}

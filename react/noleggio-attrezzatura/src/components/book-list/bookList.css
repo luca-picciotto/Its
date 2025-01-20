@@ -1,0 +1,28 @@
+.book-list {
+    width: 100%; /* Larghezza della tabella */
+    border-collapse: collapse; /* Rimuove gli spazi tra le celle */
+    margin: 20px 0; /* Margine superiore e inferiore */
+}
+
+.book-list th, .book-list td {
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    padding: 8px; /* Padding interno */
+    text-align: left; /* Allineamento del testo a sinistra */
+}
+
+.book-list th {
+    background-color: #f2f2f2; /* Sfondo grigio chiaro per l'intestazione */
+    font-weight: bold; /* Grassetto per l'intestazione */
+}
+
+.book-list tr:hover {
+    background-color: #f1f1f1; /* Colore di sfondo al passaggio del mouse */
+}
+
+.book-list .book-title {
+    font-weight: bold; /* Grassetto per il titolo del libro */
+}
+
+.book-list .book-author {
+    color: #555; /* Colore del testo grigio scuro per l'autore */
+}

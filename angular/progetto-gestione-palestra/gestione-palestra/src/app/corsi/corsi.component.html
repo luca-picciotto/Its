@@ -1,0 +1,11 @@
+<h2>Corsi</h2>
+
+<div class="card-container">
+    @if(isFetching()) {
+        <div>Caricamento corsi...</div>
+    }@else {
+        @for(corso of corsi() ?? []; track corso.id) {
+            <app-corso [corso]="corso"></app-corso>
+        }
+    }
+</div>

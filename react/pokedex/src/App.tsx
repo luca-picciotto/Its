@@ -24,6 +24,7 @@ const App = () => {
       })
       .then((data: PokemonApiResponse) => {
         setPokemon(data.results);
+
         setTotPage(Math.ceil(data.count / 20));
       });
   }, [page]);
@@ -34,8 +35,8 @@ const App = () => {
   const goToPrevPage = () => {
     if (page > 0) setPage(page - 1);
   };
-  const hasNextPage = () => {};
-  const hasPrevPage = () => {};
+  // const hasNextPage = () => {};
+  // const hasPrevPage = () => {};
 
   return (
     <div>
@@ -45,12 +46,10 @@ const App = () => {
           return <li key={index}>{poke.name}</li>;
         })}
       </ul>
-      <button onClick={goToPrevPage} disabled={hasPrevPage}>
-        Prev Page
-      </button>
-      <button onClick={goToNextPage} disabled={hasNextPage}>
-        Next Page
-      </button>
+      {/* <button onClick={goToPrevPage} disabled={hasPrevPage}> */}
+      <button onClick={goToPrevPage}>Prev Page</button>
+      {/* <button onClick={goToNextPage} disabled={hasNextPage}> */}
+      <button onClick={goToNextPage}>Next Page</button>
       Current page: {page + 1} of {totPages}
     </div>
   );

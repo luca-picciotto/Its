@@ -1,0 +1,42 @@
+button {
+  padding: 12px;
+  border-radius: 15px;
+  border: none;
+  margin: 0 10px;
+}
+
+.buttons {
+  margin: 2%;
+}
+
+.add {
+  background-color: green;
+  color: #fff;
+}
+
+.remove {
+  background-color: red;
+  color: #fff;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-auto-rows: 1fr 1fr 1fr 1fr;
+  grid-auto-columns: 1fr 1fr 1fr;
+  gap: 1%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /*nasconde le parti in eccesso */
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
