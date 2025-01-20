@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import bookingApi from "../services/bookingApi";
+import {bookingApiGet} from "../services/bookingApi";
 import BookingModel from "../types/booking.model";
 
 export function useBookingApi() {
@@ -10,7 +10,7 @@ export function useBookingApi() {
     useEffect(() => {
         setLoading(true);
         setError(null);
-        bookingApi()
+        bookingApiGet()
             .then((data: BookingModel[]) => {
                 setResult(data);
             })

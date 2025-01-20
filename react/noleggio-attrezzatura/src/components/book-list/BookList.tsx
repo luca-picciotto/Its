@@ -12,9 +12,12 @@ const BookList = () => {
         console.log(result);
         return (
             <div>
-                {result.map((booking) => (
+                <ul className="book-list">
+                    {result.map((booking) => (
                     <Book key={booking.id} bookingSelected={booking} />
                 ))}
+                </ul>
+                
             </div>
         );
     }

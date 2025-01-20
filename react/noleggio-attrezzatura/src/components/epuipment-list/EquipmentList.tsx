@@ -1,5 +1,6 @@
 import Equipment from "../equipment/Equipment";
 import useEquipmentApi from "../../hooks/useEquipmentApi";
+import './equipmentList.css';
 
 const EquipmentList = () => {
     const { result, loading, error } = useEquipmentApi();
@@ -10,7 +11,7 @@ const EquipmentList = () => {
     if (result && result.length > 0) {
         console.log(result);
         return (
-            <div>
+            <div className="equipment-list">
                 {result.map((equipment) => (
                     <Equipment key={equipment.id} equipmentSelected={equipment} />
                 ))}

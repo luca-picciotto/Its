@@ -1,21 +1,26 @@
 .book-list {
-    width: 100%; /* Larghezza della tabella */
+    width: 90%; /* Larghezza della tabella */
     border-collapse: collapse; /* Rimuove gli spazi tra le celle */
     margin: 20px 0; /* Margine superiore e inferiore */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.book-list th, .book-list td {
+.book-list li {
     border: 1px solid #ddd; /* Bordo grigio chiaro */
     padding: 8px; /* Padding interno */
     text-align: left; /* Allineamento del testo a sinistra */
+    list-style-type: none; /* Rimuove il puntatore */
+    max-width: 500px;
 }
 
-.book-list th {
+.book-list h2 {
     background-color: #f2f2f2; /* Sfondo grigio chiaro per l'intestazione */
     font-weight: bold; /* Grassetto per l'intestazione */
 }
 
-.book-list tr:hover {
+.book-list li:hover {
     background-color: #f1f1f1; /* Colore di sfondo al passaggio del mouse */
 }
 

@@ -6,6 +6,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
     background-color: #fff; /* Sfondo bianco */
     transition: transform 0.2s; /* Transizione per l'effetto hover */
+    min-width: 300px;
 }
 
 .card:hover {

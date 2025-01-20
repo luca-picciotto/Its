@@ -6,12 +6,14 @@ const Book = ({ bookingSelected }: { bookingSelected: BookingModel }) => {
     const { equipment_id, start_date, end_date } = bookingSelected;
 
     return (
-        <div>
-            <h2>Booking</h2>
-            <p>Equipment ID: {equipment_id}</p>
-            <p>Start Date: {start_date}</p>
-            <p>End Date: {end_date}</p>
-        </div>
+        <li >
+            <div>
+                <h2>Book</h2>
+                <p>Equipment ID: {equipment_id}</p>
+                <p>Start Date: {start_date}</p>
+                <p>End Date: {end_date}</p>
+            </div>
+        </li>
     );
 };
 

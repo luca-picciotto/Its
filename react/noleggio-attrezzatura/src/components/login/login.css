@@ -1,0 +1,140 @@
+/* Main Colors */
+:root {
+    --white: #ffffff;
+    --black: #000000;
+    --dark-gray: #333333;
+    --gray: #666666;
+    --light-gray: #cccccc;
+    --accent: #33b5e5;
+  }
+  
+ 
+  
+  /* Pen Title */
+  .pen-title {
+    padding: 50px 0;
+    text-align: center;
+    letter-spacing: 2px;
+  }
+  
+  .pen-title h1 {
+    margin: 0 0 20px;
+    font-size: 48px;
+    font-weight: 300;
+  }
+  
+  .pen-title span {
+    font-size: 12px;
+  }
+  
+  .pen-title .fa {
+    color: var(--accent);
+  }
+  
+  .pen-title a {
+    color: var(--accent);
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  /* Form Module */
+  .form-module {
+    position: relative;
+    background: var(--white);
+    max-width: 320px;
+    width: 100%;
+    border-top: 5px solid var(--accent);
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+  }
+  
+  .toggle {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: var(--accent);
+    width: 30px;
+    height: 30px;
+    margin: -5px 0 0;
+    color: var(--white);
+    font-size: 12px;
+    line-height: 30px;
+    text-align: center;
+  }
+  
+  .tooltip {
+    position: absolute;
+    top: 5px;
+    right: -65px;
+    background: rgba(0, 0, 0, 0.6);
+    width: auto;
+    padding: 5px;
+    font-size: 10px;
+    line-height: 1;
+    text-transform: uppercase;
+  }
+  
+  .form {
+    display: none;
+    padding: 40px;
+  }
+  
+  .form:nth-child(2) {
+    display: block;
+  }
+  
+  h2 {
+    margin: 0 0 20px;
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1;
+  }
+  
+  input {
+    outline: none;
+    display: block;
+    width: 100%;
+    border: 1px solid var(--light-gray);
+    margin: 0 0 20px;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    font-weight: 400;
+    transition: 0.3s ease;
+  }
+  
+  input:focus {
+    border: 1px solid var(--accent);
+    color: var(--dark-gray);
+  }
+  
+  button {
+    cursor: pointer;
+    background: var(--accent);
+    width: 100%;
+    border: 0;
+    padding: 10px 15px;
+    color: var(--white);
+    transition: 0.3s ease;
+  }
+  
+  button:hover {
+    background: #228fcc;
+  }
+  
+  .cta {
+    background: var(--light-gray);
+    width: 100%;
+    padding: 15px 40px;
+    box-sizing: border-box;
+    color: var(--gray);
+    font-size: 12px;
+    text-align: center;
+  }
+  
+  .cta a {
+    color: var(--dark-gray);
+    text-decoration: none;
+  }
+  

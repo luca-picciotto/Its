@@ -1,12 +1,21 @@
-import EquipmentList from './components/epuipment-list/EquipmentList'
-import BookList from './components/book-list/BookList'
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import EquipmentsPage from './pages/equipmentsPage';
+import BooksPage from './pages/booksPage';
+import HomePage from './pages/homePage';
+
 function App() {
  
 
   return (
     <>
-      <EquipmentList />
-      <BookList />
+      {/* <Navbar /> */}
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/books" element={<BooksPage />} />
+          <Route path="/equipments" element={<EquipmentsPage />} />
+        </Routes>
+      </BrowserRouter>
     </>
   )
 }

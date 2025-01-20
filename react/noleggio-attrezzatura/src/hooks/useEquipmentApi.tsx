@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react"
-import equipmentApi from "../services/equipmentApi";
+import { equipmentApiGet } from "../services/equipmentApi";
 import EquipmentModel from "../types/equipment.model";
 
 export function useEquipmentApi() {
@@ -10,7 +10,7 @@ export function useEquipmentApi() {
   useEffect(() => {
     setLoading(true);
     setError(null);
-    equipmentApi()
+    equipmentApiGet()
       .then((data: EquipmentModel[]) => {
           setResult(data);
       })
@@ -21,8 +21,14 @@ export function useEquipmentApi() {
           setLoading(false);
       });
   }, []);
+  
 
   return { result, loading, error };
 };
 
+export function handleEquipmentClick(equipmentName: string) {
+  alert(equipmentName);
+}
+
 export default useEquipmentApi;
+  

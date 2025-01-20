@@ -1,0 +1,33 @@
+nav {
+    background-color: #007bff; /* Colore di sfondo blu */
+    padding: 1rem; /* Padding interno */
+}
+
+nav h1 {
+    color: white; /* Colore del titolo */
+    margin: 0; /* Rimuove il margine */
+    font-size: 1.5rem; /* Dimensione del font */
+}
+
+nav ul {
+    list-style-type: none; /* Rimuove i puntatori della lista */
+    padding: 0; /* Rimuove il padding */
+    display: flex; /* Dispone gli elementi in orizzontale */
+    gap: 1rem; /* Spaziatura tra gli elementi */
+}
+
+nav ul li {
+    display: inline; /* Dispone gli elementi in linea */
+}
+
+nav a {
+    color: white; /* Colore del testo dei link */
+    text-decoration: none; /* Rimuove la sottolineatura */
+    padding: 0.5rem 1rem; /* Padding interno per i link */
+    border-radius: 0.25rem; /* Angoli arrotondati */
+    transition: background-color 0.3s; /* Transizione per il colore di sfondo */
+}
+
+nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Colore di sfondo al passaggio del mouse */
+}
