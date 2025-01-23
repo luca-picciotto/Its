@@ -1,11 +1,12 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { CorsiComponent } from './corsi/corsi.component';
+import { AmministrazioneComponent } from './amministrazione/amministrazione.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, CorsiComponent],
+  imports: [RouterOutlet, CorsiComponent, AmministrazioneComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
