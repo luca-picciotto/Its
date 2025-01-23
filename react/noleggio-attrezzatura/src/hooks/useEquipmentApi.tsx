@@ -7,6 +7,8 @@ export function useEquipmentApi() {
   const [error, setError] = useState<string | null>(null);
   const [loading, setLoading] = useState<boolean>(false);
 
+
+
   useEffect(() => {
     setLoading(true);
     setError(null);
@@ -26,8 +28,11 @@ export function useEquipmentApi() {
   return { result, loading, error };
 };
 
-export function handleEquipmentClick(equipmentName: string) {
-  alert(equipmentName);
+export function calculatePrice(duration: number, pricePerMinute: number | undefined): number | undefined {
+  if (pricePerMinute === undefined) {
+    return undefined;
+  }
+  return duration * pricePerMinute;
 }
 
 export default useEquipmentApi;

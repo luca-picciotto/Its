@@ -1,7 +1,12 @@
-@if(corsi() !== undefined){
-    @for(c of corsi(); track c.id){
-       <li>{{c.id}} {{c.nome}} 
-        <button (click)="removeCorso(c)"> X </button>
-    </li>
+<h2>Amministrazione</h2>
+<div>
+    @if(corsi() !== undefined){
+        @for(c of corsi(); track c.id){
+           <div>{{c.id}} {{c.nome}}
+            <button (click)="removeCorso(c)"> X </button>
+        </div>
+        }
     }
-}
+    <hr>
+    <app-form></app-form>
+</div>

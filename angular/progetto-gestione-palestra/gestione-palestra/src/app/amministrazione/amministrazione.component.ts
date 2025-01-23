@@ -1,11 +1,12 @@
 import { Component, DestroyRef, inject, signal } from '@angular/core';
 import { CorsiService } from '../corsi/corsi.service';
 import Corso from '../corsi/corso/corso.model';
+import { FormComponent } from './form/form.component';
 
 @Component({
   selector: 'app-amministrazione',
   standalone: true,
-  imports: [],
+  imports: [FormComponent],
   templateUrl: './amministrazione.component.html',
   styleUrl: './amministrazione.component.css'
 })

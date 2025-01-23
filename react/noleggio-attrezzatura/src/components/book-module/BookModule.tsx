@@ -10,3 +10,4 @@ export function BookModule() {
         </div>
     )
 }
+export default BookModule;

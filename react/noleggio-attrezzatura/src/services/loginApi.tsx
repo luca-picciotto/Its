@@ -18,7 +18,7 @@ export const loginApiPost = async (userRequest: UserRequest) => {
         throw new Error('Errore nella richiesta di login');
     }
     const data: LoginResponse = await response.json();
-    return data.token;
+    return (data.token,userRequest.username, userRequest.password);
 }
 
 export default loginApiPost;

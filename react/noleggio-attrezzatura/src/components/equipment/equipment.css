@@ -6,7 +6,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
     background-color: #fff; /* Sfondo bianco */
     transition: transform 0.2s; /* Transizione per l'effetto hover */
-    min-width: 300px;
+    width: 300px;
 }
 
 .card:hover {
@@ -23,6 +23,7 @@
     font-size: 1rem; /* Dimensione del testo */
     color: #555; /* Colore del testo grigio scuro */
     margin-bottom: 0.5rem; /* Margine inferiore */
+    word-wrap: break-word;
 }
 
 .card img {

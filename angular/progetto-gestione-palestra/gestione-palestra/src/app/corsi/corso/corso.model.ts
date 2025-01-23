@@ -1,10 +1,11 @@
 export interface Corso {
-    id: number;
+    id: number ;
     nome: string;
     descrizione: string;
     istruttore: string;
     durata: number;
     capacitaMassima: number;
+    iscritti: number;
 }
 
 

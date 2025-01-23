@@ -1,20 +1,38 @@
-import { handleEquipmentClick } from "../../hooks/useEquipmentApi";
+import { useState } from "react";
 import EquipmentModel from "../../types/equipment.model";
+import { calculatePrice } from "../../hooks/useEquipmentApi";
 import './equipment.css';
+
 const Equipment = ({ equipmentSelected }: { equipmentSelected: EquipmentModel }) => {
+    const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
+    const [duration, setDuration] = useState(0);
+    const token = localStorage.getItem('authToken');
+
+    const toggleModal = () => setIsModalVisible(!isModalVisible);
 
     if(!equipmentSelected) return null; 
 
     const { name, claim, image, pricePerMinute } = equipmentSelected;
-
+    
     return (
-        <div className="card">
-            <h2 className="card-title">{name}</h2>
-            <p className="card-text">{claim}</p>
-            <img src={image} alt="" width="150" height="150" />
-            <p className="card-text">{pricePerMinute} €</p>
-            <button className="card-button" onClick={() => handleEquipmentClick(name || '')}>Book</button>
-        </div>
+        <>
+            <div className="card" style={{ display: isModalVisible ? "block" : "none" }}>
+                <h2 className="card-title">{name}</h2>
+                <p className="card-text">{claim}</p>
+                <img src={image} alt="" width="150" height="150" />
+                <p className="card-text">{pricePerMinute} €</p>
+                <button type="submit" className="card-button" onClick={toggleModal}>Book</button>
+            </div>
+            <div className="card" style={{ display: isModalVisible ? "none" : "block" }}>
+                <h2 className="card-title">{name}</h2>
+                <button onClick={toggleModal} className="card-button" style={{width: 50}}> ←</button>
+                <p className="card-text">{pricePerMinute} €</p>
+                <p className="card-text">{token}</p>
+                <input type="number" placeholder="Duration /minutes" value={duration} onChange={(d) => {setDuration(d.target.valueAsNumber); }} />
+                <p className="cart-text">{(calculatePrice(duration, pricePerMinute))} €</p>
+                <button type="submit" className="card-button">Book</button>
+            </div>
+        </>
     );
 };
 
