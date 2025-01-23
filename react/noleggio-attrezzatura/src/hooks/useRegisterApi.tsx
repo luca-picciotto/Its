@@ -10,9 +10,13 @@ export function useRegisterApi() {
 
   
    const register = (userRequest: UserRequest) => {
+    setLoading(true);
+    setError(null);
     registerApiPost(userRequest)
     .then((data) => {
         setResult(data);
+        console.log(data);
+        
     })
     .catch((error: string) => {
         setError(error);

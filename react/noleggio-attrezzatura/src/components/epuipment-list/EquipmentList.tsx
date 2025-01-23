@@ -9,7 +9,6 @@ const EquipmentList = () => {
     if (error) return <div>Error: {error}</div>;
 
     if (result && result.length > 0) {
-        console.log(result);
         return (
             <div className="equipment-list">
                 {result.map((equipment) => (

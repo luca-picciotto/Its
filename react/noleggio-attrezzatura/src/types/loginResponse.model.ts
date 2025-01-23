@@ -1,5 +1,5 @@
 export interface LoginResponse {
-    token: string;
+    token: string | '';
 }
 
 export default LoginResponse;   
