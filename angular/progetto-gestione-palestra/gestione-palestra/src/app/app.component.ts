@@ -6,7 +6,7 @@ import { AmministrazioneComponent } from './amministrazione/amministrazione.comp
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,RouterLink, CorsiComponent, AmministrazioneComponent],
+  imports: [RouterOutlet,RouterLink],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })

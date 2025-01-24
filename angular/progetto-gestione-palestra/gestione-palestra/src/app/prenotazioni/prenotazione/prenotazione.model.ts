@@ -1,6 +1,6 @@
 export interface Prenotazioni {
-    idPrenotazione: number,
-    idCorso: number
+    id: number,
+    idCorso: string
 }
 
 export default Prenotazioni;

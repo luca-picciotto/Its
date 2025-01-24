@@ -1,1 +1,38 @@
 /* You can add global styles to this file, and also import other style files */
+/* Stile per h1 */
+h1 {
+    font-size: 2.5em; /* Dimensione del font */
+    color: #333; /* Colore del testo */
+    margin-bottom: 20px; /* Margine inferiore */
+    text-align: center; /* Allineamento al centro */
+    font-weight: bold; /* Grassetto */
+}
+
+/* Stile per h2 */
+h2 {
+    font-size: 2em; /* Dimensione del font */
+    color: #000000; /* Colore verde */
+    margin-bottom: 15px; /* Margine inferiore */
+    text-align: left; /* Allineamento a sinistra */
+    font-weight: semi-bold; /* Semi-grassetto */
+}
+
+/* Stile per h3 */
+h3 {
+    font-size: 1.5em; /* Dimensione del font */
+    color: #555; /* Colore grigio scuro */
+    margin-bottom: 10px; /* Margine inferiore */
+    text-align: left; /* Allineamento a sinistra */
+    font-weight: normal; /* Normale */
+}
+.feedback-message {
+    margin-top: 15px; /* Margine superiore */
+    font-size: 1em; /* Dimensione del font */
+    color: #5cb85c; /* Colore verde per successi */
+}
+
+.feedback-error {
+    margin-top: 15px; /* Margine superiore */
+    font-size: 1em; /* Dimensione del font */
+    color: #d9534f; /* Colore rosso per errori */
+}

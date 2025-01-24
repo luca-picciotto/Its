@@ -1,0 +1,51 @@
+/* Contenitore principale per la lista dei corsi */
+.corsi-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Stile per ogni corso */
+.corso {
+    background-color: #f9f9f9;
+    width: 90%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 15px;
+    margin: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+    max-width: 600px;
+}
+
+/* Effetto hover sul corso */
+.corso:hover {
+    transform: scale(1.05);
+}
+
+/* Stile per il testo del corso */
+.corso h3 {
+    margin: 0 0 10px;
+    color: #333;
+}
+
+/* Stile per il bottone */
+.corso button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    float: right;
+}
+
+.corso button:hover {
+    background-color: #0056b3;
+}
+

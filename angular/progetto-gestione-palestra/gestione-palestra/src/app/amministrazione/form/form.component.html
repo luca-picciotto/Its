@@ -1,36 +1,39 @@
-<form (ngSubmit)="onSubmit({
-    id: enteredId,
-    nome: enteredNomeCorso,
-    descrizione: enteredDescrizione,
-    istruttore: enteredIstruttore,
-    durata: enteredDurata,
-    capacitaMassima: enteredCapacita,
-    iscritti: enteredIscritti
-
-  })" style="display: flex; flex-wrap: wrap; width: 200px;">
-    <input type="text" placeholder="Id" id="id" 
-        [(ngModel)]="enteredId" 
-        [ngModelOptions]="{ standalone: true }" 
-        required>
-    <input type="text" placeholder="Nome corso" id="nome-corso" 
-        [(ngModel)]="enteredNomeCorso" 
-        [ngModelOptions]="{ standalone: true }" 
-        required>
-    <input type="text" placeholder="Descrizione" id="descrizione" 
-        [(ngModel)]="enteredDescrizione" 
-        [ngModelOptions]="{ standalone: true }" 
-        required>
-    <input type="text" placeholder="Istruttore" id="istruttore" 
-        [(ngModel)]="enteredIstruttore" 
-        [ngModelOptions]="{ standalone: true }" 
-        required>
-    <input type="number" placeholder="Durata" id="durata" 
-        [(ngModel)]="enteredDurata" 
-        [ngModelOptions]="{ standalone: true }" 
-        required>
-    <input type="number" placeholder="Capacita Massima" id="capacita" 
-        [(ngModel)]="enteredCapacita" 
-        [ngModelOptions]="{ standalone: true }" 
-        required>
-    <button type="submit">Aggiungi corso</button>
-</form>
+<div>
+    <h3>Aggiungi un corso</h3>
+    <form class="form-container" (ngSubmit)="onSubmit({
+        id: enteredId,
+        nome: enteredNomeCorso,
+        descrizione: enteredDescrizione,
+        istruttore: enteredIstruttore,
+        durata: enteredDurata,
+        capacitaMassima: enteredCapacita,
+        iscritti: enteredIscritti
+    
+      })" >
+        <input type="text" placeholder="Id" id="id"
+            [(ngModel)]="enteredId"
+            [ngModelOptions]="{ standalone: true }"
+            required>
+        <input type="text" placeholder="Nome corso" id="nome-corso"
+            [(ngModel)]="enteredNomeCorso"
+            [ngModelOptions]="{ standalone: true }"
+            required>
+        <input type="text" placeholder="Descrizione" id="descrizione"
+            [(ngModel)]="enteredDescrizione"
+            [ngModelOptions]="{ standalone: true }"
+            required>
+        <input type="text" placeholder="Istruttore" id="istruttore"
+            [(ngModel)]="enteredIstruttore"
+            [ngModelOptions]="{ standalone: true }"
+            required>
+        <input type="number" placeholder="Durata" id="durata"
+            [(ngModel)]="enteredDurata"
+            [ngModelOptions]="{ standalone: true }"
+            required>
+        <input type="number" placeholder="Capacita Massima" id="capacita"
+            [(ngModel)]="enteredCapacita"
+            [ngModelOptions]="{ standalone: true }"
+            required>
+        <button type="submit">Aggiungi corso</button>
+    </form>
+</div>

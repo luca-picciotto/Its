@@ -1,32 +1,45 @@
 .card {
-    border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    margin: 1rem;
-    overflow: hidden;
-    transition: transform 0.2s;
-    min-width: 300px;
-    max-width: 500px;
-
+    width: 300px; /* Larghezza fissa */
+    background-color: #ffffff; /* Colore di sfondo bianco */
+    border: 1px solid #ddd; /* Bordo grigio chiaro */
+    border-radius: 8px; /* Angoli arrotondati */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Ombra per profondità */
+    margin: 15px; /* Margine tra le card */
+    transition: transform 0.3s, box-shadow 0.3s; /* Transizioni per effetto hover */
 }
 
+/* Effetto hover sulla card */
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-5px); /* Sollevamento della card */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Ombra più pronunciata */
 }
 
-.card-header {
-    background-color: #f8f9fa;
-    padding: 1rem;
-    font-size: 1.25rem;
-    font-weight: bold;
+/* Stile per il titolo nella card */
+.card h3 {
+    margin: 15px; /* Margine per il titolo */
+    font-size: 1.5em; /* Dimensione del font */
+    color: #333; /* Colore del testo */
 }
 
-.card-body {
-    padding: 1rem;
+/* Stile per il contenuto della card */
+.card p {
+    margin: 0 15px 15px; /* Margini per il contenuto */
+    color: #666; /* Colore del testo */
 }
 
-.card-footer {
-    background-color: #f8f9fa;
-    padding: 0.75rem;
-    text-align: right;
+/* Stile per il bottone nella card */
+.card button {
+    background-color: #007bff; /* Colore blu */
+    color: white; /* Colore del testo */
+    border: none; /* Nessun bordo */
+    padding: 10px 15px; /* Padding per il bottone */
+    cursor: pointer; /* Cursor a mano */
+    border-radius: 4px; /* Angoli arrotondati */
+    margin: 0 15px 15px; /* Margine per il bottone */
+    transition: background-color 0.3s; /* Transizione per effetto hover */
 }
+
+.card button:hover {
+    background-color: #0056b3; /* Colore blu scuro al passaggio del mouse */
+}
+

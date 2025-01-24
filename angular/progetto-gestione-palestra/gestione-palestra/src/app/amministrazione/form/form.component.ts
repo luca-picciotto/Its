@@ -13,7 +13,7 @@ import { FormsModule } from '@angular/forms';
 export class FormComponent {
   private corsiService = inject(CorsiService);
 
-  enteredId!: number;
+  enteredId!: string;
   enteredNomeCorso!: string;
   enteredDescrizione!: string;
   enteredIstruttore!: string;
@@ -21,7 +21,16 @@ export class FormComponent {
   enteredCapacita!: number;
   enteredIscritti: number = 0;
   
-  onSubmit(corso: Corso) {
+  /**
+ * Aggiunge un nuovo corso al sistema.
+ * 
+ * Utilizza il servizio `CorsiService` per inviare il corso specificato.
+ * Stampa i dati restituiti nella console.
+ * 
+ * @param {Corso} corso - Il corso da aggiungere.
+ * @returns {void} Non restituisce alcun valore.
+ */
+  onSubmit(corso: Corso): void {
     this.corsiService.addCorso(corso)
     .subscribe({
       next: (resData => {console.log(resData);

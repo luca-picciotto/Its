@@ -1,25 +1,23 @@
+import { Component, DestroyRef, inject, signal } from '@angular/core';
+import Corso from '../corsi/corso/corso.model';
+import { CorsiService } from '../corsi/corsi.service';
+import { CorsoComponent } from '../corsi/corso/corso.component';
 
-import { Component, DestroyRef, signal } from '@angular/core';
-import { CorsiService } from './corsi.service';
-import { Corso } from './corso/corso.model';
-import { inject } from '@angular/core';
-import { CorsoComponent } from './corso/corso.component';
 @Component({
-  selector: 'app-corsi',
+  selector: 'app-home',
   standalone: true,
   imports: [CorsoComponent],
-  templateUrl: './corsi.component.html',
-  styleUrl: './corsi.component.css'
+  templateUrl: './home.component.html',
+  styleUrl: './home.component.css'
 })
-export class CorsiComponent {
+export class HomeComponent {
 
   corsi = signal<Corso[] | undefined>(undefined);
   isFetching = signal<boolean>(false);
   errorMessage = signal<string | undefined>(undefined);
   private corsiService = inject(CorsiService);
   private destroyRef = inject(DestroyRef);
-
-
+  
   /**
  * Inizializza il componente e carica i corsi.
  * 
@@ -45,4 +43,6 @@ export class CorsiComponent {
     })
     this.destroyRef.onDestroy(() => subscription.unsubscribe());
   }
+
+  
 }

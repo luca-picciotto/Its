@@ -1,4 +1,4 @@
-<h2>La nostra selezione di corsi</h2>
+<h2>Benvenuto nella nostra comunity</h2>
 
 <div class="card-container">
     @if(isFetching()) {
@@ -6,8 +6,9 @@
     }@else if (errorMessage() !== undefined) {
         <div class="feedback-error"> {{errorMessage()}}</div>
     }@else {
-        @for(corso of corsi() ?? []; track corso.id) {
+        @for(corso of corsi()?.slice(0,4); track corso.id; ) {
             <app-corso [corso]="corso"></app-corso>
+           
         }
     }
 </div>

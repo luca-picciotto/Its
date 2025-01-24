@@ -1,11 +1,22 @@
 <div class="card"   >
-    <div class="card-header">
-        <h2>{{corso().nome}}</h2>
-    </div>
-    <div class="card-body">
+    
+        <h3>{{corso().nome}}</h3>
+    
+    
         <p>{{corso().descrizione}}</p>
-        <p>{{corso().durata}}</p>
-        <p>{{corso().capacitaMassima}}</p>
-    </div>
+        <p>Durata: {{corso().durata}} minuti</p>
+        <p>Posti massimi: {{corso().capacitaMassima}}</p>
+        <p>Posti disponibili: {{corso().capacitaMassima - corso().iscritti }}</p>
+    
     <button type="submit" (click)="onSubmit(corso())" >Prenota</button>
+
+    @if(feedbackMessage === 'Prenotazione effettuata con successo!') {
+        <div class="feedback-message">
+            {{feedbackMessage}}
+        </div>
+    }@else if(feedbackMessage === 'Corso pieno!') {
+        <div class="feedback-error">
+            {{feedbackMessage}}
+        </div> 
+    }
 </div>

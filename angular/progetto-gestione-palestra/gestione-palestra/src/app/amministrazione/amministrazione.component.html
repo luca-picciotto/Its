@@ -1,10 +1,13 @@
-<h2>Amministrazione</h2>
-<div>
-    @if(corsi() !== undefined){
+<h2>Benvenuto, User Admin</h2>
+<div class="corsi-container">
+    <h3>Corsi attivi: </h3>
+    @if (errorMessage() !== undefined) {
+        <div class="feedback-error"> {{errorMessage()}}</div>
+    }@else if(corsi() !== undefined){
         @for(c of corsi(); track c.id){
-           <div>{{c.id}} {{c.nome}}
-            <button (click)="removeCorso(c)"> X </button>
-        </div>
+            <div class="corso">{{c.id}} {{c.nome}}
+                <button (click)="removeCorso(c)"> X </button>
+            </div>
         }
     }
     <hr>
