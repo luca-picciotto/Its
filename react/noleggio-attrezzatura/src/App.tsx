@@ -3,7 +3,7 @@ import EquipmentsPage from './pages/equipmentsPage';
 import BooksPage from './pages/booksPage';
 import ProtectedPage from './pages/ProtectedPage';
 import LoginPage from './pages/LoginPage';
-import Account from './pages/IsLogPage';
+import Account from './pages/Account';
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
           } />
           <Route path="/login" element={
               <LoginPage />
-            } />
+          } />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
       </BrowserRouter>
