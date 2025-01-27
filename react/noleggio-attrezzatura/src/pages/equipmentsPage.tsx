@@ -6,11 +6,7 @@ const EquipmentsPage = () => {
     return (
         <>
             <Navbar />
-            <div className="equipments-page">
-                <EquipmentList />
-                
-            </div>
-            
+            <EquipmentList />
         </>
     );
 }

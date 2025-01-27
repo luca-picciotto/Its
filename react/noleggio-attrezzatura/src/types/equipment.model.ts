@@ -1,5 +1,5 @@
 interface EquipmentModel {
-    id: number | undefined;
+    id: string ;
     name: string | undefined;
     claim: string | undefined;
     image: string | undefined;

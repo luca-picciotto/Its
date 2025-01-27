@@ -8,13 +8,13 @@ const Navbar = () => {
         <h1>Noleggio Attrezzatura</h1>
         <ul>
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/profile">User Area</Link>
           </li>
           <li>
-            <Link to="/equipments">Equipments</Link>
+            <Link to="/">Equipments</Link>
           </li>
           <li>
-            <Link to="/books">Books</Link>
+            <Link to="/bookings">Bookings</Link>
           </li>
           <li>
             <a href="https://d3660g9kardf5b.cloudfront.net/api/docs/" target="_blank">Docs</a>

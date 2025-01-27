@@ -1,5 +1,5 @@
 interface BookingModel {
-    id: number | null;
+    id: number ;
     equipment_id: number | null;
     start_date: string | null;
     end_date: string | null;

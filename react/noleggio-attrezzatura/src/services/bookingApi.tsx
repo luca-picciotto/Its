@@ -7,7 +7,7 @@ export const bookingApiGet = async () => {
     return data;
 }
 
-export const bookingApiPost = async (id: string, durationRequest:number, token: string | null ) => {
+export const bookingApiPost = async (id: string, durationRequest:number, token: string  ) => {
     const response = await fetch(`https://d3660g9kardf5b.cloudfront.net/api/equipment/${id}/book`, {
         method: 'POST',
         headers: {
