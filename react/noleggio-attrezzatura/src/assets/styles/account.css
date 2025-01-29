@@ -1,3 +1,11 @@
 .account {
     height: 100vh;
 }
+
+.card-button {
+    background-color: #ff1d1d; /* Colore del pulsante */
+    color: white; /* Testo bianco */
+    padding: 0.5rem 1rem; /* Padding interno */
+    border: none; /* Nessun bordo */
+    border-radius: 0.25rem; /* Angoli arrotondati */
+}
