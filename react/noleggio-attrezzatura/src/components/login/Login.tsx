@@ -20,9 +20,7 @@ const Login = () => {
   return (
     <>
       <div className="module form-module">
-        <div className="toggle" onClick={toggleForms}>
-          Click
-        </div>
+       
         <div className="form" style={{ display: isLoginVisible ? "block" : "none" }}>
           <h2>Login to your account</h2>
           <form onSubmit={(e) => {
@@ -38,10 +36,14 @@ const Login = () => {
           }}>
             <input type="text" placeholder="Username" value={username} onChange={(u) => {setUsername(u.currentTarget.value)}}/>
             <input type="password" placeholder="Password" value={password} onChange={(u) => {setPassword(u.currentTarget.value)}}/>
-            <p>{alertMessage}</p>
+            {alertMessage && <p>{alertMessage}</p>}
             {error && <p>{error?.toString()}</p>}
+            <div className="toggle" onClick={toggleForms}>
+              Non hai un account? <span>Registrati</span>
+            </div>
             <button type="submit" onClick={() => console.log(username, password)}>Login</button>
-          </form >
+          </form > 
+          
         </div>
         <div className="form" style={{ display: isLoginVisible ? "none" : "block" }}>
           <h2>Create an account</h2>
@@ -51,6 +53,9 @@ const Login = () => {
             <input type="password" placeholder="Password" value={password} onChange={(u) => {setPassword(u.currentTarget.value)}}/>
             {registerError && <p>{registerError?.toString()}</p>}
             {result && <p>{result}</p>}
+            <div className="toggle" onClick={toggleForms}>
+              Hai gia un account? <span>Accedi</span>
+            </div>
             <button type="submit">Register</button>
           </form>
         </div>

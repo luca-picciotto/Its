@@ -1,6 +1,7 @@
 import { useEffect } from 'react';
 import Login from '../components/login/Login';
 import { useNavigate } from 'react-router-dom';
+import '../components/login/login.css';
 
 const LoginPage = () => {
     const navigate = useNavigate();
@@ -12,9 +13,9 @@ const LoginPage = () => {
     }, [navigate]);
     return (
         <>
-            <h1>Accedi</h1>
-            <h3>Non sei registrato? Crea un profilo</h3>
-            <Login />
+            <div className="login-page">
+                <Login />
+            </div>
         </>
     );
 }

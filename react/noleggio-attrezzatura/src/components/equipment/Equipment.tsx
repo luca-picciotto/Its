@@ -31,7 +31,7 @@ const Equipment = ({ equipmentSelected }: { equipmentSelected: EquipmentModel })
                 <h2 className="card-title">{name}</h2>
                 <button onClick={toggleModal} className="card-button" style={{width: 50}}> ← </button>
                 <p className="card-text">{pricePerMinute} € </p>
-                <input type="number" placeholder="Duration /minutes" value={duration} onChange={(d) => {setDuration(d.target.valueAsNumber); }} />
+                <input type="number" placeholder="Duration /minutes" value={duration || ""} onChange={(d) => {setDuration(d.target.valueAsNumber); }} />
                 <p className="cart-text">{(calculatePrice(duration, pricePerMinute)?.toFixed(2))} €</p>
                 <p>{result}</p>
                 {error && <p>Duration must be between 1 and 20 minutes.</p>}

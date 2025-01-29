@@ -1,4 +1,3 @@
-import React from 'react';
 import BookList from '../components/book-list/BookList';
 import Navbar from '../components/navbar/Navbar';
 

@@ -1,12 +1,14 @@
 nav {
-    background-color: #007bff; /* Colore di sfondo blu */
+    background-color: #0000006c; /* Colore di sfondo blu */
     padding: 1rem; /* Padding interno */
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Divide in due colonne */
 }
 
 nav h1 {
     color: white; /* Colore del titolo */
-    margin: 0; /* Rimuove il margine */
     font-size: 1.5rem; /* Dimensione del font */
+    grid-column: 1 / 2; /* Occupa la prima colonna */
 }
 
 nav ul {
@@ -14,10 +16,13 @@ nav ul {
     padding: 0; /* Rimuove il padding */
     display: flex; /* Dispone gli elementi in orizzontale */
     gap: 1rem; /* Spaziatura tra gli elementi */
+    grid-column: 2 / 3; /* Occupa la seconda colonna */
+    margin-left: auto; /* Allinea a destra */
 }
 
 nav ul li {
     display: inline; /* Dispone gli elementi in linea */
+    margin: auto 0;
 }
 
 nav a {

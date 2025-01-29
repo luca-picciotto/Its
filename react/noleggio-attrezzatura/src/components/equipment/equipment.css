@@ -1,12 +1,13 @@
 .card {
-    border: 1px solid #ddd; /* Bordo grigio chiaro */
     border-radius: 0.5rem; /* Angoli arrotondati */
+    color: white; /* Testo bianco */
     padding: 1rem; /* Padding interno */
     margin: 1rem; /* Margine esterno */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombra leggera */
     background-color: #fff; /* Sfondo bianco */
     transition: transform 0.2s; /* Transizione per l'effetto hover */
     width: 300px;
+    background-color: #00000052;
 }
 
 .card:hover {
@@ -21,7 +22,6 @@
 
 .card-text {
     font-size: 1rem; /* Dimensione del testo */
-    color: #555; /* Colore del testo grigio scuro */
     margin-bottom: 0.5rem; /* Margine inferiore */
     word-wrap: break-word;
 }
@@ -31,9 +31,23 @@
     height: auto; /* Mantieni le proporzioni */
     border-radius: 0.25rem; /* Angoli arrotondati per l'immagine */
 }
+.card input {
+
+        padding: 0.5rem;
+        width: 15rem;
+        border-radius: 10px;
+        height: 1.5rem;
+        background-color: #00000077;
+        color: #fff;
+      
+      }
+      .card input::placeholder {
+        color: #fff;
+      
+}
 
 .card-button {
-    background-color: #007bff; /* Colore del pulsante */
+    background-color: #ff1d1d; /* Colore del pulsante */
     color: white; /* Testo bianco */
     padding: 0.5rem 1rem; /* Padding interno */
     border: none; /* Nessun bordo */
