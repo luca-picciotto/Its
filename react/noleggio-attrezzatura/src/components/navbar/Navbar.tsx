@@ -16,9 +16,6 @@ const Navbar = () => {
           <li>
             <Link to="/bookings">Bookings</Link>
           </li>
-          <li>
-            <a href="https://d3660g9kardf5b.cloudfront.net/api/docs/" target="_blank">Docs</a>
-          </li>
         </ul>
       </nav>
 

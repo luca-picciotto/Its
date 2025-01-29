@@ -1,8 +1,12 @@
 nav {
-    background-color: #0000006c; /* Colore di sfondo blu */
+    background-color: #8B0000 ; /* Colore di sfondo blu */
     padding: 1rem; /* Padding interno */
     display: grid;
     grid-template-columns: 1fr 2fr; /* Divide in due colonne */
+    height: 5rem; /* Altezza */
+    position: sticky; /* Posizione fissa */
+    top: 0; /* In alto */
+    z-index: 1000; /* Z-index */
 }
 
 nav h1 {
@@ -15,7 +19,7 @@ nav ul {
     list-style-type: none; /* Rimuove i puntatori della lista */
     padding: 0; /* Rimuove il padding */
     display: flex; /* Dispone gli elementi in orizzontale */
-    gap: 1rem; /* Spaziatura tra gli elementi */
+    gap: 0.3rem; /* Spaziatura tra gli elementi */
     grid-column: 2 / 3; /* Occupa la seconda colonna */
     margin-left: auto; /* Allinea a destra */
 }

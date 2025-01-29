@@ -4,7 +4,7 @@ import Book from '../book/Book';
 
 const BookList = () => {
     const { result, loading, error } = useBookingApi();
-
+    
     if (loading) return <div>Loading...</div>;
     if (error) return <div>Error: {error}</div>;
 
@@ -12,9 +12,11 @@ const BookList = () => {
         console.log(result);
         return (
             <div>
-                <ul className="book-list">
+                <ul className="booking-list">
                     {result.map((booking) => (
-                    <Book key={booking.id} bookingSelected={booking} />
+                        <>
+                            <Book key={booking.id} bookingSelected={booking} />
+                        </>
                 ))}
                 </ul>
                 
