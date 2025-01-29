@@ -22,12 +22,6 @@ const Equipment = ({ equipmentSelected }: { equipmentSelected: EquipmentModel })
         <>
             <div className="card" style={{ display: isModalVisible ? "block" : "none" }}>
                 <h2 className="card-title">{id} {name}</h2>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" style={{ width: '100px', height: '100px', fill: 'teal' }}>
-                    <rect width="100" height="40" x="8" y="30" style={{ fill: 'inherit' }} />
-                    <rect width="16" height="32" y="38" style={{ fill: 'inherit', filter: 'brightness(0.8)' }} />
-                    <circle cx="8" cy="38" r="8" style={{ fill: 'inherit', filter: 'brightness(0.4)' }} />
-                    <circle cx="8" cy="70" r="8" style={{ fill: 'inherit', filter: 'brightness(0.8)' }} />
-                </svg>
                 <p className="card-text">{claim}</p>
                 <img src={image} alt="" width="150" height="150" />
                 <p className="card-text">{pricePerMinute} €</p>

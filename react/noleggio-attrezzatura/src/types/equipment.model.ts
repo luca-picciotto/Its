@@ -1,4 +1,4 @@
-interface EquipmentModel {
+export interface EquipmentModel {
     id: string ;
     name: string | undefined;
     claim: string | undefined;

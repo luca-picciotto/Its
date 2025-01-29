@@ -1,150 +1,185 @@
-Perfetto, procediamo con una linea guida semplice e chiara per costruire la tua applicazione passo dopo passo. Ecco gli step principali:
+# Documentation
+Ddetailed project documentation
 
----
-
-### **1. Preparazione dell'ambiente**
-- **Installazione degli strumenti necessari**:
-  - Installa [Node.js](https://nodejs.org/) (consigliata versione LTS).
-  - Installa un editor di testo come [Visual Studio Code](https://code.visualstudio.com/).
-- **Creazione del progetto React**:
-  ```bash
-  npx create-react-app gym-booking --template typescript
-  cd gym-booking
+## Structure of project
   ```
-- **Avvia il server di sviluppo**:
-  ```bash
-  npm start
+  src/
+  ├── components/ # Reusable components (e.g. modals, buttons, cards)
+  ├── services/ # API calls and interactions with the backend
+  ├── hooks/ # Custom hooks (e.g. state management or data fetch)
+  ├── pages/ # Main app screens
+  ├── types/ # Definition of TypeScript interfaces and types
+  ├── App.tsx # Main entry point of the app
+  └── index.tsx # Mount the React app in the DOM
   ```
 
----
+## Services
 
-Ecco i passi aggiornati considerando l'inclusione delle cartelle `routes/` e `pages/`:
+### loginApi
+- endpoint: https://d3660g9kardf5b.cloudfront.net/api/login ;
+- method: POST;
+- body: username, password;
+- return: authentification token of error;
 
----
+### registerApiPost
+- endpoint: https://d3660g9kardf5b.cloudfront.net/api/register ;
+- method: POST;
+- body: username, password;
+- return: 'User create' or error;
 
-### **2. Struttura**
-1. **Setup del progetto**:
-   
-   - Struttura base del progetto:
-     ```
-     src/
-     ├── components/    # Componenti riutilizzabili (es. modali, bottoni, card)
-     ├── services/      # API call e interazioni con il backend
-     ├── hooks/         # Hook personalizzati (es. gestione stato o fetch dati)
-     ├── routes/        # Logica di navigazione e definizione delle rotte principali
-     ├── pages/         # Schermate principali dell'app
-     ├── types/         # Definizione delle interfacce e tipi TypeScript
-     ├── App.tsx        # Punto di ingresso principale dell'app
-     └── index.tsx      # Monta l'app React nel DOM
-     ```
+### equipmentApiGet
+- endpoint: https://d3660g9kardf5b.cloudfront.net/api/equipment ;
+- method: GET;
+- return: list of equipment or error;
 
-2. **Definizione delle rotte (`routes/`)**:
-   - Crea un file `AppRoutes.tsx` nella cartella `routes/`.
-   - In questo file, definisci la logica di navigazione usando `react-router-dom`.
-   - Mappa ogni rotta a un componente nella cartella `pages/`.
+### bookingApiGet
+- endpoint: https://d3660g9kardf5b.cloudfront.net/api/equipment-bookings ;
+- method: GET;
+- return: list of bookings or error;
 
-3. **Creazione delle pagine principali (`pages/`)**:
-   - Per ogni schermata principale dell'applicazione, crea un file nella cartella `pages/`. Esempio:
-     - `HomePage.tsx`: Mostra la lista di attrezzature disponibili.
-     - `LoginPage.tsx`: Schermata di accesso.
-     - `RegisterPage.tsx`: Schermata di registrazione.
-     - `BookingPage.tsx`: Mostra le prenotazioni attive.
-   - Ogni pagina può importare componenti dalla cartella `components/`.
+### bookingApiPost 
+- endpoint: https://d3660g9kardf5b.cloudfront.net/api/equipment/${id}/book ;
+- method: POST;
+- body: duration of booking;
+- return: ok messagge or error;
 
-4. **Creazione dei componenti riutilizzabili (`components/`)**:
-   - Qui aggiungi i componenti più piccoli e riutilizzabili, come:
-     - **Card** per visualizzare un'attrezzatura.
-     - **Modal** per la prenotazione.
-     - **Button** per azioni come "Noleggia" o "Prenota".
+## Hooks
 
-5. **Gestione delle chiamate API (`services/`)**:
-   - Implementa le funzioni per comunicare con il backend.
-   - Ad esempio:
-     - `getEquipmentList()` per recuperare la lista di attrezzature.
-     - `bookEquipment()` per inviare una prenotazione.
-     - `loginUser()` e `registerUser()` per autenticazione.
+### useLoginApi
+- Called service: loginApi;
+- login(userRequest): object it contains username and password; 
+- Return: 
+    - result: auth tokem;
+    - error;
+    - loading;
+    - login: method that calls the API
 
-6. **Hook personalizzati (`hooks/`)**:
-   - Qui puoi creare hook per gestire lo stato o semplificare alcune logiche, ad esempio:
-     - `useFetch` per gestire chiamate API con stato di caricamento ed errori.
-     - `useAuth` per gestire il token JWT e l'autenticazione.
+### useRegisterApi
+- Called service: registerApiPost:
+- register(userRequest): object it contains username and password;
+- Return: 
+    - result: 'User Create';
+    - error;
+    - loading;
+    - register: method that calls the API;
 
-7. **Tipizzazione delle entità (`types/`)**:
-   - Crea un file per ogni tipo o raggruppa tutte le entità correlate. Ad esempio:
-     - `Equipment.ts` per la tipizzazione degli oggetti dell'attrezzatura.
-     - `Booking.ts` per la tipizzazione delle prenotazioni.
+### useEquipmentApi
+- Called service: equipmentApiGet;
+- Return: 
+    - result: equipment's list;
+    - error;
+    - loading;
 
----
+### useBookingApi
+- Called service: bookingApiGet;
+- Return: 
+    - result: booking's list;
+    - error;
+    - loading;
 
-Questi passaggi ora riflettono la struttura aggiornata. Dimmi se vuoi approfondire un punto o iniziare da un passo specifico! 😊
+### useBookEquipmentApi
+- Called service: bookingApiPost;
+- bookEquipment(id, durationRequest, token);
+- result: 
+    - ok messagge;
+    - error;
+    - loading;
+    - bookEquipment: method that calls the API;
 
-### **3. Creazione delle funzionalità**
-#### **3.1. Visualizzazione attrezzature**
-- **Componenti coinvolti**:
-  - `EquipmentList`: Mostra una lista di attrezzature.
-  - `EquipmentItem`: Componente per ogni singolo attrezzo.
-- **API da chiamare**: `/api/equipment`.
-- **UI**:
-  - Usa una griglia o una lista con immagine, nome e pulsante "Noleggia".
+## Components
 
----
+### Login
+- Description: login and register forms component;
+- Form login 
+    - onSubmit: call login({username, password});
+- Form register: 
+    - onSubmit: call register({username, password});
 
-#### **3.2. Prenotazione attrezzature**
-- **Componenti coinvolti**:
-  - `BookingModal`: Modale per scegliere durata e visualizzare il prezzo.
-- **API da chiamare**: `/api/equipment/{id}/book`.
-- **UI**:
-  - Modale con input per la durata e visualizzazione del costo.
+### EquipmentList
+- Description: for each equipment contained in result it generates an equipment component;
 
----
+### Equipment
+- Description: component that shows equipment information;
+- Actions: shows a modal where you can enter the duration of the booking, calculating the estimated price;
+- Modal onClick: bookEquipment(id, duration, token); 
 
-#### **3.3. Visualizzazione prenotazioni**
-- **Componenti coinvolti**:
-  - `BookingList`: Mostra tutte le prenotazioni attive.
-  - `BookingItem`: Dettaglio per ogni prenotazione.
-- **API da chiamare**: `/api/equipment-bookings`.
-- **UI**:
-  - Tabella o lista con informazioni come nome attrezzo, durata e data.
+### BookList
+- Description: for each equipment contained in result it generates an booking component;
 
----
+### Book 
+- Description: component that shows booking information;
 
-#### **3.4. Registrazione e Login**
-- **Componenti coinvolti**:
-  - `RegisterForm`: Per creare un nuovo account.
-  - `LoginForm`: Per effettuare il login.
-- **API da chiamare**:
-  - Registrazione: `/api/register`.
-  - Login: `/api/login`.
-- **UI**:
-  - Form con input per username e password.
-  - Pulsante per inviare la richiesta.
+### Navbar
+- Description: Internal navigation menu using routes.
+- Link: 
+    - / -> equipments page;
+    - /profile -> user area;
+    - /bookings -> bookings page;
 
----
+## Routes
+All routes are managed in app.tsx
+- / : EquipmentsPage;
+- /bookings : BooksPage;
+- /profile : Account;
+- /login : LoginPage; 
+- \*  : EquipmentsPage;
 
-### **4. Gestione dello stato globale**
-- **Scelta della libreria**: Usa [Context API](https://react.dev/reference/react/useContext) o [Redux Toolkit](https://redux-toolkit.js.org/) per gestire:
-  - Token di autenticazione.
-  - Dati delle attrezzature e delle prenotazioni.
+## Authentication Controll Page
+### ProtectedPage
+- Description: every time the route changes it checks if the token exists, and if it is different from an empty string. If it is 'true' it returns the child component (the protected one), if it is 'false' it sets the route to '/login'.
 
----
+## Custom Types
 
-### **5. UI/UX**
-- Usa una libreria per semplificare il design:
-  - [Material UI](https://mui.com/) o [Tailwind CSS](https://tailwindcss.com/).
-- Implementa uno stile responsive per mobile e desktop.
+For each API we manage the typing of responses and sends (if it is POST) with custom types.
+- UserRequest: 
+    ```ts
+    export interface UserRequest {
+        username: string;
+        password: string;
+    }
 
----
+    export default UserRequest;
+    ```
+- LoginResponce: 
 
-### **6. Test e deploy**
-- **Test locale**:
-  - Assicurati che tutte le funzionalità funzionino correttamente.
-- **Build per la produzione**:
-  ```bash
-  npm run build
-  ```
-- **Deploy su Netlify**:
-  - Usa [Netlify Drop](https://app.netlify.com/drop) per caricare la cartella `build`.
+    ```ts
+    export interface LoginResponse {
+        token: string ;
+    }
 
----
+    export default LoginResponse;   
+    ```
+- EquipmantBookingRequest: 
 
-Se vuoi, possiamo partire dal primo passo o approfondire uno specifico punto! 😊
+    ```ts
+    export interface EquipmentBookingRequest {
+	    duration: number;
+    }
+
+    export default EquipmentBookingRequest;        
+    ```
+ 
+- EquipmentModel:
+   ```js
+    export interface EquipmentModel {
+        id: string ;
+        name: string | undefined;
+        claim: string | undefined;
+        image: string | undefined;
+        icon: string | undefined;
+        pricePerMinute: number | undefined;
+    }
+    export default EquipmentModel;
+   ```
+- BookingModel: 
+    ```js
+    export interface BookingModel {
+        id: number ;
+        equipment_id: number | null;
+        start_date: string | null;
+        end_date: string | null;
+        
+    }
+
+    export default BookingModel;
+    ```
