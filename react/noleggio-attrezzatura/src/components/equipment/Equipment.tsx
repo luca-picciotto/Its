@@ -2,11 +2,12 @@ import {  useState } from "react";
 import EquipmentModel from "../../types/equipment.model";
 import { calculatePrice } from "../../hooks/useEquipmentApi";
 import useBookEquipmentApi from "../../hooks/useBookEquipmentApi";
+import parseSvgIcon from "../../assets/utils/parseSvgIcon";
 
 import './equipment.css';
 
 const Equipment = ({ equipmentSelected }: { equipmentSelected: EquipmentModel }) => {
-    const {id, name, claim, image, pricePerMinute } = equipmentSelected;
+    const {id, name, claim, image, pricePerMinute, icon } = equipmentSelected;
     const [isModalVisible, setIsModalVisible] = useState<boolean>(true);
     const [duration, setDuration] = useState(0);
     const autToken = localStorage.getItem('authToken') || "";
@@ -21,10 +22,11 @@ const Equipment = ({ equipmentSelected }: { equipmentSelected: EquipmentModel })
     return (
         <>
             <div className="card" style={{ display: isModalVisible ? "block" : "none" }}>
-                <h2 className="card-title">{id} {name}</h2>
+                <h2 className="card-title">{id} {name} </h2>
                 <p className="card-text">{claim}</p>
-                <img src={image} alt="" width="150" height="150" />
+                <img src={image} alt="" width="200" height="150" />
                 <p className="card-text">{pricePerMinute} €</p>
+                <p>{parseSvgIcon(icon || "")}</p>
                 <button type="submit" className="card-button" onClick={toggleModal}>Book</button>
             </div>
             <div className="card" style={{ display: isModalVisible ? "none" : "block" }}>
