@@ -1,7 +1,8 @@
 import { useEffect, useState } from "react";
 import {bookingApiGet} from "../services/bookingApi";
 import BookingModel from "../types/booking.model";
-
+import EquipmentModel from "../types/equipment.model";
+import { equipmentApiGet } from "../services/equipmentApi";
 /**
  * Custom hook to fetch the list of active equipment bookings.
  * 
@@ -15,6 +16,8 @@ import BookingModel from "../types/booking.model";
  */
 export function useBookingApi() {
     const [result, setResult] = useState<BookingModel[] | null>(null);
+    const [resultEquipment, setResultEquipment] = useState<EquipmentModel[] >([]);
+    const [errorEquipment, setErrorEquipment] = useState<string | null>(null);
     const [error, setError] = useState<string | null>(null);
     const [loading, setLoading] = useState<boolean>(false);
 
@@ -28,12 +31,21 @@ export function useBookingApi() {
             .catch((error: string) => {
                 setError(error);
             })
+        equipmentApiGet()
+            .then((data: EquipmentModel[]) => {
+                
+                setResultEquipment(data);
+            })
+            .catch((error: string) => {
+                setErrorEquipment(error);
+            })
             .finally(() => {
                 setLoading(false);
             });
     }, []);
 
-    return { result, loading, error };
+
+    return { result, resultEquipment, errorEquipment, loading, error };
 }
 
 export default useBookingApi;

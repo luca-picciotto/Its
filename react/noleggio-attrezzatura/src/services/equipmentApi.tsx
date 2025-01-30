@@ -6,10 +6,12 @@
  * is expected to be in JSON format.
  */
 export const equipmentApiGet = async () => {
+    const token = localStorage.getItem('authToken');
     const response = await fetch('https://d3660g9kardf5b.cloudfront.net/api/equipment', {
         method: 'GET',
         headers: {
             'Content-Type': 'application/json',
+            'Authorization': `Bearer ${token}`,
         },
     });
     if (!response.ok) {
